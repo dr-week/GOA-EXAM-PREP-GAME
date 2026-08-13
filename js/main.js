@@ -20,7 +20,7 @@ window.switchTab = function(tabName) {
   } else if (tabName === 'brain-games') {
     initMemoryGame();
   } else if (tabName === 'revision-bank') {
-    loadMDFile('goa_current_affairs_2026');
+    loadMDFile('goa_current_affairs_2026', document.querySelector('.btn-chip'));
     renderBookmarks();
   }
 };
@@ -68,7 +68,15 @@ window.nextOMRQuestion = nextOMRQuestion;
 window.submitFullExam = submitFullExam;
 window.useFiftyFifty = useFiftyFifty;
 window.closeResultModal = closeResultModal;
-window.loadBrainGame = loadBrainGame;
+
+window.loadBrainGame = function(gameType, btnElem = null) {
+  if (btnElem) {
+    document.querySelectorAll('#view-brain-games .btn-chip').forEach(b => b.classList.remove('active'));
+    btnElem.classList.add('active');
+  }
+  loadBrainGame(gameType);
+};
+
 window.initMemoryGame = initMemoryGame;
 window.startSpeedMath = startSpeedMath;
 window.startFullExamArena = startFullExamArena;
@@ -124,7 +132,12 @@ window.filterGlobalSearch = function(query) {
     `).join('');
 };
 
-window.loadMDFile = async function(catKey) {
+window.loadMDFile = async function(catKey, btnElem = null) {
+  if (btnElem) {
+    document.querySelectorAll('#view-revision-bank .btn-chip').forEach(b => b.classList.remove('active'));
+    btnElem.classList.add('active');
+  }
+
   const viewer = document.getElementById('md-viewer-content');
   if (!viewer) return;
   viewer.innerHTML = '<p>Loading markdown notes...</p>';
