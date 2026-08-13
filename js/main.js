@@ -25,20 +25,10 @@ window.switchTab = function(tabName) {
   }
 };
 
+// Opens Official Exam Arena in a NEW Window / Tab cleanly
 window.launchExamArenaView = function(catKey = null) {
-  const launchScreen = document.getElementById('exam-launch-screen');
-  const activeContainer = document.getElementById('active-exam-container');
-
-  if (launchScreen) {
-    launchScreen.classList.add('hidden');
-    launchScreen.style.display = 'none';
-  }
-  if (activeContainer) {
-    activeContainer.classList.remove('hidden');
-    activeContainer.style.display = 'block';
-  }
-
-  startFullExamArena(catKey);
+  const url = catKey ? `exam.html?cat=${catKey}` : 'exam.html';
+  window.open(url, '_blank');
 };
 
 window.exitExamArenaView = function() {
@@ -63,7 +53,6 @@ window.exitExamArenaView = function() {
 };
 
 window.startCategoryQuiz = function(catKey) {
-  window.switchTab('exam-studio');
   window.launchExamArenaView(catKey);
 };
 
