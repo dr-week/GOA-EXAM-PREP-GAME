@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Goa Govt Exam Master - Aptitude & GK Quiz Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Mobile Top Navigation Header -->
+    <header class="mobile-nav-header">
+      <div class="brand-mobile">
+        <span class="logo-icon">🌴</span>
+        <h2>GoaExamPrep</h2>
+      </div>
+      <div class="mobile-stats">
+        <span>LVL <strong id="user-level-mobile">1</strong></span>
+        <span>🔥 <strong id="user-streak-mobile">1</strong>d</span>
+      </div>
+    </header>
+
+    <!-- Streamlined Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-icon">🌴</div>
+        <div class="brand-text">
+          <h2>GoaExamPrep</h2>
+          <span>GPSC & GSSC Studio</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="dashboard">
+          <span class="icon">📊</span> Dashboard
+        </button>
+        <button class="nav-item" data-tab="exam-arena">
+          <span class="icon">🏛️</span> Exam Arena (OMR & Quizzes)
+        </button>
+        <button class="nav-item" data-tab="brain-games">
+          <span class="icon">🧠</span> Brain Arcade Games
+        </button>
+        <button class="nav-item" data-tab="study">
+          <span class="icon">📚</span> Study Notes & MD Banks
+        </button>
+        <button class="nav-item" data-tab="future-roadmap">
+          <span class="icon">💡</span> Future Idea Roadmap
+        </button>
+      </nav>
+
+      <div class="stats-badge">
+        <div class="xp-level">
+          <span class="lvl-tag">LVL <span id="user-level">1</span></span>
+          <span class="xp-val"><span id="user-xp">0</span> XP</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="xp-progress" style="width: 10%;"></div>
+        </div>
+        <div class="streak-count">🔥 Streak: <span id="user-streak">0</span> days</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Searchbar Area (GitHub pill removed as requested) -->
+      <header class="topbar">
+        <div class="search-bar">
+          <input type="text" id="global-search" placeholder="Search Goa history, formulas, topics...">
+        </div>
+      </header>
+
+      <!-- View Sections -->
+
+      <!-- 1. Unified Dashboard View -->
+      <section id="view-dashboard" class="tab-view active">
+        <div class="welcome-banner">
+          <h1>Goa Exam Prep Studio 🚀</h1>
+          <p>Master GPSC, GSSC, LDC, MTS & Goa Govt competitive examinations with structured MD notes, OMR simulation & brain games.</p>
+        </div>
+
+        <h2 style="font-family:var(--font-heading); margin-bottom:1.25rem;">🏛️ Unified Exam & Practice Modules</h2>
+        <div class="category-grid">
+          <div class="cat-card" onclick="switchTab('exam-arena')">
+            <div class="cat-icon">🏛️</div>
+            <h3>Full Govt Exam Arena</h3>
+            <p>Single Official Exam Hall with 100-Question OMR Palette & Instant Evaluation</p>
+            <button class="btn btn-primary">Enter Exam Arena</button>
+          </div>
+
+          <div class="cat-card" onclick="startCategoryQuiz('goa_special_gk')">
+            <div class="cat-icon">🏝️</div>
+            <h3>Goa Special & History GK</h3>
+            <p>1961 Liberation, 3 Districts Update, Freedom Struggle (Cuncolim & Pinto Revolts)</p>
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+
+          <div class="cat-card" onclick="startCategoryQuiz('quantitative_aptitude')">
+            <div class="cat-icon">🔢</div>
+            <h3>Aptitude & GitHub Bank</h3>
+            <p>Percentages, Profit/Loss, Ratios, Speed & Time, GitHub Placement Repos</p>
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+
+          <div class="cat-card" onclick="startCategoryQuiz('konkani_rti')">
+            <div class="cat-icon">📜</div>
+            <h3>Konkani, RTI & Polity</h3>
+            <p>Konkani Devanagari Vocabulary, Goa RTI 30-day rules, Article 371I</p>
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+
+          <div class="cat-card" onclick="startCategoryQuiz('computer_awareness')">
+            <div class="cat-icon">💻</div>
+            <h3>Computer & e-Governance</h3>
+            <p>MS Office shortcuts, Goa Online, Dharani Land Records, LAN/WAN</p>
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+
+          <div class="cat-card" onclick="switchTab('brain-games')">
+            <div class="cat-icon">🧠</div>
+            <h3>Brain Arcade Games</h3>
+            <p>Goa Memory Match & 60-Sec Speed Math Calculation Trainer</p>
+            <button class="btn btn-primary">Play Brain Games</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Combined Single Exam Arena (OMR & Category Runner) -->
+      <section id="view-exam-arena" class="tab-view">
+        <div class="quiz-header">
+          <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall</span>
+          <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()">🔥 50:50 Lifeline</button>
+          <div class="quiz-timer" id="exam-timer">⏱️ Time Left: 30:00</div>
+        </div>
+
+        <div class="omr-layout">
+          <div class="omr-question-card">
+            <div class="q-number">Question <span id="omr-q-curr">1</span> of <span id="omr-q-total">100</span></div>
+            <h2 class="q-text" id="omr-q-text">Loading question...</h2>
+
+            <div class="options-container" id="omr-options-container">
+              <!-- Options -->
+            </div>
+
+            <div class="explanation-box hidden" id="omr-explanation-box">
+              <h4>💡 Answer & Explanation</h4>
+              <p id="omr-explanation-text"></p>
+            </div>
+
+            <div class="quiz-actions" style="margin-top:2rem; display:flex; gap:1rem;">
+              <button class="btn btn-secondary" onclick="prevOMRQuestion()">◄ Previous</button>
+              <button class="btn btn-primary" onclick="nextOMRQuestion()">Next Question ►</button>
+              <button class="btn btn-primary" style="background:#10b981; margin-left:auto;" onclick="submitFullExam()">Finish & Submit Test</button>
+            </div>
+          </div>
+
+          <div class="omr-palette">
+            <h3>📌 OMR Palette</h3>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Jump to any question instantly:</p>
+            <div class="palette-grid" id="omr-palette-grid">
+              <!-- Question Palette Buttons -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Brain Training Arcade View -->
+      <section id="view-brain-games" class="tab-view">
+        <div class="study-header">
+          <h2>🧠 Brain Training Arcade</h2>
+          <div class="md-selector">
+            <button class="btn-chip active" onclick="loadBrainGame('memory')">🃏 Memory Match</button>
+            <button class="btn-chip" onclick="loadBrainGame('speedmath')">⚡ Speed Math Trainer</button>
+          </div>
+        </div>
+
+        <!-- Game 1: Memory Match -->
+        <div id="game-memory-box" class="game-box">
+          <h3>🃏 Goa GK & Aptitude Memory Match</h3>
+          <p style="color:var(--text-muted); margin-bottom:1.5rem;">Match identical pairs of cards to sharpen your visual memory!</p>
+          <div class="memory-grid" id="memory-grid">
+            <!-- Rendered cards -->
+          </div>
+          <button class="btn btn-primary" onclick="initMemoryGame()">Restart Game</button>
+        </div>
+
+        <!-- Game 2: Speed Math Trainer -->
+        <div id="game-speedmath-box" class="game-box hidden">
+          <h3>⚡ 60-Second Speed Math Trainer</h3>
+          <p style="color:var(--text-muted); margin-bottom:1rem;">Boost your quantitative calculation speed!</p>
+          <div class="speed-math-display" id="math-problem">5 + 7 = ?</div>
+          <input type="number" class="math-input" id="math-answer-input" placeholder="Answer" autofocus>
+          <div style="margin-top:1.5rem; font-size:1.1rem;">
+            <span id="math-score-tag" style="font-weight:700; color:#10b981;">Score: 0</span> | 
+            <span id="math-time-tag" style="font-weight:700; color:#ef4444;">Time Left: 60s</span>
+          </div>
+          <button class="btn btn-primary" style="margin-top:1.5rem;" onclick="startSpeedMath()">Start 60-Sec Challenge</button>
+        </div>
+      </section>
+
+      <!-- 4. Study Notes & Bookmarks Combined View -->
+      <section id="view-study" class="tab-view">
+        <div class="study-header">
+          <h2>📚 Study Notes & Bookmarks Bank</h2>
+          <div class="md-selector">
+            <button class="btn-chip active" onclick="loadMDFile('general_knowledge_india')">50 Master Qs</button>
+            <button class="btn-chip" onclick="loadMDFile('goa_special_gk')">Goa GK</button>
+            <button class="btn-chip" onclick="loadMDFile('github_repos_aptitude')">GitHub Aptitude</button>
+            <button class="btn-chip" onclick="loadMDFile('goa_freedom_history')">Freedom Movement</button>
+            <button class="btn-chip" onclick="loadMDFile('konkani_rti')">Konkani & RTI</button>
+            <button class="btn-chip" onclick="loadMDFile('computer_awareness')">Computer</button>
+          </div>
+        </div>
+        <div class="md-viewer-box" id="md-viewer-content">
+          <!-- Rendered Markdown output -->
+        </div>
+
+        <div style="margin-top:3rem;">
+          <h2>🔖 Saved Bookmarks for Revision</h2>
+          <div id="bookmarks-list" class="bookmarks-list" style="margin-top:1rem;">
+            <p class="empty-state">No bookmarked questions yet. Click 🔖 during a test to save tricky questions!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Future Idea Roadmap View -->
+      <section id="view-future-roadmap" class="tab-view">
+        <div class="welcome-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);">
+          <h1>💡 Future Product Roadmap & Idea List</h1>
+          <p>Upcoming features, automation scripts, and enhancements planned for the platform:</p>
+        </div>
+
+        <div class="repo-list" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));">
+          <div class="repo-card">
+            <h4>1. 🎙️ Native Text-To-Speech (TTS) Commute Mode</h4>
+            <p>Listen to study notes and Konkani vocabulary hands-free while travelling using browser Web Speech API.</p>
+          </div>
+          <div class="repo-card">
+            <h4>2. 📊 AI Performance & Weakness Analytics</h4>
+            <p>Visual radar chart analyzing accuracy % per topic (Quant vs. Goa History vs. RTI) to target weak areas.</p>
+          </div>
+          <div class="repo-card">
+            <h4>3. 🤖 Daily Goa Gazette Auto-Scraper</h4>
+            <p>Background python job to scrape daily government recruitment notifications & syllabus updates from `gpsc.goa.gov.in`.</p>
+          </div>
+          <div class="repo-card">
+            <h4>4. ⚔️ Multiplayer Head-to-Head Duel</h4>
+            <p>Real-time 1v1 quiz battles against other aspirants via WebSockets.</p>
+          </div>
+          <div class="repo-card">
+            <h4>5. 📱 One-Click APK Cloud Build CI/CD</h4>
+            <p>GitHub Actions automatic release pipeline to compile native `.apk` Android installers on code updates.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation Bar for Native Android Mobile Navigation -->
+    <nav class="mobile-bottom-nav">
+      <button class="bottom-nav-item active" data-tab="dashboard">
+        <span class="icon">📊</span>
+        <span>Dashboard</span>
+      </button>
+      <button class="bottom-nav-item" data-tab="exam-arena">
+        <span class="icon">🏛️</span>
+        <span>Exam Arena</span>
+      </button>
+      <button class="bottom-nav-item" data-tab="brain-games">
+        <span class="icon">🧠</span>
+        <span>Arcade</span>
+      </button>
+      <button class="bottom-nav-item" data-tab="study">
+        <span class="icon">📚</span>
+        <span>Notes</span>
+      </button>
+      <button class="bottom-nav-item" data-tab="future-roadmap">
+        <span class="icon">💡</span>
+        <span>Roadmap</span>
+      </button>
+    </nav>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

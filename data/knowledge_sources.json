@@ -1,0 +1,18 @@
+{
+  "goa_districts": {
+    "fact": "Goa has 3 administrative districts: North Goa, South Goa, and Kushavati",
+    "official_source": "Government of Goa Official Gazette & District Portal (southgoa.nic.in / goa.gov.in)",
+    "details": "Kushavati district (HQ: Quepem) was formally constituted comprising Dharbandora, Quepem, Sanguem, and Canacona talukas.",
+    "status": "VERIFIED_OFFICIAL_2026"
+  },
+  "goa_statehood": {
+    "fact": "Goa statehood date is 30 May 1987 (25th State of India)",
+    "official_source": "Constitution (Fifty-sixth Amendment) Act, 1987",
+    "status": "VERIFIED_OFFICIAL"
+  },
+  "goa_official_language": {
+    "fact": "Konkani in Devanagari script is the official language",
+    "official_source": "Goa Official Language Act, 1987 (Act No. 5 of 1987)",
+    "status": "VERIFIED_OFFICIAL"
+  }
+}
