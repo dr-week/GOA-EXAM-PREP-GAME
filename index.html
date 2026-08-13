@@ -80,7 +80,7 @@
       <section id="view-exam-studio" class="tab-view active">
         <div class="welcome-banner">
           <h1>Goa Exam Prep Studio 🚀</h1>
-          <p>Master GPSC, GSSC, LDC & MTS exams with OMR simulations and instant solution explanations!</p>
+          <p>Master GPSC, GSSC, LDC & MTS exams with OMR simulations, instant solution explanations & 2026 Current Affairs!</p>
         </div>
 
         <div class="category-grid" style="margin-bottom:2rem;">
@@ -91,24 +91,31 @@
             <button class="btn btn-primary">Launch Full Exam (100 Qs)</button>
           </div>
 
+          <div class="cat-card" onclick="startCategoryQuiz('goa_current_affairs_2026')">
+            <div class="cat-icon">🆕</div>
+            <h3>Goa Current Affairs 2025-2026</h3>
+            <p>Kushavati 3rd District, ULLAS Literacy, Sukanya Scheme, Startup Policy</p>
+            <button class="btn btn-primary">Start Quiz</button>
+          </div>
+
           <div class="cat-card" onclick="startCategoryQuiz('goa_special_gk')">
             <div class="cat-icon">🏝️</div>
             <h3>Goa Special & History GK</h3>
-            <p>1961 Liberation, 3 Districts Update, Freedom Movement</p>
+            <p>1961 Liberation, Sonsogor Peak (1166m), Freedom Struggle</p>
             <button class="btn btn-primary">Start Quiz</button>
           </div>
 
           <div class="cat-card" onclick="startCategoryQuiz('quantitative_aptitude')">
             <div class="cat-icon">🔢</div>
             <h3>Aptitude & GitHub Bank</h3>
-            <p>Percentages, Ratios, Speed & Time, Placement Repos</p>
+            <p>Percentages, Ratios, Speed & Time, Data Interpretation</p>
             <button class="btn btn-primary">Start Quiz</button>
           </div>
 
           <div class="cat-card" onclick="startCategoryQuiz('konkani_rti')">
             <div class="cat-icon">📜</div>
             <h3>Konkani, RTI & Polity</h3>
-            <p>Konkani Devanagari Vocabulary, Goa RTI rules</p>
+            <p>Konkani Devanagari Vocabulary, Goa RTI 30-day rules</p>
             <button class="btn btn-primary">Start Quiz</button>
           </div>
         </div>
@@ -201,12 +208,12 @@
         <div class="study-header">
           <h2>📚 Revision & Notes Bank</h2>
           <div class="md-selector">
-            <button class="btn-chip active" onclick="loadMDFile('general_knowledge_india')">50 Master Qs</button>
+            <button class="btn-chip active" onclick="loadMDFile('goa_current_affairs_2026')">Goa 2026 CA</button>
+            <button class="btn-chip" onclick="loadMDFile('general_knowledge_india')">50 Master Qs</button>
             <button class="btn-chip" onclick="loadMDFile('goa_special_gk')">Goa GK</button>
             <button class="btn-chip" onclick="loadMDFile('github_repos_aptitude')">GitHub Aptitude</button>
             <button class="btn-chip" onclick="loadMDFile('goa_freedom_history')">Freedom Movement</button>
             <button class="btn-chip" onclick="loadMDFile('konkani_rti')">Konkani & RTI</button>
-            <button class="btn-chip" onclick="loadMDFile('computer_awareness')">Computer</button>
           </div>
         </div>
 
