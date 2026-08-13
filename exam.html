@@ -9,26 +9,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    body { padding: 1.5rem; background: var(--bg-dark); color: #fff; }
-    .exam-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+    body { 
+      padding: 1rem; 
+      background: var(--bg-dark); 
+      color: #fff; 
+      margin: 0;
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .exam-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .exam-header { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      margin-bottom: 1.25rem; 
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    /* Mobile Responsive Optimizations for Standalone Exam Page */
+    @media (max-width: 768px) {
+      body { padding: 0.75rem; }
+      .exam-header { flex-direction: row; justify-content: space-between; }
+      .exam-header h2 { font-size: 1.1rem !important; }
+      .exam-header span { font-size: 0.75rem !important; }
+      .omr-layout { grid-template-columns: 1fr !important; }
+      .palette-grid { grid-template-columns: repeat(6, 1fr) !important; }
+    }
   </style>
 </head>
 <body>
-  <div class="app-container" style="max-width: 1200px; margin: 0 auto;">
+  <div class="exam-wrapper">
     <header class="exam-header">
       <div class="brand-text" style="display:flex; align-items:center; gap:0.75rem;">
         <span style="font-size:1.8rem;">🏛️</span>
         <div>
-          <h2 style="font-family:var(--font-heading); font-size:1.4rem; margin:0;">GPSC & GSSC Official Exam Arena</h2>
-          <span style="font-size:0.85rem; color:var(--text-muted);">100-Question Official Hall Simulation</span>
+          <h2 style="font-family:var(--font-heading); font-size:1.3rem; margin:0;">GPSC & GSSC Official Exam Arena</h2>
+          <span style="font-size:0.82rem; color:var(--text-muted);">100-Question Official Hall Simulation</span>
         </div>
       </div>
-      <div style="display:flex; gap:1rem; align-items:center;">
-        <button class="btn btn-secondary" id="btn-audio-toggle" onclick="toggleAudioMute()" style="padding:0.5rem 1rem; font-size:0.85rem;">
+      <div style="display:flex; gap:0.5rem; align-items:center;">
+        <button class="btn btn-secondary" id="btn-audio-toggle" onclick="toggleAudioMute()" style="padding:0.4rem 0.8rem; font-size:0.82rem;">
           🔊 Audio ON
         </button>
-        <button class="btn btn-secondary" onclick="window.close()" style="padding:0.5rem 1rem; font-size:0.85rem;">
-          ✖ Exit Exam
+        <button class="btn btn-secondary" onclick="window.close()" style="padding:0.4rem 0.8rem; font-size:0.82rem;">
+          ✖ Exit
         </button>
       </div>
     </header>
@@ -47,9 +81,9 @@
     <!-- Active OMR Layout -->
     <div class="omr-layout">
       <div class="omr-question-card">
-        <div class="quiz-header" style="margin-bottom:1rem;">
+        <div class="quiz-header" style="margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
           <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall (100 Qs)</span>
-          <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()" style="padding:0.3rem 0.8rem; font-size:0.8rem;">🔥 50:50</button>
+          <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()" style="padding:0.3rem 0.8rem; font-size:0.8rem; margin-left:auto;">🔥 50:50</button>
           <div class="quiz-timer" id="exam-timer">⏱️ 30:00</div>
         </div>
 
@@ -65,7 +99,7 @@
           <p id="omr-explanation-text"></p>
         </div>
 
-        <div class="quiz-actions" style="margin-top:2rem; display:flex; gap:1rem;">
+        <div class="quiz-actions" style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
           <button class="btn btn-secondary" onclick="prevOMRQuestion()">◄ Previous</button>
           <button class="btn btn-primary" onclick="nextOMRQuestion()">Next Question ►</button>
           <button class="btn btn-primary" style="background:#10b981; margin-left:auto;" onclick="submitFullExam()">Finish Test</button>
