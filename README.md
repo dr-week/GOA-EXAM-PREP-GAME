@@ -11,7 +11,7 @@
   [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-10b981?style=for-the-badge&logo=github)](https://dr-week.github.io/GOA-EXAM-PREP-GAME/)
   [![GitHub Stars](https://img.shields.io/github/stars/dr-week/GOA-EXAM-PREP-GAME?style=for-the-badge&color=6366f1)](https://github.com/dr-week/GOA-EXAM-PREP-GAME)
   [![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
-  [![Questions Database](https://img.shields.io/badge/Questions-213%20Indexed-06b6d4?style=for-the-badge)](data/db_export.json)
+  [![Questions Database](https://img.shields.io/badge/Questions-226%20Indexed-06b6d4?style=for-the-badge)](data/db_export.json)
   [![Android Ready](https://img.shields.io/badge/Android-Capacitor%20Ready-f59e0b?style=for-the-badge)](build_apk.bat)
 
   <p align="center">
@@ -28,7 +28,7 @@ Welcome to **Goa Exam Prep Studio** — an interactive web and native mobile app
 
 Experience the live app now at **[Goa Govt Exam Master - Aptitude & GK Quiz Studio](https://dr-week.github.io/GOA-EXAM-PREP-GAME/)**!
 
-Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassmorphism, Modular ES JS)**, this platform packs a **213+ Question Relational SQLite Database**, an **OMR Exam Simulator with 30-Minute Timer**, **Interactive Brain Training Arcade Games**, and an **Android Packaging Pipeline**!
+Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassmorphism, Modular ES JS)**, this platform packs a **226+ Question Relational SQLite Database**, an **OMR Exam Simulator with 30-Minute Timer**, **Interactive Brain Training Arcade Games**, and an **Android Packaging Pipeline**!
 
 ---
 
@@ -37,6 +37,7 @@ Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassm
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 🏛️ FULL GOVT EXAM ARENA (OMR SIMULATOR)                                      │
+│    • Standalone new-tab exam launcher (exam.html) for distraction-free tests│
 │    • 100-Question interactive OMR palette grid with instant feedback        │
 │    • 30-minute exam countdown timer with auto-submit guards                 │
 │    • Double-Randomizer Engine (shuffles question order & A/B/C/D choices)   │
@@ -48,8 +49,8 @@ Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassm
 └─────────────────────────────────────────────────────────────────────────────┘
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 📚 STRUCTURED MARKDOWN QUESTION BANKS & STUDY READER                         │
-│    • 213+ curated questions categorized across 10 subject domains           │
-│    • Real-time topbar search engine filtering questions & explanations      │
+│    • 226+ curated questions categorized across 13 subject domains           │
+│    • Real-time search engine filtering questions & explanations             │
 │    • LocalStorage bookmarking system for tricky questions revision          │
 └─────────────────────────────────────────────────────────────────────────────┘
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -61,11 +62,12 @@ Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassm
 
 ---
 
-## 🏝️ Subject Domains Covered (10 Modules)
+## 🏝️ Subject Domains Covered (13 Question Banks)
 
 | Icon | Topic Domain | Syllabus Details |
 | :---: | :--- | :--- |
-| 🏝️ | **Goa Special GK** | 1961 Liberation, 3 Districts Update (Kushavati HQ Quepem), Konkani Act 1987 |
+| 🆕 | **Goa Current Affairs 2026** | Kushavati 3rd District (HQ Quepem), ULLAS Literacy, Sukanya Scheme, Startup Policy |
+| 🏝️ | **Goa Special GK** | 1961 Liberation, 3 Districts Update, Konkani Official Language Act 1987 |
 | ⛰️ | **Geography & Ports** | Sonsogor Peak (1,166m), Zuari River, Mormugao Port, New Zuari Cable Bridge |
 | 🎭 | **Culture & Schemes** | Shigmo Festival, Divar Bonderam, Griha Aadhar Scheme, Chikhal Kalo |
 | 🚩 | **Freedom Struggle** | 1580 Cuncolim Revolt, 1787 Pinto Revolt, Dr. T.B. Cunha, Lohia 18 June 1946 |
@@ -78,10 +80,11 @@ Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassm
 
 ---
 
-## 🛠️ Automated Scripts & Developer Tools
+## 🛠️ Automated Scripts & Quality Control Matrix
 
 | Command | Purpose |
 | :--- | :--- |
+| `python deep_audit_md.py` | Audits all 13 Markdown banks for 0 duplicate questions & 0 formatting blunders. |
 | `python compile_db.py` | Compiles Markdown banks (`data/*.md`) into SQLite DB (`questions.db`) & JSON (`db_export.json`). |
 | `python randomizer_engine.py` | Double-shuffles question sequence & choices into `randomized_mock_exam.md`. |
 | `python test_ui_suite.py` | Runs end-to-end DOM structure & SQLite database integrity tests. |
@@ -118,6 +121,7 @@ The frontend is engineered with modular **ES Modules (`js/`)**:
 ```
 govtexamtest/
 ├── index.html              # Main single-page application layout
+├── exam.html               # Standalone new-tab Official OMR Exam Arena
 ├── style.css               # Dark-mode glassmorphic 60fps CSS design system
 ├── js/
 │   ├── main.js             # Entry point & global window bindings
@@ -126,9 +130,10 @@ govtexamtest/
 │   ├── exam.js             # OMR Exam Arena & 30-min countdown timer
 │   ├── games.js            # Brain Arcade Memory Match & Speed Math
 │   └── audio.js            # Web Audio API sound synthesizer
-├── data/                   # 10 Subject Markdown Question Banks
+├── data/                   # 13 Subject Markdown Question Banks
+├── deep_audit_md.py        # Automated Markdown blunder & duplicate detector
 ├── compile_db.py           # SQLite database builder
-└── randomizer_engine.py    # Randomized mock test generator
+└── randomizer_engine.py    # Double-randomized mock test generator
 ```
 
 ---
