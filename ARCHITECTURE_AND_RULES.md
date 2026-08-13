@@ -1,41 +1,39 @@
-# 🎯 Goa Exam Prep - Architecture Rules & Modular Coding Guidelines
+# 🎯 Goa Exam Prep - Architecture Rules & Modern Tech Stack Guidelines
 
-This document outlines the strict modular architecture rules and skill guidelines for maintaining the **Goa Exam Prep Codebase**.
+This document outlines the strict modular architecture rules and skill guidelines for maintaining the **Goa Exam Prep Codebase**. The project is migrating to a modern, scalable, production-grade tech stack.
 
 ---
 
-## 🏗️ 1. ES Module Architecture (`js/`)
+## 🏗️ 1. Modern Technology Stack (React, Tailwind, Supabase)
 
-The JavaScript codebase is split into 5 clean, decoupled ES Modules under [`js/`](file:///d:/CODES/busy/govtexamtest/js/):
+The codebase has pivoted from Vanilla HTML/JS/CSS to a modern component-based architecture:
 
-| Module File | Responsibility | Exports / Imports |
+| Layer | Recommended Technology | Responsibility |
 |---|---|---|
-| **[`js/state.js`](file:///d:/CODES/busy/govtexamtest/js/state.js)** | Central reactive state store, XP level calculation, localStorage persistence. | `state`, `addXP()`, `updateXPDisplay()` |
-| **[`js/audio.js`](file:///d:/CODES/busy/govtexamtest/js/audio.js)** | Web Audio API sound synthesis (`correct` & `wrong` chimes). | `playSound()` |
-| **[`js/db.js`](file:///d:/CODES/busy/govtexamtest/js/db.js)** | `db_export.json` loader, Fisher-Yates array randomizer & option text shuffler. | `loadQuestionBanks()`, `shuffleArray()`, `shuffleOptionsAndAnswer()` |
-| **[`js/exam.js`](file:///d:/CODES/busy/govtexamtest/js/exam.js)** | Unified OMR Exam Hall, 30-min countdown timer, palette rendering, option locks. | `startFullExamArena()`, `renderOMRQuestion()`, `submitFullExam()` |
-| **[`js/games.js`](file:///d:/CODES/busy/govtexamtest/js/games.js)** | Brain Arcade games (Memory Match card flip & 60-Sec Speed Math trainer). | `loadBrainGame()`, `initMemoryGame()`, `startSpeedMath()` |
-| **[`js/main.js`](file:///d:/CODES/busy/govtexamtest/js/main.js)** | Main ES module entry point registering global window handlers & DOM listeners. | Primary Entry Point |
+| **Frontend Framework** | **React (via Vite) / Next.js** | Replaces Vanilla HTML/JS. Uses reusable functional components and hooks for state management. |
+| **Styling Engine** | **Tailwind CSS + shadcn/ui** | Replaces massive `style.css`. Uses utility-first CSS and pre-built components for fast, glassmorphic UI development. |
+| **Backend & Database** | **Supabase (PostgreSQL)** | Replaces local SQLite (`questions.db`). Provides real-time database, user authentication (cloud saves), and API endpoints. |
+| **Type Safety** | **TypeScript** | Replaces vanilla JavaScript. Ensures robust type-checking across 2,500+ questions. |
 
 ---
 
 ## 📜 2. Coding Rules & Best Practices
 
-1. **No Monolithic Files**: Never add game logic or exam timer code directly to a single `app.js` file. Place features into their respective domain modules under `js/`.
-2. **State Isolation**: All global counters (`userXP`, `userStreak`, `omrUserAnswers`) must be mutated via `js/state.js`.
-3. **No Direct DOM Polling in Loops**: Use event-driven DOM updates and explicit functions.
-4. **Hardware Acceleration**: Always use GPU-accelerated CSS properties (`transform`, `opacity`, `will-change`) for 60fps animations in `style.css`.
-5. **Mandatory Automated Test Verification**: Any code modification must be verified by running `python test_ui_suite.py` and `python test_exam_hall.py`.
+1. **Component-Based Architecture**: Never use monolithic files. UI elements (Timers, Question Cards, Modals) must be broken down into separate React components (e.g., `<ExamTimer />`, `<QuestionCard />`).
+2. **State Management**: Use React Context or Zustand for global state (User XP, Streak, Current Exam State) instead of manual DOM mutations.
+3. **API Integration**: All database fetches must go through the Supabase Client. No static JSON bundle loading for dynamic data.
+4. **Tailwind First**: Do not write custom CSS unless absolutely necessary for complex animations (Framer Motion is preferred). Use Tailwind utility classes.
+5. **Mandatory Automated Test Verification**: Any code modification must be verified by running the test suite (`python src/manage_db.py test`).
 
 ---
 
 ## 🛠️ 3. Development Skill Commands
 
-| Action | Command | Skill Description |
+The Python backend is maintained strictly as a CLI tool (`manage_db.py`) for data generation and pipeline management.
+
+| Action | Command | Description |
 |---|---|---|
-| **Run Fast Syntax Test** | `python test_fast.py` | Validates syntax and duplicate detection across all 12 Markdown question banks. |
-| **Run UI & DOM Suite** | `python test_ui_suite.py` | Runs end-to-end headless DOM and database integrity tests. |
-| **Run Exam Hall Test** | `python test_exam_hall.py` | Prevents regression bugs causing early exam termination. |
-| **Run Exam Rules Test** | `python test_official_rules.py` | Verifies hardware acceleration & mobile responsive breakpoints. |
-| **Recompile SQLite DB** | `python compile_db.py` | Re-indexes `data/*.md` into `data/questions.db` & `data/db_export.json`. |
-| **Run Double-Randomizer** | `python randomizer_engine.py` | Generates randomized mock paper `data/randomized_mock_exam.md`. |
+| **Recompile SQLite DB** | `python src/manage_db.py compile` | Re-indexes `data/*.md` into `data/questions.db` & JSON. |
+| **Run Audit Suite** | `python src/manage_db.py audit` | Validates syntax and duplicate detection across all Markdown banks. |
+| **Seed Bulk Q&A** | `python src/manage_db.py seed-bulk` | Programmatically generates 500+ Goa Q&A. |
+| **Run Full Test Suite** | `python src/manage_db.py test` | Runs end-to-end Pytest suite in `/tests`. |

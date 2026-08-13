@@ -84,12 +84,10 @@ Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassm
 
 | Command | Purpose |
 | :--- | :--- |
-| `python deep_audit_md.py` | Audits all 13 Markdown banks for 0 duplicate questions & 0 formatting blunders. |
-| `python compile_db.py` | Compiles Markdown banks (`data/*.md`) into SQLite DB (`questions.db`) & JSON (`db_export.json`). |
-| `python randomizer_engine.py` | Double-shuffles question sequence & choices into `randomized_mock_exam.md`. |
-| `python test_ui_suite.py` | Runs end-to-end DOM structure & SQLite database integrity tests. |
-| `python test_exam_hall.py` | Runs regression test preventing early exam completion bugs. |
-| `python test_official_rules.py` | Validates 60fps hardware acceleration CSS & mobile media query breakpoints. |
+| `python src/manage_db.py audit` | Audits all Markdown banks for 0 duplicate questions & 0 formatting blunders. |
+| `python src/manage_db.py compile` | Compiles Markdown banks (`data/*.md`) into SQLite DB (`questions.db`) & JSON (`db_export.json`). |
+| `python src/manage_db.py seed-bulk` | Programmatically generates 500+ Goa Q&A into the database. |
+| `python src/manage_db.py test` | Runs the full end-to-end Pytest suite verifying DB integrity and UI structure. |
 | `.\build_apk.bat` | Packages the web application into a native Android `.apk` installer using Ionic Capacitor. |
 
 ---
@@ -117,23 +115,24 @@ build_apk.bat
 
 ## 📜 Architecture & Codebase Design
 
-The frontend is engineered with modular **ES Modules (`js/`)**:
-```
+The codebase has been refactored into a modern, modular structure, pivoting towards a React/Tailwind/Supabase ecosystem:
+```text
 govtexamtest/
-├── index.html              # Main single-page application layout
-├── exam.html               # Standalone new-tab Official OMR Exam Arena
-├── style.css               # Dark-mode glassmorphic 60fps CSS design system
-├── js/
-│   ├── main.js             # Entry point & global window bindings
-│   ├── state.js            # Reactive state store & XP progress
-│   ├── db.js               # JSON database loader & shuffler logic
-│   ├── exam.js             # OMR Exam Arena & 30-min countdown timer
-│   ├── games.js            # Brain Arcade Memory Match & Speed Math
-│   └── audio.js            # Web Audio API sound synthesizer
-├── data/                   # 13 Subject Markdown Question Banks
-├── deep_audit_md.py        # Automated Markdown blunder & duplicate detector
-├── compile_db.py           # SQLite database builder
-└── randomizer_engine.py    # Double-randomized mock test generator
+├── /src                    # Source code for the backend and data pipelines
+│   ├── manage_db.py        # The ONLY unified CLI tool for all database operations
+│   ├── compile_db.py       # SQLite database builder
+│   ├── deep_audit_md.py    # Automated Markdown blunder & duplicate detector
+│   └── create_500_goa.py   # Bulk question generator
+├── /tests                  # Pytest automated testing suite
+│   ├── test_ui_suite.py
+│   └── test_fast.py
+├── /data                   # Subject Markdown Question Banks & Databases
+│   ├── questions.db
+│   └── db_export.json
+├── /public                 # Frontend Web App assets (HTML/CSS/JS)
+│   ├── index.html
+│   └── /js                 # Modular ES JS Engine
+└── build_apk.bat           # Capacitor APK build script
 ```
 
 ---

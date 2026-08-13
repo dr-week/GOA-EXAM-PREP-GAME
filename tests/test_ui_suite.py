@@ -27,7 +27,6 @@ def test_sqlite_integrity():
 
     assert count >= 100, f"SQLite DB has less than 100 questions! Found: {count}"
     print(f"  [PASS] SQLite Database OK. Total records: {count}")
-    return True
 
 def test_json_bundle():
     """Test 2: JSON Web Export Structure Check"""
@@ -41,7 +40,6 @@ def test_json_bundle():
     sample = data[0]
     assert "question" in sample and "options" in sample and "answer" in sample and "explanation" in sample
     print(f"  [PASS] Web JSON Bundle OK. Total questions: {len(data)}")
-    return True
 
 def test_ui_html_structure():
     """Test 3: Headless UI DOM Structure & 3-Tab Element IDs Check"""
@@ -69,15 +67,13 @@ def test_ui_html_structure():
         assert f'id="{elem_id}"' in combined_html or f"id='{elem_id}'" in combined_html, f"Missing required UI DOM element ID: {elem_id}"
 
     print(f"  [PASS] UI HTML Structure OK. All {len(required_ids)} required DOM element IDs verified across index.html & exam.html!")
-    return True
 
 def test_randomizer_logic():
     """Test 4: Randomizer & Shuffler Logic Verification"""
     print("[TEST 4/4] Randomizer Engine Logic Check...")
-    rand_script = "randomizer_engine.py"
+    rand_script = os.path.join("src", "randomizer_engine.py")
     assert os.path.exists(rand_script), "randomizer_engine.py script missing!"
     print("  [PASS] Randomizer Engine Script verified.")
-    return True
 
 def run_full_test_suite():
     print("=" * 60)

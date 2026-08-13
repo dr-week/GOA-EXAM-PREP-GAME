@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build Output
+dist/
+frontend/dist/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Environment Files
+.env
+.env.local
