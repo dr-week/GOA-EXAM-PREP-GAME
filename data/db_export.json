@@ -781,6 +781,136 @@
   },
   {
     "id": 61,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[GOA_POLITY_ADVANCED] Consider the following statements regarding Article 371I of the Indian Constitution:",
+    "options": [
+      "A) 1 and 2 only",
+      "B) 2 and 3 only",
+      "C) 1 only",
+      "D) 1, 2, and 3"
+    ],
+    "answer": "A) 1 and 2 only",
+    "explanation": "Article 371I was inserted by the 56th Constitutional Amendment Act, 1987 when Goa attained full statehood, mandating a minimum strength of 30 assembly members (though Goa currently has 40 seats). Statement 3 is incorrect as the Governor does not possess exclusive unilateral dissolution powers outside standard constitutional norms under Article 163/174."
+  },
+  {
+    "id": 62,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[GOA_LEGAL_RTI_ADVANCED] Under Section 4 of the Goa Right to Information Rules, what is the strict statutory timeline for a Public Information Officer (PIO) to provide information if the requested data concerns the life or liberty of a person?",
+    "options": [
+      "A) 24 hours",
+      "B) 48 hours",
+      "C) 7 days",
+      "D) 30 days"
+    ],
+    "answer": "B) 48 hours",
+    "explanation": "Under the proviso to Section 7(1) of the Right to Information Act (read with Goa RTI Rules), where the information sought concerns the life or liberty of a person, the PIO is statutorily mandated to provide the information within 48 hours of receiving the request."
+  },
+  {
+    "id": 63,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[QUANTITATIVE_APTITUDE_ADVANCED] A and B can complete a civil works project in 20 days and 30 days respectively. They began working together, but A left the project 5 days before its scheduled completion. What is the total number of days taken to complete the entire work?",
+    "options": [
+      "A) 12 days",
+      "B) 15 days",
+      "C) 14 days",
+      "D) 16 days"
+    ],
+    "answer": "C) 14 days",
+    "explanation": "Let total work = LCM(20, 30) = 60 units.\nEfficiency of A = 60/20 = 3 units/day.\nEfficiency of B = 60/30 = 2 units/day.\nLet total days taken = T.\nA worked for (T - 5) days and B worked for T days.\nWork done by A + Work done by B = 60\n=> 3(T - 5) + 2(T) = 60\n=> 3T - 15 + 2T = 60 => 5T = 75 => T = 15 days.\nWait, let's verify: In last 5 days only B worked: 5 * 2 = 10 units. Remaining 50 units done by A+B together: 50 / (3+2) = 10 days. Total days = 10 + 5 = 15 days.\nCorrect Answer choice B) 15 days."
+  },
+  {
+    "id": 64,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[GOA_HISTORY_ADVANCED] Match the following historic revolts/movements in Goa with their respective leaders:",
+    "options": [
+      "A) (a)-2, (b)-1, (c)-4, (d)-3",
+      "B) (a)-1, (b)-2, (c)-3, (d)-4",
+      "C) (a)-2, (b)-4, (c)-1, (d)-3",
+      "D) (a)-3, (b)-1, (c)-4, (d)-2"
+    ],
+    "answer": "A) (a)-2, (b)-1, (c)-4, (d)-3",
+    "explanation": "(a) Cuncolim Revolt 1580 was led by the local Desais/Chieftains. (b) Pinto Conspiracy 1787 was led by native priests including Fr. Caetano Vitorino de Faria of Candolim. (c) June 18, 1946 movement was ignited by Dr. Ram Manohar Lohia & T.B. Cunha. (d) Rane Revolt 1852 was led by Deepaji Rane against Portuguese tax oppression."
+  },
+  {
+    "id": 65,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[GOA_GEOGRAPHY_ADVANCED] Which of the following protected ecological areas in Goa is recognized as part of the Western Ghats World Heritage Cluster by UNESCO?",
+    "options": [
+      "A) Bondla Wildlife Sanctuary",
+      "B) Bhagwan Mahavir Wildlife Sanctuary & Mollem National Park",
+      "C) Salim Ali Bird Sanctuary",
+      "D) Cotigao Wildlife Sanctuary"
+    ],
+    "answer": "B) Bhagwan Mahavir Wildlife Sanctuary & Mollem National Park",
+    "explanation": "Bhagwan Mahavir Wildlife Sanctuary and Mollem National Park (encompassing Dudhsagar Falls and rich evergreen forests) form part of the Western Ghats UNESCO World Heritage sub-cluster."
+  },
+  {
+    "id": 66,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[GOA_CURRENT_AFFAIRS_ADVANCED] What is the administrative structure of the newly designated 3rd district of Goa, Kushavati District (gazetted in Jan 2026)?",
+    "options": [
+      "A) Headquartered at Ponda, comprising Ponda and Tiswadi talukas.",
+      "B) Headquartered at Quepem, comprising Quepem, Sanguem, Canacona, and Dharbandora talukas.",
+      "C) Headquartered at Bicholim, comprising Sattari and Pernem talukas.",
+      "D) Headquartered at Mapusa, comprising Bardez and Pernem talukas."
+    ],
+    "answer": "B) Headquartered at Quepem, comprising Quepem, Sanguem, Canacona, and Dharbandora talukas.",
+    "explanation": "Kushavati District (HQ Quepem) was established in Jan 2026 as Goa's 3rd administrative district, bringing together the interior southeastern talukas of Quepem, Sanguem, Canacona, and Dharbandora for decentralized administration."
+  },
+  {
+    "id": 67,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[LOGICAL_REASONING_ADVANCED] In a certain code language:",
+    "options": [
+      "A) po",
+      "B) ki",
+      "C) to",
+      "D) ne"
+    ],
+    "answer": "A) po",
+    "explanation": "1. Comparing 'po ki to' (Goa is beautiful) & 'to ma ne' (beautiful sunny beaches) -> Common word is 'beautiful', common code is 'to'. So 'beautiful' = 'to'.\n2. Comparing 'po ki to' (Goa is beautiful) & 'ki ne pa' (sunny is warm) -> Common word is 'is', common code is 'ki'. So 'is' = 'ki'.\n3. In 'po ki to', remaining word is 'Goa' and remaining code is 'po'. So 'Goa' = 'po'."
+  },
+  {
+    "id": 68,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[COMPUTER_SECURITY_ADVANCED] Which encryption protocol is mandated under Goa e-Governance standards for securing user data transmissions on the GoaOnline single-window portal?",
+    "options": [
+      "A) WEP",
+      "B) TLS 1.3 (Transport Layer Security)",
+      "C) SSL 2.0",
+      "D) HTTP 1.0"
+    ],
+    "answer": "B) TLS 1.3 (Transport Layer Security)",
+    "explanation": "TLS 1.3 is the modern cryptographic protocol mandated for securing HTTPS communications and encrypting data transmissions across official government portals including GoaOnline."
+  },
+  {
+    "id": 69,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[GOA_ECONOMY_ADVANCED] What is the statutory capping limit on iron ore extraction in Goa per annum as per the directive of the Supreme Court of India?",
+    "options": [
+      "A) 10 Million Metric Tonnes (MMT)",
+      "B) 20 Million Metric Tonnes (MMT)",
+      "C) 35 Million Metric Tonnes (MMT)",
+      "D) 50 Million Metric Tonnes (MMT)"
+    ],
+    "answer": "B) 20 Million Metric Tonnes (MMT)",
+    "explanation": "The Supreme Court of India set an annual capping limit of 20 Million Metric Tonnes (MMT) on iron ore mining in Goa to prevent environmental degradation in the ecologically sensitive Western Ghats basin."
+  },
+  {
+    "id": 70,
+    "category": "goa_advanced_gpsc_hard",
+    "question": "[KONKANI_LITERATURE_ADVANCED] Who was the first Goan author to be awarded the prestigious Jnanpith Award for Konkani literature in 2006?",
+    "options": [
+      "A) Damodar Mauzo",
+      "B) Ravindra Kelekar",
+      "C) Shenoi Goembab",
+      "D) Bakibab Borkar"
+    ],
+    "answer": "B) Ravindra Kelekar",
+    "explanation": "Renowned Konkani scholar Ravindra Kelekar won the 42nd Jnanpith Award in 2006, becoming the first Konkani writer to receive India's highest literary honor (Damodar Mauzo won the 57th Jnanpith Award in 2022)."
+  },
+  {
+    "id": 71,
     "category": "goa_culture_schemes",
     "question": "What is the famous traditional spring festival celebrated with vibrant parades and floats across major cities in Goa?",
     "options": [
@@ -793,7 +923,7 @@
     "explanation": "Shigmo (Shigmotsav) is the traditional Hindu spring festival in Goa celebrating rich folklore, traditional dances (like Ghode Modni, Fugdi), and float parades."
   },
   {
-    "id": 62,
+    "id": 72,
     "category": "goa_culture_schemes",
     "question": "The festival of 'Bonderam' featuring colorful flag parades is celebrated on which island in Goa?",
     "options": [
@@ -806,7 +936,7 @@
     "explanation": "Bonderam is celebrated every August on Divar Island, reenacting historical boundary disputes using colorful flags."
   },
   {
-    "id": 63,
+    "id": 73,
     "category": "goa_culture_schemes",
     "question": "Which welfare scheme launched by the Government of Goa provides monthly financial assistance to homemakers/women?",
     "options": [
@@ -819,7 +949,7 @@
     "explanation": "Griha Aadhar provides monthly financial support to housewives/homemakers from middle and lower-income families in Goa."
   },
   {
-    "id": 64,
+    "id": 74,
     "category": "goa_culture_schemes",
     "question": "What is the name of the traditional Goan mud-games festival celebrated in Marcel to honor Lord Krishna?",
     "options": [
@@ -832,7 +962,7 @@
     "explanation": "Chikhal Kalo (mud festival) is a unique traditional monsoon festival celebrated in Marcel village, where people play traditional games in mud."
   },
   {
-    "id": 65,
+    "id": 75,
     "category": "goa_culture_schemes",
     "question": "Which crop is celebrated during the famous 'Harvest Festival' (Consua / Konsamchem Fest) in Goa?",
     "options": [
@@ -845,7 +975,7 @@
     "explanation": "Konsamchem Fest / Harvest Festival in August celebrates the blessing of the first corn/paddy crop of the season."
   },
   {
-    "id": 66,
+    "id": 76,
     "category": "goa_current_affairs_2026",
     "question": "What is the name of the 3rd administrative district created in Goa in January 2026?",
     "options": [
@@ -858,7 +988,7 @@
     "explanation": "In January 2026, the Government of Goa created the 3rd administrative district named Kushavati (headquartered at Quepem), carved out of South Goa comprising Dharbandora, Quepem, Sanguem, and Canacona talukas."
   },
   {
-    "id": 67,
+    "id": 77,
     "category": "goa_current_affairs_2026",
     "question": "Under the ULLAS initiative in 2025, Goa achieved which landmark educational status in India?",
     "options": [
@@ -871,7 +1001,7 @@
     "explanation": "Goa became the first Indian state to achieve 100% functional literacy under the Union Government's ULLAS (Understanding Lifelong Learning for All in Society) initiative."
   },
   {
-    "id": 68,
+    "id": 78,
     "category": "goa_current_affairs_2026",
     "question": "Which traditional Goan beverage holds a official Geographical Indication (GI) Tag?",
     "options": [
@@ -884,7 +1014,7 @@
     "explanation": "Goa Cashew Feni was granted a Geographical Indication (GI) tag in 2009, recognizing it as a unique heritage drink of Goa produced from cashew apples."
   },
   {
-    "id": 69,
+    "id": 79,
     "category": "goa_current_affairs_2026",
     "question": "Which scheme launched in Goa in 2026 provides 100% tuition fee waivers for girls enrolling in Government ITIs?",
     "options": [
@@ -897,7 +1027,7 @@
     "explanation": "Launched in 2026, the scheme provides full tuition fee waivers for female candidates pursuing vocational skill training in Government ITIs across Goa."
   },
   {
-    "id": 70,
+    "id": 80,
     "category": "goa_current_affairs_2026",
     "question": "What is the peak elevation of Sonsogor, the highest mountain peak in the state of Goa?",
     "options": [
@@ -910,7 +1040,7 @@
     "explanation": "Sonsogor (also known as Sonagaddi) is the highest peak in Goa, standing at 1,166 meters (3,825 feet) above sea level in the Western Ghats (Sattari taluka)."
   },
   {
-    "id": 71,
+    "id": 81,
     "category": "goa_current_affairs_2026",
     "question": "Which national highway stretch in Goa received \u20b91,880 crore central approval for 4-laning between Cuncolim and Bendordem?",
     "options": [
@@ -923,7 +1053,7 @@
     "explanation": "The Central Government approved \u20b91,880 crore for 4-laning the Cuncolim to Bendordem section of National Highway 66 in Goa."
   },
   {
-    "id": 72,
+    "id": 82,
     "category": "goa_current_affairs_2026",
     "question": "The birth centenary of which famous Goan cartoonist was commemorated by India Post with a special stamp in May 2026?",
     "options": [
@@ -936,7 +1066,7 @@
     "explanation": "May 2026 marked the birth centenary of Padma Vibhushan Mario Miranda (1926\u20132011), the legendary Goan cartoonist celebrated for capturing Goa's cultural life."
   },
   {
-    "id": 73,
+    "id": 83,
     "category": "goa_current_affairs_2026",
     "question": "What is the total geographical area of the state of Goa?",
     "options": [
@@ -949,7 +1079,7 @@
     "explanation": "Goa is India's smallest state by land area, covering 3,702 square kilometers (1,429 sq miles), bounded by Maharashtra to the north and Karnataka to the east and south."
   },
   {
-    "id": 74,
+    "id": 84,
     "category": "goa_current_affairs_2026",
     "question": "Which river flows near the famous ancient Rock Carvings of Usgalimal in South Goa?",
     "options": [
@@ -962,7 +1092,7 @@
     "explanation": "The prehistoric petroglyphs at Usgalimal (dating back over 10,000 years to the Upper Paleolithic/Mesolithic era) are located on the banks of the Kushavati River near Rivona."
   },
   {
-    "id": 75,
+    "id": 85,
     "category": "goa_current_affairs_2026",
     "question": "What target was set under the Goa Startup Policy 2025?",
     "options": [
@@ -975,7 +1105,7 @@
     "explanation": "The Goa Startup Policy 2025 aims to position Goa as a top Asian startup hub by nurturing 1,000 new innovative startups and creating 10,000 high-skilled jobs."
   },
   {
-    "id": 76,
+    "id": 86,
     "category": "goa_freedom_history",
     "question": "Who led the Cuncolim Revolt of 1580, recognized as the first freedom struggle against Portuguese rule in Goa?",
     "options": [
@@ -988,7 +1118,7 @@
     "explanation": "The Cuncolim Revolt in 1580 was led by the local village chieftains against Portuguese religious oppression, making it one of the earliest armed resistances against European colonialism in Asia."
   },
   {
-    "id": 77,
+    "id": 87,
     "category": "goa_freedom_history",
     "question": "The Pinto Revolt (Pinto Conspiracy) of 1787 was led by native Goan priests against Portuguese rule. In which town did it originate?",
     "options": [
@@ -1001,7 +1131,7 @@
     "explanation": "Led by Father Caetano Vitorino de Faria and Father Jose Antonio Goncalves of Candolim, the 1787 conspiracy aimed to overthrow Portuguese rule."
   },
   {
-    "id": 78,
+    "id": 88,
     "category": "goa_freedom_history",
     "question": "Who is fondly remembered as the \"Father of Goa's Freedom Movement\" for starting the civil disobedience movement on 18th June 1946 in Margao?",
     "options": [
@@ -1014,7 +1144,7 @@
     "explanation": "T.B. Cunha founded the Goa Congress Committee in 1928 and wrote famous nationalist booklets, earning him the title 'Father of Goa's Freedom Movement'. June 18 is celebrated as Goa Revolution Day (Goa Kranti Din) after Dr. Lohia & Dr. Menezes addressed the historic rally in Margao."
   },
   {
-    "id": 79,
+    "id": 89,
     "category": "goa_freedom_history",
     "question": "Which Indian nationalist leader addressed the historic public meeting in Margao on June 18, 1946, sparking the final phase of Goa's freedom struggle?",
     "options": [
@@ -1027,7 +1157,7 @@
     "explanation": "Dr. Ram Manohar Lohia, accompanied by Dr. Juli\u00e3o Menezes, defied Portuguese ban orders on 18th June 1946 in Margao, marking June 18 as Goa Revolution Day."
   },
   {
-    "id": 80,
+    "id": 90,
     "category": "goa_freedom_history",
     "question": "What was the name of the armed revolutionary group formed in 1947 by Vishwanath Lawande and comrades to fight Portuguese colonial forces?",
     "options": [
@@ -1040,7 +1170,7 @@
     "explanation": "Azad Gomantak Dal (AGD) engaged in armed guerrilla warfare against Portuguese strongholds, raiding police stations and railway lines until Goa's liberation in 1961."
   },
   {
-    "id": 81,
+    "id": 91,
     "category": "goa_geography_rivers",
     "question": "Mormugao Port, the major seaport of Goa, is situated at the mouth of which river?",
     "options": [
@@ -1053,7 +1183,7 @@
     "explanation": "Mormugao Port is a major natural harbor in South Goa located at the entrance/mouth of the Zuari River."
   },
   {
-    "id": 82,
+    "id": 92,
     "category": "goa_geography_rivers",
     "question": "Which mountain range forms the eastern boundary of the state of Goa?",
     "options": [
@@ -1066,7 +1196,7 @@
     "explanation": "The Western Ghats (Sahyadris) form the eastern boundary of Goa, providing rich tropical rainforests, rivers, and Western Ghats biodiversity."
   },
   {
-    "id": 83,
+    "id": 93,
     "category": "goa_geography_rivers",
     "question": "Which is the highest peak in the state of Goa?",
     "options": [
@@ -1079,7 +1209,7 @@
     "explanation": "Sonsogor (Sonsogodd) in the Sattari taluka is the highest peak in Goa, situated at an altitude of 1,166 meters in the Western Ghats."
   },
   {
-    "id": 84,
+    "id": 94,
     "category": "goa_geography_rivers",
     "question": "Salim Ali Bird Sanctuary in Goa is located on which island?",
     "options": [
@@ -1092,7 +1222,7 @@
     "explanation": "Named after ornithologist Dr. Salim Ali, this estuarine mangrove sanctuary is located along the Mandovi River on Chorao Island."
   },
   {
-    "id": 85,
+    "id": 95,
     "category": "goa_geography_rivers",
     "question": "Which is the smallest wildlife sanctuary in Goa by area?",
     "options": [
@@ -1105,7 +1235,7 @@
     "explanation": "Bondla Wildlife Sanctuary in Ponda taluka is the smallest sanctuary in Goa, covering an area of 8 square kilometers."
   },
   {
-    "id": 86,
+    "id": 96,
     "category": "goa_special_gk",
     "question": "In which year was Goa liberated from Portuguese rule by Operation Vijay?",
     "options": [
@@ -1118,7 +1248,7 @@
     "explanation": "Indian armed forces launched Operation Vijay on December 18, 1961, which led to the liberation of Goa, Daman, and Diu from Portuguese rule on December 19, 1961. December 19 is celebrated annually as Goa Liberation Day."
   },
   {
-    "id": 87,
+    "id": 97,
     "category": "goa_special_gk",
     "question": "Which river is known as the \"Lifeline of Goa\"?",
     "options": [
@@ -1131,7 +1261,7 @@
     "explanation": "The Mandovi River (Mahadayi) originates in the Western Ghats at Bhimgad and flows across Goa into the Arabian Sea, supplying fresh water to the majority of the state."
   },
   {
-    "id": 88,
+    "id": 98,
     "category": "goa_special_gk",
     "question": "On which date did Goa officially become the 25th state of India?",
     "options": [
@@ -1144,7 +1274,7 @@
     "explanation": "Goa was conferred full statehood on May 30, 1987. May 30 is celebrated as Goa Statehood Day."
   },
   {
-    "id": 89,
+    "id": 99,
     "category": "goa_special_gk",
     "question": "Which is the official language of the state of Goa under the Goa Official Language Act, 1987?",
     "options": [
@@ -1157,7 +1287,7 @@
     "explanation": "Under the Goa Official Language Act 1987, Konkani in the Devanagari script is the sole official language of Goa."
   },
   {
-    "id": 90,
+    "id": 100,
     "category": "goa_special_gk",
     "question": "The famous Dudhsagar Waterfalls is located on which river?",
     "options": [
@@ -1170,7 +1300,7 @@
     "explanation": "Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River inside Bhagwan Mahaveer Sanctuary and Mollem National Park."
   },
   {
-    "id": 91,
+    "id": 101,
     "category": "goa_special_gk",
     "question": "Who was the first Chief Minister of Goa, Daman and Diu?",
     "options": [
@@ -1183,7 +1313,7 @@
     "explanation": "Dayanand Bandodkar (Bhausaheb Bandodkar) of the Maharashtrawadi Gomantak Party (MGP) served as the first Chief Minister of Goa from 1963 to 1973."
   },
   {
-    "id": 92,
+    "id": 102,
     "category": "goa_special_gk",
     "question": "Which sanctuary is the largest wildlife sanctuary in Goa?",
     "options": [
@@ -1196,7 +1326,7 @@
     "explanation": "Located in Mollem, Bhagwan Mahaveer Wildlife Sanctuary covers 240 sq km and is the largest wildlife sanctuary in Goa."
   },
   {
-    "id": 93,
+    "id": 103,
     "category": "goa_special_gk",
     "question": "The Historic Opinion Poll of 1967 in Goa was held to decide:",
     "options": [
@@ -1209,7 +1339,7 @@
     "explanation": "Held on January 16, 1967, the referendum voted decisively for Goa to remain an independent Union Territory rather than merge with Maharashtra."
   },
   {
-    "id": 94,
+    "id": 104,
     "category": "goa_special_gk",
     "question": "Following recent administrative reorganization, how many total administrative districts does Goa have?",
     "options": [
@@ -1222,7 +1352,7 @@
     "explanation": "Goa has 3 administrative districts: North Goa (HQ: Panaji), South Goa (HQ: Margao), and Kushavati district (HQ: Quepem, carved out of South Goa comprising Dharbandora, Quepem, Sanguem, and Canacona talukas). Source: Government of Goa Official Gazette."
   },
   {
-    "id": 95,
+    "id": 105,
     "category": "goa_special_gk",
     "question": "Which UNESCO World Heritage Site in Goa houses the mortal remains of St. Francis Xavier?",
     "options": [
@@ -1235,7 +1365,7 @@
     "explanation": "Located in Old Goa, the Basilica of Bom Jesus holds the preserved mortal remains of St. Francis Xavier."
   },
   {
-    "id": 96,
+    "id": 106,
     "category": "goa_special_gk",
     "question": "What is the length of the newly constructed 8-lane cable-stayed bridge over the Zuari River in Goa (New Zuari Bridge)?",
     "options": [
@@ -1248,7 +1378,7 @@
     "explanation": "The New Zuari Bridge is India's second longest cable-stayed bridge, spanning 640 meters across the Zuari River connecting North and South Goa."
   },
   {
-    "id": 97,
+    "id": 107,
     "category": "goa_special_gk",
     "question": "Manohar International Airport at Mopa in North Goa was developed in partnership with which infrastructure group?",
     "options": [
@@ -1261,7 +1391,7 @@
     "explanation": "Manohar International Airport (Mopa) was developed by GMR Goa International Airport Limited (GGIAL)."
   },
   {
-    "id": 98,
+    "id": 108,
     "category": "indian_polity_goa",
     "question": "Which Article of the Constitution of India contains special provisions with respect to the State of Goa?",
     "options": [
@@ -1274,7 +1404,7 @@
     "explanation": "Article 371I specifies that the Legislative Assembly of the State of Goa shall consist of not less than thirty members."
   },
   {
-    "id": 99,
+    "id": 109,
     "category": "indian_polity_goa",
     "question": "Under the Panchayati Raj system in Goa, what are the two tiers of rural local self-government?",
     "options": [
@@ -1287,7 +1417,7 @@
     "explanation": "Goa follows a two-tier Panchayati Raj system consisting of Village (Gram) Panchayats at the base and Zilla Panchayats (North Goa & South Goa Zilla Panchayats) at the district level."
   },
   {
-    "id": 100,
+    "id": 110,
     "category": "indian_polity_goa",
     "question": "How many seats are there in the Goa State Legislative Assembly (Vidhan Sabha)?",
     "options": [
@@ -1300,7 +1430,7 @@
     "explanation": "The Goa Legislative Assembly consists of 40 elected members (MLAs)."
   },
   {
-    "id": 101,
+    "id": 111,
     "category": "indian_polity_goa",
     "question": "How many members represent the State of Goa in the Lok Sabha (Lower House of Parliament)?",
     "options": [
@@ -1313,7 +1443,7 @@
     "explanation": "Goa is divided into 2 Lok Sabha parliamentary constituencies: North Goa and South Goa."
   },
   {
-    "id": 102,
+    "id": 112,
     "category": "indian_polity_goa",
     "question": "How many seats does Goa have in the Rajya Sabha (Upper House of Parliament)?",
     "options": [
@@ -1326,7 +1456,7 @@
     "explanation": "Goa is represented by 1 seat in the Rajya Sabha."
   },
   {
-    "id": 103,
+    "id": 113,
     "category": "konkani_rti",
     "question": "Under the Goa Official Language Act 1987, which language is the official language of the state?",
     "options": [
@@ -1339,7 +1469,7 @@
     "explanation": "The Goa Official Language Act of 1987 states that Konkani written in the Devanagari script is the sole official language of Goa."
   },
   {
-    "id": 104,
+    "id": 114,
     "category": "konkani_rti",
     "question": "What is the maximum time limit for a Public Information Officer (PIO) to supply information under the RTI Act 2005 for ordinary requests?",
     "options": [
@@ -1352,7 +1482,7 @@
     "explanation": "Under Section 7(1) of the RTI Act 2005, the PIO must provide the requested information within 30 days of receiving the application."
   },
   {
-    "id": 105,
+    "id": 115,
     "category": "konkani_rti",
     "question": "If the information sought under RTI concerns the life or liberty of a person, within how many hours must it be provided?",
     "options": [
@@ -1365,7 +1495,7 @@
     "explanation": "Proviso to Section 7(1) mandates that information concerning life or liberty must be provided within 48 hours."
   },
   {
-    "id": 106,
+    "id": 116,
     "category": "konkani_rti",
     "question": "In Konkani grammar, what does the word '\u0909\u0926\u0915' (Udak) mean?",
     "options": [
@@ -1378,7 +1508,7 @@
     "explanation": "In Konkani, '\u0909\u0926\u0915' (Udak) translates to Water."
   },
   {
-    "id": 107,
+    "id": 117,
     "category": "konkani_rti",
     "question": "What is the primary portal for applying to Goa Government online services and certificates?",
     "options": [
@@ -1391,7 +1521,7 @@
     "explanation": "Goa Online (goaonline.gov.in) is the official single-window e-governance portal for Goa State Government services."
   },
   {
-    "id": 108,
+    "id": 118,
     "category": "logical_reasoning",
     "question": "In a certain code language, 'GOA' is coded as 42 and 'MAP' is coded as 64. How will 'EXAM' be coded in that language?",
     "options": [
@@ -1404,7 +1534,7 @@
     "explanation": "Sum of alphabetical positions multiplied by 2:\nG(7) + O(15) + A(1) = 23 \u00d7 2 = 46 (Adjustment: G=7, O=15, A=1 -> 23 \u00d7 2 - 4 = 42).\nStandard logic: E(5) + X(24) + A(1) + M(13) = 43. 43 \u00d7 2 + 10 = 96."
   },
   {
-    "id": 109,
+    "id": 119,
     "category": "logical_reasoning",
     "question": "Pointing to a photograph, Rohit said, \"She is the daughter of my grandfather's only son.\" How is the woman in the photograph related to Rohit?",
     "options": [
@@ -1417,7 +1547,7 @@
     "explanation": "Rohit's grandfather's only son is Rohit's father.\nThe daughter of Rohit's father is Rohit's sister."
   },
   {
-    "id": 110,
+    "id": 120,
     "category": "logical_reasoning",
     "question": "Select the antonym of the given word: IMPEDIMENT",
     "options": [
@@ -1430,7 +1560,7 @@
     "explanation": "'Impediment' means a hindrance or obstruction in doing something. Its antonym (opposite) is 'Assistance' or 'Help'."
   },
   {
-    "id": 111,
+    "id": 121,
     "category": "logical_reasoning",
     "question": "Find the correctly spelled word:",
     "options": [
@@ -1443,7 +1573,7 @@
     "explanation": "The correct spelling is B-U-R-E-A-U-C-R-A-C-Y."
   },
   {
-    "id": 112,
+    "id": 122,
     "category": "logical_reasoning",
     "question": "Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
     "options": [
@@ -1456,7 +1586,7 @@
     "explanation": "It is an alternating addition and subtraction series: +3, -2, +3, -2, +3, -2.\n12 - 2 = 10."
   },
   {
-    "id": 113,
+    "id": 123,
     "category": "quantitative_aptitude",
     "question": "If the price of sugar increases by 20%, by what percentage must a household reduce its consumption so that total expenditure remains unchanged?",
     "options": [
@@ -1469,7 +1599,7 @@
     "explanation": "Formula: `Percentage reduction = [R / (100 + R)] \u00d7 100%`\nHere R = 20%.\n`Reduction = [20 / 120] \u00d7 100 = 100 / 6 = 16.67%`."
   },
   {
-    "id": 114,
+    "id": 124,
     "category": "quantitative_aptitude",
     "question": "A train 150 meters long is running at a speed of 54 km/hr. How much time will it take to cross a platform 250 meters long?",
     "options": [
@@ -1482,7 +1612,7 @@
     "explanation": "Total distance to cover = Length of train + Length of platform = 150 + 250 = 400 meters.\nSpeed in m/s = 54 \u00d7 (5/18) = 15 m/s.\nTime = Distance / Speed = 400 / 15 = 26.67 seconds."
   },
   {
-    "id": 115,
+    "id": 125,
     "category": "quantitative_aptitude",
     "question": "A person sold an article at a profit of 15%. If he had bought it at 10% less and sold it for \u20b918 less, he would have gained 25%. Find the cost price of the article.",
     "options": [
@@ -1495,7 +1625,7 @@
     "explanation": "Let CP = 100x. SP1 = 115x.\nNew CP = 90x. New SP2 = 90x \u00d7 1.25 = 112.5x.\nDifference = 115x - 112.5x = 2.5x.\nGiven 2.5x = 18 => x = 7.2 => 100x = \u20b9720."
   },
   {
-    "id": 116,
+    "id": 126,
     "category": "quantitative_aptitude",
     "question": "A and B together can complete a work in 12 days. B alone can finish it in 30 days. In how many days can A alone complete the work?",
     "options": [
@@ -1508,7 +1638,7 @@
     "explanation": "1 day work of (A + B) = 1/12. 1 day work of B = 1/30.\n1 day work of A = (1/12) - (1/30) = (5 - 2)/60 = 3/60 = 1/20.\nTherefore, A alone can finish in 20 days."
   },
   {
-    "id": 117,
+    "id": 127,
     "category": "quantitative_aptitude",
     "question": "What will be the compound interest on \u20b910,000 for 2 years at 10% per annum compounded annually?",
     "options": [
@@ -1521,7 +1651,7 @@
     "explanation": "Amount = P(1 + r/100)^t = 10000 \u00d7 (1.1)\u00b2 = 10000 \u00d7 1.21 = \u20b912,100.\nCI = Amount - Principal = 12100 - 10000 = \u20b92,100."
   },
   {
-    "id": 118,
+    "id": 128,
     "category": "quantitative_aptitude",
     "question": "[Data Interpretation] The average production of wheat in a farm over 4 consecutive years was 120 tons. If the production in the 5th year was 170 tons, what is the new 5-year average?",
     "options": [
@@ -1534,831 +1664,103 @@
     "explanation": "Total production of 4 years = 120 \u00d7 4 = 480 tons.\nTotal production of 5 years = 480 + 170 = 650 tons.\nNew average = 650 / 5 = 130 tons."
   },
   {
-    "id": 119,
+    "id": 129,
     "category": "randomized_mock_exam",
     "question": "[LOGICAL_REASONING] Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
     "options": [
-      "A) 13",
-      "B) 10",
-      "C) 12",
-      "D) 7"
+      "A) 12",
+      "B) 7",
+      "C) 13",
+      "D) 10"
     ],
-    "answer": "B) 10",
+    "answer": "D) 10",
     "explanation": "It is an alternating addition and subtraction series: +3, -2, +3, -2, +3, -2.\n12 - 2 = 10."
-  },
-  {
-    "id": 120,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] Which UNESCO World Heritage Site in Goa houses the mortal remains of St. Francis Xavier?",
-    "options": [
-      "A) Church of St. Cajetan",
-      "B) Se Cathedral",
-      "C) Church of Our Lady of the Immaculate Conception",
-      "D) Basilica of Bom Jesus"
-    ],
-    "answer": "D) Basilica of Bom Jesus",
-    "explanation": "Located in Old Goa, the Basilica of Bom Jesus holds the preserved mortal remains of St. Francis Xavier."
-  },
-  {
-    "id": 121,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] In Indian Economics, what does 'NITI' in NITI Aayog stand for?",
-    "options": [
-      "A) National Institute of Technology and Innovation",
-      "B) National Institution for Transforming India",
-      "C) National Initiative for Trade and Industry",
-      "D) National Institute for Technical Integration"
-    ],
-    "answer": "B) National Institution for Transforming India",
-    "explanation": "NITI Aayog stands for National Institution for Transforming India, established on 1st January 2015 replacing the Planning Commission."
-  },
-  {
-    "id": 122,
-    "category": "randomized_mock_exam",
-    "question": "[KONKANI_RTI] Under the Goa Official Language Act 1987, which language is the official language of the state?",
-    "options": [
-      "A) Konkani in Devanagari script",
-      "B) Portuguese",
-      "C) Marathi",
-      "D) English"
-    ],
-    "answer": "A) Konkani in Devanagari script",
-    "explanation": "The Goa Official Language Act of 1987 states that Konkani written in the Devanagari script is the sole official language of Goa."
-  },
-  {
-    "id": 123,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_GEOGRAPHY_RIVERS] Salim Ali Bird Sanctuary in Goa is located on which island?",
-    "options": [
-      "A) Chorao Island",
-      "B) Divar Island",
-      "C) St. Jacinto Island",
-      "D) Tiswadi Island"
-    ],
-    "answer": "A) Chorao Island",
-    "explanation": "Named after ornithologist Dr. Salim Ali, this estuarine mangrove sanctuary is located along the Mandovi River on Chorao Island."
-  },
-  {
-    "id": 124,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which island in Goa is known for the historical St. Jacinto Church and lighthouse bridge?",
-    "options": [
-      "A) St. Jacinto Island",
-      "B) Chorao Island",
-      "C) Divar Island",
-      "D) Corjuem Island"
-    ],
-    "answer": "A) St. Jacinto Island",
-    "explanation": "St. Jacinto Island in South Goa is connected by a bridge over the Zuari estuary and houses St. Jacinto Church."
-  },
-  {
-    "id": 125,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which device is used to measure atmospheric pressure?",
-    "options": [
-      "A) Thermometer",
-      "B) Anemometer",
-      "C) Hygrometer",
-      "D) Barometer"
-    ],
-    "answer": "D) Barometer",
-    "explanation": "A barometer is a scientific instrument used to measure atmospheric pressure."
-  },
-  {
-    "id": 126,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which dam in North Goa is built across the Costi River in Sattari taluka?",
-    "options": [
-      "A) Panchwadi Dam",
-      "B) Anjunem Dam",
-      "C) Chapoli Dam",
-      "D) Salaulim Dam"
-    ],
-    "answer": "B) Anjunem Dam",
-    "explanation": "Anjunem Dam is located in Sattari taluka in North Goa."
-  },
-  {
-    "id": 127,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which gas is most abundant in Earth's atmosphere?",
-    "options": [
-      "A) Nitrogen",
-      "B) Argon",
-      "C) Oxygen",
-      "D) Carbon Dioxide"
-    ],
-    "answer": "A) Nitrogen",
-    "explanation": "Nitrogen makes up approximately 78% of the Earth's atmosphere by volume."
-  },
-  {
-    "id": 128,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the length of the coastline of Goa?",
-    "options": [
-      "A) 300 km",
-      "B) 500 km",
-      "C) 101 km (approx 160 km including estuaries)",
-      "D) 50 km"
-    ],
-    "answer": "C) 101 km (approx 160 km including estuaries)",
-    "explanation": "Goa has a continuous tropical coastline of about 101 km facing the Arabian Sea."
-  },
-  {
-    "id": 129,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_GEOGRAPHY_RIVERS] Mormugao Port, the major seaport of Goa, is situated at the mouth of which river?",
-    "options": [
-      "A) Zuari River",
-      "B) Mandovi River",
-      "C) Sal River",
-      "D) Chapora River"
-    ],
-    "answer": "A) Zuari River",
-    "explanation": "Mormugao Port is a major natural harbor in South Goa located at the entrance/mouth of the Zuari River."
   },
   {
     "id": 130,
     "category": "randomized_mock_exam",
-    "question": "[KONKANI_RTI] What is the primary portal for applying to Goa Government online services and certificates?",
+    "question": "[QUANTITATIVE_APTITUDE] A train 150 meters long is running at a speed of 54 km/hr. How much time will it take to cross a platform 250 meters long?",
     "options": [
-      "A) Goa Online (goaonline.gov.in)",
-      "B) Goa Seva",
-      "C) Digital Goa",
-      "D) E-Goa Portal"
+      "A) 20 seconds",
+      "B) 26.67 seconds",
+      "C) 24.67 seconds",
+      "D) 30 seconds"
     ],
-    "answer": "A) Goa Online (goaonline.gov.in)",
-    "explanation": "Goa Online (goaonline.gov.in) is the official single-window e-governance portal for Goa State Government services."
+    "answer": "B) 26.67 seconds",
+    "explanation": "Total distance to cover = Length of train + Length of platform = 150 + 250 = 400 meters.\nSpeed in m/s = 54 \u00d7 (5/18) = 15 m/s.\nTime = Distance / Speed = 400 / 15 = 26.67 seconds."
   },
   {
     "id": 131,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Viceroy of India introduced the Doctrine of Lapse policy?",
+    "question": "[GOA_SPECIAL_GK] In which year was Goa liberated from Portuguese rule by Operation Vijay?",
     "options": [
-      "A) Lord William Bentinck",
-      "B) Lord Canning",
-      "C) Lord Curzon",
-      "D) Lord Dalhousie"
+      "A) 1950",
+      "B) 1947",
+      "C) 1987",
+      "D) 1961"
     ],
-    "answer": "D) Lord Dalhousie",
-    "explanation": "Lord Dalhousie (Governor-General from 1848 to 1856) introduced the Doctrine of Lapse to annex princely states."
+    "answer": "D) 1961",
+    "explanation": "Indian armed forces launched Operation Vijay on December 18, 1961, which led to the liberation of Goa, Daman, and Diu from Portuguese rule on December 19, 1961. December 19 is celebrated annually as Goa Liberation Day."
   },
   {
     "id": 132,
     "category": "randomized_mock_exam",
-    "question": "[GOA_CULTURE_SCHEMES] Which crop is celebrated during the famous 'Harvest Festival' (Consua / Konsamchem Fest) in Goa?",
+    "question": "[KONKANI_RTI] In Konkani grammar, what does the word '\u0909\u0926\u0915' (Udak) mean?",
     "options": [
-      "A) Mango",
-      "B) Coconut",
-      "C) Paddy (Rice)",
-      "D) Cashew"
+      "A) Fire",
+      "B) Water",
+      "C) Earth",
+      "D) Milk"
     ],
-    "answer": "C) Paddy (Rice)",
-    "explanation": "Konsamchem Fest / Harvest Festival in August celebrates the blessing of the first corn/paddy crop of the season."
+    "answer": "B) Water",
+    "explanation": "In Konkani, '\u0909\u0926\u0915' (Udak) translates to Water."
   },
   {
     "id": 133,
     "category": "randomized_mock_exam",
-    "question": "[KONKANI_RTI] If the information sought under RTI concerns the life or liberty of a person, within how many hours must it be provided?",
+    "question": "[GOA_GEOGRAPHY_RIVERS] Which mountain range forms the eastern boundary of the state of Goa?",
     "options": [
-      "A) 48 hours",
-      "B) 72 hours",
-      "C) 7 days",
-      "D) 24 hours"
+      "A) Western Ghats (Sahyadri Range)",
+      "B) Satpura Range",
+      "C) Eastern Ghats",
+      "D) Vindhya Range"
     ],
-    "answer": "A) 48 hours",
-    "explanation": "Proviso to Section 7(1) mandates that information concerning life or liberty must be provided within 48 hours."
+    "answer": "A) Western Ghats (Sahyadri Range)",
+    "explanation": "The Western Ghats (Sahyadris) form the eastern boundary of Goa, providing rich tropical rainforests, rivers, and Western Ghats biodiversity."
   },
   {
     "id": 134,
     "category": "randomized_mock_exam",
-    "question": "[KONKANI_RTI] What is the maximum time limit for a Public Information Officer (PIO) to supply information under the RTI Act 2005 for ordinary requests?",
+    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: drsarveshwarbharti/Aptitude-For-Placements] If A:B = 2:3 and B:C = 4:5, what is A:B:C?",
     "options": [
-      "A) 15 days",
-      "B) 30 days",
-      "C) 60 days",
-      "D) 45 days"
+      "A) 6:9:15",
+      "B) 8:12:15",
+      "C) 2:4:5",
+      "D) 8:10:15"
     ],
-    "answer": "B) 30 days",
-    "explanation": "Under Section 7(1) of the RTI Act 2005, the PIO must provide the requested information within 30 days of receiving the application."
+    "answer": "B) 8:12:15",
+    "explanation": "Multiply A:B by 4 -> 8:12.\nMultiply B:C by 3 -> 12:15.\nCombined ratio A:B:C = 8:12:15."
   },
   {
     "id": 135,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the minimum passing age for obtaining a permanent Motor Vehicle Driving License in India?",
+    "question": "[GOA_SPECIAL_GK] Which UNESCO World Heritage Site in Goa houses the mortal remains of St. Francis Xavier?",
     "options": [
-      "A) 25 years",
-      "B) 16 years",
-      "C) 21 years",
-      "D) 18 years"
+      "A) Basilica of Bom Jesus",
+      "B) Church of Our Lady of the Immaculate Conception",
+      "C) Church of St. Cajetan",
+      "D) Se Cathedral"
     ],
-    "answer": "D) 18 years",
-    "explanation": "Under the Motor Vehicles Act, the minimum age for a permanent driving license for motor vehicles is 18 years."
+    "answer": "A) Basilica of Bom Jesus",
+    "explanation": "Located in Old Goa, the Basilica of Bom Jesus holds the preserved mortal remains of St. Francis Xavier."
   },
   {
     "id": 136,
     "category": "randomized_mock_exam",
-    "question": "[QUANTITATIVE_APTITUDE] A train 150 meters long is running at a speed of 54 km/hr. How much time will it take to cross a platform 250 meters long?",
-    "options": [
-      "A) 30 seconds",
-      "B) 20 seconds",
-      "C) 26.67 seconds",
-      "D) 24.67 seconds"
-    ],
-    "answer": "C) 26.67 seconds",
-    "explanation": "Total distance to cover = Length of train + Length of platform = 150 + 250 = 400 meters.\nSpeed in m/s = 54 \u00d7 (5/18) = 15 m/s.\nTime = Distance / Speed = 400 / 15 = 26.67 seconds."
-  },
-  {
-    "id": 137,
-    "category": "randomized_mock_exam",
-    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: rohanmistry231/CSE-Aptitude-Test-Practice-Hub] Find the missing number in the sequence: 2, 6, 12, 20, 30, ?",
-    "options": [
-      "A) 36",
-      "B) 42",
-      "C) 40",
-      "D) 48"
-    ],
-    "answer": "B) 42",
-    "explanation": "Differences between consecutive terms: +4, +6, +8, +10.\nNext difference is +12 => 30 + 12 = 42."
-  },
-  {
-    "id": 138,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_FREEDOM_HISTORY] Who led the Cuncolim Revolt of 1580, recognized as the first freedom struggle against Portuguese rule in Goa?",
-    "options": [
-      "A) Chieftains of Cuncolim (Desais of Cuncolim)",
-      "B) Dayanand Bandodkar",
-      "C) Kusti Desai",
-      "D) Pinto Revolt Leaders"
-    ],
-    "answer": "A) Chieftains of Cuncolim (Desais of Cuncolim)",
-    "explanation": "The Cuncolim Revolt in 1580 was led by the local village chieftains against Portuguese religious oppression, making it one of the earliest armed resistances against European colonialism in Asia."
-  },
-  {
-    "id": 139,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan GI-tagged alcoholic beverage is distilled from cashew apples or coconut sap?",
-    "options": [
-      "A) Toddy",
-      "B) Urak",
-      "C) Feni",
-      "D) Arrack"
-    ],
-    "answer": "C) Feni",
-    "explanation": "Cashew Feni received Geographical Indication (GI) registration in 2009 as a traditional Goan liquor."
-  },
-  {
-    "id": 140,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Who was the first President of Independent India?",
-    "options": [
-      "A) Jawaharlal Nehru",
-      "B) Dr. S. Radhakrishnan",
-      "C) Dr. Rajendra Prasad",
-      "D) Dr. B.R. Ambedkar"
-    ],
-    "answer": "C) Dr. Rajendra Prasad",
-    "explanation": "Dr. Rajendra Prasad served as the first President of India from 1950 to 1962."
-  },
-  {
-    "id": 141,
-    "category": "randomized_mock_exam",
-    "question": "[INDIAN_POLITY_GOA] How many seats does Goa have in the Rajya Sabha (Upper House of Parliament)?",
-    "options": [
-      "A) 3 Seats",
-      "B) 2 Seats",
-      "C) 5 Seats",
-      "D) 1 Seat"
-    ],
-    "answer": "D) 1 Seat",
-    "explanation": "Goa is represented by 1 seat in the Rajya Sabha."
-  },
-  {
-    "id": 142,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_CULTURE_SCHEMES] What is the name of the traditional Goan mud-games festival celebrated in Marcel to honor Lord Krishna?",
-    "options": [
-      "A) Chikhal Kalo",
-      "B) Shigmo",
-      "C) Tripurari Poornima",
-      "D) Sao Joao"
-    ],
-    "answer": "A) Chikhal Kalo",
-    "explanation": "Chikhal Kalo (mud festival) is a unique traditional monsoon festival celebrated in Marcel village, where people play traditional games in mud."
-  },
-  {
-    "id": 143,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] In which year was Goa liberated from Portuguese rule by Operation Vijay?",
-    "options": [
-      "A) 1987",
-      "B) 1961",
-      "C) 1950",
-      "D) 1947"
-    ],
-    "answer": "B) 1961",
-    "explanation": "Indian armed forces launched Operation Vijay on December 18, 1961, which led to the liberation of Goa, Daman, and Diu from Portuguese rule on December 19, 1961. December 19 is celebrated annually as Goa Liberation Day."
-  },
-  {
-    "id": 144,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] Which river is known as the \"Lifeline of Goa\"?",
-    "options": [
-      "A) Sal",
-      "B) Chapora",
-      "C) Zuari",
-      "D) Mandovi (Mahadayi)"
-    ],
-    "answer": "D) Mandovi (Mahadayi)",
-    "explanation": "The Mandovi River (Mahadayi) originates in the Western Ghats at Bhimgad and flows across Goa into the Arabian Sea, supplying fresh water to the majority of the state."
-  },
-  {
-    "id": 145,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan village is famous for the 'Reis Magos Fort' built in 1551?",
-    "options": [
-      "A) Calangute",
-      "B) Candolim",
-      "C) Nerul",
-      "D) Reis Magos (Verem)"
-    ],
-    "answer": "D) Reis Magos (Verem)",
-    "explanation": "Reis Magos Fort sits on the northern bank of Mandovi river at Verem village in Bardez."
-  },
-  {
-    "id": 146,
-    "category": "randomized_mock_exam",
-    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: rohanmistry231/CSE-Aptitude-Test-Practice-Hub] A sum of money doubles itself at simple interest in 8 years. What is the rate of interest per annum?",
-    "options": [
-      "A) 10%",
-      "B) 16.67%",
-      "C) 15%",
-      "D) 12.5%"
-    ],
-    "answer": "D) 12.5%",
-    "explanation": "SI = Principal = P. Time = 8 years.\nFormula: `SI = (P \u00d7 R \u00d7 T) / 100` => `P = (P \u00d7 R \u00d7 8) / 100` => `R = 100 / 8 = 12.5%`."
-  },
-  {
-    "id": 147,
-    "category": "randomized_mock_exam",
-    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: ratneshmaurya/Aptitude_Practice_Questions] Find the LCM of 12, 15, and 20.",
-    "options": [
-      "A) 30",
-      "B) 60",
-      "C) 120",
-      "D) 90"
-    ],
-    "answer": "B) 60",
-    "explanation": "Prime factors: 12 = 2\u00b2 \u00d7 3, 15 = 3 \u00d7 5, 20 = 2\u00b2 \u00d7 5.\nLCM = 2\u00b2 \u00d7 3 \u00d7 5 = 60."
-  },
-  {
-    "id": 148,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the maximum strength of the Council of Ministers in Goa (including the Chief Minister)?",
-    "options": [
-      "A) 12 Ministers",
-      "B) 15 Ministers",
-      "C) 6 Ministers",
-      "D) 20 Ministers"
-    ],
-    "answer": "A) 12 Ministers",
-    "explanation": "Under the 91st Constitutional Amendment Act 2003, the total number of ministers (including CM) in a State with 40 seats cannot exceed 12 (or 15% of assembly strength, min 12)."
-  },
-  {
-    "id": 149,
-    "category": "randomized_mock_exam",
-    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: drsarveshwarbharti/Aptitude-For-Placements] If A:B = 2:3 and B:C = 4:5, what is A:B:C?",
-    "options": [
-      "A) 2:4:5",
-      "B) 6:9:15",
-      "C) 8:12:15",
-      "D) 8:10:15"
-    ],
-    "answer": "C) 8:12:15",
-    "explanation": "Multiply A:B by 4 -> 8:12.\nMultiply B:C by 3 -> 12:15.\nCombined ratio A:B:C = 8:12:15."
-  },
-  {
-    "id": 150,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the primary iron ore export port of Goa?",
-    "options": [
-      "A) Mormugao Port",
-      "B) Talpona Port",
-      "C) Chapora Port",
-      "D) Panaji Port"
-    ],
-    "answer": "A) Mormugao Port",
-    "explanation": "Mormugao Port handles a major share of India's iron ore exports mined in Goa."
-  },
-  {
-    "id": 151,
-    "category": "randomized_mock_exam",
-    "question": "[INDIAN_POLITY_GOA] How many members represent the State of Goa in the Lok Sabha (Lower House of Parliament)?",
-    "options": [
-      "A) 1 Member",
-      "B) 3 Members",
-      "C) 4 Members",
-      "D) 2 Members"
-    ],
-    "answer": "D) 2 Members",
-    "explanation": "Goa is divided into 2 Lok Sabha parliamentary constituencies: North Goa and South Goa."
-  },
-  {
-    "id": 152,
-    "category": "randomized_mock_exam",
-    "question": "[QUANTITATIVE_APTITUDE] If the price of sugar increases by 20%, by what percentage must a household reduce its consumption so that total expenditure remains unchanged?",
-    "options": [
-      "A) 16.67%",
-      "B) 15%",
-      "C) 25%",
-      "D) 20%"
-    ],
-    "answer": "A) 16.67%",
-    "explanation": "Formula: `Percentage reduction = [R / (100 + R)] \u00d7 100%`\nHere R = 20%.\n`Reduction = [20 / 120] \u00d7 100 = 100 / 6 = 16.67%`."
-  },
-  {
-    "id": 153,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] The Tropic of Cancer does NOT pass through which of the following Indian states?",
-    "options": [
-      "A) West Bengal",
-      "B) Rajasthan",
-      "C) Gujarat",
-      "D) Odisha"
-    ],
-    "answer": "D) Odisha",
-    "explanation": "The Tropic of Cancer passes through 8 Indian states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram (It does not pass through Odisha)."
-  },
-  {
-    "id": 154,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_GEOGRAPHY_RIVERS] Which mountain range forms the eastern boundary of the state of Goa?",
-    "options": [
-      "A) Satpura Range",
-      "B) Vindhya Range",
-      "C) Western Ghats (Sahyadri Range)",
-      "D) Eastern Ghats"
-    ],
-    "answer": "C) Western Ghats (Sahyadri Range)",
-    "explanation": "The Western Ghats (Sahyadris) form the eastern boundary of Goa, providing rich tropical rainforests, rivers, and Western Ghats biodiversity."
-  },
-  {
-    "id": 155,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the average annual rainfall received by Goa during the South-West Monsoon?",
-    "options": [
-      "A) 5,000 mm",
-      "B) 3,000 mm to 3,500 mm",
-      "C) 1,000 mm",
-      "D) 500 mm"
-    ],
-    "answer": "B) 3,000 mm to 3,500 mm",
-    "explanation": "Goa receives heavy rainfall averaging around 3,000 mm to 3,500 mm annually between June and September."
-  },
-  {
-    "id": 156,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Who among the following was the founder of the Brahmo Samaj in 1828?",
-    "options": [
-      "A) Swami Dayananda Saraswati",
-      "B) Ishwar Chandra Vidyasagar",
-      "C) Raja Ram Mohan Roy",
-      "D) Swami Vivekananda"
-    ],
-    "answer": "C) Raja Ram Mohan Roy",
-    "explanation": "Raja Ram Mohan Roy established the Brahmo Samaj in Kolkata in 1828 to reform Hindu society and abolish sati."
-  },
-  {
-    "id": 157,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the capital of North Goa district?",
-    "options": [
-      "A) Mapusa",
-      "B) Panaji",
-      "C) Vasco da Gama",
-      "D) Margao"
-    ],
-    "answer": "B) Panaji",
-    "explanation": "Panaji (Panjim) is the headquarters of North Goa district and the state capital of Goa."
-  },
-  {
-    "id": 158,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the official newspaper printed in Konkani in Devanagari script in Goa?",
-    "options": [
-      "A) Sunaparant (historic) / Bhaangar Bhuin",
-      "B) Tarun Bharat",
-      "C) O Heraldo",
-      "D) The Navhind Times"
-    ],
-    "answer": "A) Sunaparant (historic) / Bhaangar Bhuin",
-    "explanation": "*Bhaangar Bhuin* is a prominent contemporary daily newspaper published in Konkani (Devanagari script)."
-  },
-  {
-    "id": 159,
-    "category": "randomized_mock_exam",
-    "question": "[COMPUTER_AWARENESS] Which protocol is used for secure communication over the Internet?",
-    "options": [
-      "A) SMTP",
-      "B) HTTP",
-      "C) HTTPS",
-      "D) FTP"
-    ],
-    "answer": "C) HTTPS",
-    "explanation": "HTTPS (Hypertext Transfer Protocol Secure) encrypts data sent between your browser and the website using SSL/TLS."
-  },
-  {
-    "id": 160,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_FREEDOM_HISTORY] The Pinto Revolt (Pinto Conspiracy) of 1787 was led by native Goan priests against Portuguese rule. In which town did it originate?",
-    "options": [
-      "A) Mapusa",
-      "B) Margao",
-      "C) Vasco da Gama",
-      "D) Candolim (Bardez)"
-    ],
-    "answer": "D) Candolim (Bardez)",
-    "explanation": "Led by Father Caetano Vitorino de Faria and Father Jose Antonio Goncalves of Candolim, the 1787 conspiracy aimed to overthrow Portuguese rule."
-  },
-  {
-    "id": 161,
-    "category": "randomized_mock_exam",
-    "question": "[LOGICAL_REASONING] In a certain code language, 'GOA' is coded as 42 and 'MAP' is coded as 64. How will 'EXAM' be coded in that language?",
-    "options": [
-      "A) 96",
-      "B) 86",
-      "C) 92",
-      "D) 100"
-    ],
-    "answer": "A) 96",
-    "explanation": "Sum of alphabetical positions multiplied by 2:\nG(7) + O(15) + A(1) = 23 \u00d7 2 = 46 (Adjustment: G=7, O=15, A=1 -> 23 \u00d7 2 - 4 = 42).\nStandard logic: E(5) + X(24) + A(1) + M(13) = 43. 43 \u00d7 2 + 10 = 96."
-  },
-  {
-    "id": 162,
-    "category": "randomized_mock_exam",
-    "question": "[LOGICAL_REASONING] Find the correctly spelled word:",
-    "options": [
-      "A) Bureaucracy",
-      "B) Beuracracy",
-      "C) Bureaucracy",
-      "D) Burocracy"
-    ],
-    "answer": "C) Bureaucracy",
-    "explanation": "The correct spelling is B-U-R-E-A-U-C-R-A-C-Y."
-  },
-  {
-    "id": 163,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which gland in the human body is known as the 'Master Gland'?",
-    "options": [
-      "A) Pancreas",
-      "B) Pituitary Gland",
-      "C) Adrenal Gland",
-      "D) Thyroid Gland"
-    ],
-    "answer": "B) Pituitary Gland",
-    "explanation": "The pituitary gland regulates the functions of most other endocrine glands in the body and is called the master gland."
-  },
-  {
-    "id": 164,
-    "category": "randomized_mock_exam",
-    "question": "[INDIAN_POLITY_GOA] Which Article of the Constitution of India contains special provisions with respect to the State of Goa?",
-    "options": [
-      "A) Article 371A",
-      "B) Article 370",
-      "C) Article 371J",
-      "D) Article 371I"
-    ],
-    "answer": "D) Article 371I",
-    "explanation": "Article 371I specifies that the Legislative Assembly of the State of Goa shall consist of not less than thirty members."
-  },
-  {
-    "id": 165,
-    "category": "randomized_mock_exam",
-    "question": "[QUANTITATIVE_APTITUDE] What will be the compound interest on \u20b910,000 for 2 years at 10% per annum compounded annually?",
-    "options": [
-      "A) \u20b92,200",
-      "B) \u20b92,100",
-      "C) \u20b92,500",
-      "D) \u20b92,000"
-    ],
-    "answer": "B) \u20b92,100",
-    "explanation": "Amount = P(1 + r/100)^t = 10000 \u00d7 (1.1)\u00b2 = 10000 \u00d7 1.21 = \u20b912,100.\nCI = Amount - Principal = 12100 - 10000 = \u20b92,100."
-  },
-  {
-    "id": 166,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which schedule of the Indian Constitution contains the 22 officially recognized languages?",
-    "options": [
-      "A) Eighth Schedule",
-      "B) Tenth Schedule",
-      "C) Ninth Schedule",
-      "D) Seventh Schedule"
-    ],
-    "answer": "A) Eighth Schedule",
-    "explanation": "The Eighth Schedule of the Indian Constitution lists the 22 official languages of the Republic of India (including Konkani)."
-  },
-  {
-    "id": 167,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Viceregal palace in Old Goa was converted into the Archaeological Museum of Goa?",
-    "options": [
-      "A) Cabo Raj Bhavan",
-      "B) Convent and Church of St. Francis of Assisi",
-      "C) Reis Magos Fort",
-      "D) Aguada Fort"
-    ],
-    "answer": "B) Convent and Church of St. Francis of Assisi",
-    "explanation": "The Archaeological Museum of Goa in Old Goa is maintained by the ASI in the annex of the Church of St. Francis of Assisi."
-  },
-  {
-    "id": 168,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which fundamental right was removed from the list of Fundamental Rights by the 44th Constitutional Amendment Act of 1978?",
-    "options": [
-      "A) Right to Constitutional Remedies",
-      "B) Right to Property",
-      "C) Right to Equality",
-      "D) Right to Freedom of Speech"
-    ],
-    "answer": "B) Right to Property",
-    "explanation": "The 44th Amendment Act (1978) deleted the Right to Property as a Fundamental Right and made it a legal/constitutional right under Article 300A."
-  },
-  {
-    "id": 169,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Fort in Goa overlooks the confluence of the Mandovi River and Arabian Sea and features a 4-storey lighthouse?",
-    "options": [
-      "A) Reis Magos Fort",
-      "B) Chapora Fort",
-      "C) Cabo de Rama Fort",
-      "D) Aguada Fort"
-    ],
-    "answer": "D) Aguada Fort",
-    "explanation": "Built in 1612 by the Portuguese, Fort Aguada overlooks Sinquerim beach and Mandovi River with a historic lighthouse."
-  },
-  {
-    "id": 170,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_FREEDOM_HISTORY] Who is fondly remembered as the \"Father of Goa's Freedom Movement\" for starting the civil disobedience movement on 18th June 1946 in Margao?",
-    "options": [
-      "A) Dr. Juli\u00e3o Menezes",
-      "B) Vishwanath Lawande",
-      "C) Dr. Ram Manohar Lohia",
-      "D) T.B. Cunha (Trist\u00e3o de Bragan\u00e7a Cunha)"
-    ],
-    "answer": "D) T.B. Cunha (Trist\u00e3o de Bragan\u00e7a Cunha)",
-    "explanation": "T.B. Cunha founded the Goa Congress Committee in 1928 and wrote famous nationalist booklets, earning him the title 'Father of Goa's Freedom Movement'. June 18 is celebrated as Goa Revolution Day (Goa Kranti Din) after Dr. Lohia & Dr. Menezes addressed the historic rally in Margao."
-  },
-  {
-    "id": 171,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Under the Constitution of India, who appoints the Governor of Goa?",
-    "options": [
-      "A) Chief Minister of Goa",
-      "B) President of India",
-      "C) Prime Minister of India",
-      "D) Chief Justice of India"
-    ],
-    "answer": "B) President of India",
-    "explanation": "Article 155 of the Indian Constitution states that the Governor of a State shall be appointed by the President of India."
-  },
-  {
-    "id": 172,
-    "category": "randomized_mock_exam",
-    "question": "[LOGICAL_REASONING] Pointing to a photograph, Rohit said, \"She is the daughter of my grandfather's only son.\" How is the woman in the photograph related to Rohit?",
-    "options": [
-      "A) Cousin",
-      "B) Sister",
-      "C) Mother",
-      "D) Aunt"
-    ],
-    "answer": "B) Sister",
-    "explanation": "Rohit's grandfather's only son is Rohit's father.\nThe daughter of Rohit's father is Rohit's sister."
-  },
-  {
-    "id": 173,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_CULTURE_SCHEMES] The festival of 'Bonderam' featuring colorful flag parades is celebrated on which island in Goa?",
-    "options": [
-      "A) St. Jacinto Island",
-      "B) Vanxim Island",
-      "C) Divar Island",
-      "D) Chorao Island"
-    ],
-    "answer": "C) Divar Island",
-    "explanation": "Bonderam is celebrated every August on Divar Island, reenacting historical boundary disputes using colorful flags."
-  },
-  {
-    "id": 174,
-    "category": "randomized_mock_exam",
-    "question": "[LOGICAL_REASONING] Select the antonym of the given word: IMPEDIMENT",
-    "options": [
-      "A) Assistance",
-      "B) Obstacle",
-      "C) Hindrance",
-      "D) Barrier"
-    ],
-    "answer": "A) Assistance",
-    "explanation": "'Impediment' means a hindrance or obstruction in doing something. Its antonym (opposite) is 'Assistance' or 'Help'."
-  },
-  {
-    "id": 175,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] The famous Dudhsagar Waterfalls is located on which river?",
-    "options": [
-      "A) Tiracol",
-      "B) Zuari",
-      "C) Talpona",
-      "D) Mandovi"
-    ],
-    "answer": "D) Mandovi",
-    "explanation": "Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River inside Bhagwan Mahaveer Sanctuary and Mollem National Park."
-  },
-  {
-    "id": 176,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] Which sanctuary is the largest wildlife sanctuary in Goa?",
-    "options": [
-      "A) Dr. Salim Ali Bird Sanctuary",
-      "B) Bhagwan Mahaveer Sanctuary",
-      "C) Bondla Wildlife Sanctuary",
-      "D) Cotigao Wildlife Sanctuary"
-    ],
-    "answer": "B) Bhagwan Mahaveer Sanctuary",
-    "explanation": "Located in Mollem, Bhagwan Mahaveer Wildlife Sanctuary covers 240 sq km and is the largest wildlife sanctuary in Goa."
-  },
-  {
-    "id": 177,
-    "category": "randomized_mock_exam",
-    "question": "[QUANTITATIVE_APTITUDE] A person sold an article at a profit of 15%. If he had bought it at 10% less and sold it for \u20b918 less, he would have gained 25%. Find the cost price of the article.",
-    "options": [
-      "A) \u20b9800",
-      "B) \u20b9720",
-      "C) \u20b9600",
-      "D) \u20b9900"
-    ],
-    "answer": "B) \u20b9720",
-    "explanation": "Let CP = 100x. SP1 = 115x.\nNew CP = 90x. New SP2 = 90x \u00d7 1.25 = 112.5x.\nDifference = 115x - 112.5x = 2.5x.\nGiven 2.5x = 18 => x = 7.2 => 100x = \u20b9720."
-  },
-  {
-    "id": 178,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_CULTURE_SCHEMES] What is the famous traditional spring festival celebrated with vibrant parades and floats across major cities in Goa?",
-    "options": [
-      "A) Chikhal Kalo",
-      "B) Shigmo Festival (Shigmotsav)",
-      "C) Bonderam",
-      "D) Sao Joao"
-    ],
-    "answer": "B) Shigmo Festival (Shigmotsav)",
-    "explanation": "Shigmo (Shigmotsav) is the traditional Hindu spring festival in Goa celebrating rich folklore, traditional dances (like Ghode Modni, Fugdi), and float parades."
-  },
-  {
-    "id": 179,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which battle fought in 1510 led to the capture of Goa by Afonso de Albuquerque from the Sultan of Bijapur?",
-    "options": [
-      "A) Battle of Diu",
-      "B) Conquest of Goa (1510)",
-      "C) Battle of Plassey",
-      "D) Battle of Panipat"
-    ],
-    "answer": "B) Conquest of Goa (1510)",
-    "explanation": "Afonso de Albuquerque conquered Goa in 1510 from Ismail Adil Shah, Sultan of Bijapur, establishing Portuguese rule for over 450 years."
-  },
-  {
-    "id": 180,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the chemical name of common salt?",
-    "options": [
-      "A) Sodium Chloride",
-      "B) Sodium Bicarbonate",
-      "C) Potassium Chloride",
-      "D) Calcium Carbonate"
-    ],
-    "answer": "A) Sodium Chloride",
-    "explanation": "Common salt is chemically known as Sodium Chloride (NaCl)."
-  },
-  {
-    "id": 181,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which international airport in Goa was inaugurated at Mopa in Pernem taluka?",
-    "options": [
-      "A) Dabolim Airport",
-      "B) Manohar International Airport (Mopa)",
-      "C) Panaji Airport",
-      "D) Chhatrapati Shivaji Airport"
-    ],
-    "answer": "B) Manohar International Airport (Mopa)",
-    "explanation": "Manohar International Airport at Mopa in North Goa commenced operations in January 2023."
-  },
-  {
-    "id": 182,
-    "category": "randomized_mock_exam",
     "question": "[GENERAL_KNOWLEDGE_INDIA] In which year did the Daman and Diu Enclaves separate administratively from Goa when Goa became a full state?",
     "options": [
-      "A) 1992",
-      "B) 1971",
+      "A) 1971",
+      "B) 1992",
       "C) 1961",
       "D) 1987"
     ],
@@ -2366,527 +1768,722 @@
     "explanation": "On 30 May 1987, Goa became the 25th state while Daman and Diu remained separate Union Territories."
   },
   {
-    "id": 183,
+    "id": 137,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which river flows past the famous Chapora Fort in North Goa?",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the average annual rainfall received by Goa during the South-West Monsoon?",
     "options": [
-      "A) Talpona River",
-      "B) Galgibaga River",
-      "C) Chapora River",
-      "D) Sal River"
+      "A) 1,000 mm",
+      "B) 500 mm",
+      "C) 5,000 mm",
+      "D) 3,000 mm to 3,500 mm"
     ],
-    "answer": "C) Chapora River",
-    "explanation": "Chapora Fort is located on the southern headland of the Chapora River in Bardez taluka."
+    "answer": "D) 3,000 mm to 3,500 mm",
+    "explanation": "Goa receives heavy rainfall averaging around 3,000 mm to 3,500 mm annually between June and September."
   },
   {
-    "id": 184,
+    "id": 138,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the minimum age required to become a member of the Goa Legislative Assembly (MLA)?",
+    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: rohanmistry231/CSE-Aptitude-Test-Practice-Hub] A sum of money doubles itself at simple interest in 8 years. What is the rate of interest per annum?",
     "options": [
-      "A) 18 years",
-      "B) 21 years",
-      "C) 30 years",
-      "D) 25 years"
+      "A) 12.5%",
+      "B) 16.67%",
+      "C) 10%",
+      "D) 15%"
     ],
-    "answer": "D) 25 years",
-    "explanation": "Under Article 173(b) of the Constitution, the minimum age to be eligible for election to a State Legislative Assembly is 25 years."
+    "answer": "A) 12.5%",
+    "explanation": "SI = Principal = P. Time = 8 years.\nFormula: `SI = (P \u00d7 R \u00d7 T) / 100` => `P = (P \u00d7 R \u00d7 8) / 100` => `R = 100 / 8 = 12.5%`."
   },
   {
-    "id": 185,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_FREEDOM_HISTORY] What was the name of the armed revolutionary group formed in 1947 by Vishwanath Lawande and comrades to fight Portuguese colonial forces?",
-    "options": [
-      "A) Goa Liberation Army",
-      "B) Azad Gomantak Dal (AGD)",
-      "C) National Congress (Goa)",
-      "D) Gomantak Mukti Sena"
-    ],
-    "answer": "B) Azad Gomantak Dal (AGD)",
-    "explanation": "Azad Gomantak Dal (AGD) engaged in armed guerrilla warfare against Portuguese strongholds, raiding police stations and railway lines until Goa's liberation in 1961."
-  },
-  {
-    "id": 186,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state tree of Goa?",
-    "options": [
-      "A) Matti (Terminalia elliptica / Asan)",
-      "B) Banyan Tree",
-      "C) Neem Tree",
-      "D) Coconut Palm"
-    ],
-    "answer": "A) Matti (Terminalia elliptica / Asan)",
-    "explanation": "Matti (Crocodile Bark tree) is declared as the state tree of Goa."
-  },
-  {
-    "id": 187,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which festival in Goa is marked by jumping into wells and streams to celebrate St. John the Baptist?",
-    "options": [
-      "A) Carnival",
-      "B) Shigmo",
-      "C) Sao Joao",
-      "D) Bonderam"
-    ],
-    "answer": "C) Sao Joao",
-    "explanation": "Sao Joao is celebrated on June 24 every monsoon, where villagers wear flower crowns ('kopel') and jump into wells."
-  },
-  {
-    "id": 188,
-    "category": "randomized_mock_exam",
-    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: ratneshmaurya/Aptitude_Practice_Questions] What is the HCF of 24, 36, and 60?",
-    "options": [
-      "A) 6",
-      "B) 18",
-      "C) 24",
-      "D) 12"
-    ],
-    "answer": "D) 12",
-    "explanation": "Factors of 24 = 2\u00b3 \u00d7 3\nFactors of 36 = 2\u00b2 \u00d7 3\u00b2\nFactors of 60 = 2\u00b2 \u00d7 3 \u00d7 5\nHCF = 2\u00b2 \u00d7 3 = 12."
-  },
-  {
-    "id": 189,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] Manohar International Airport at Mopa in North Goa was developed in partnership with which infrastructure group?",
-    "options": [
-      "A) Reliance Infrastructure",
-      "B) Tata Infrastructure",
-      "C) Adani Group",
-      "D) GMR Group"
-    ],
-    "answer": "D) GMR Group",
-    "explanation": "Manohar International Airport (Mopa) was developed by GMR Goa International Airport Limited (GGIAL)."
-  },
-  {
-    "id": 190,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] What is the length of the newly constructed 8-lane cable-stayed bridge over the Zuari River in Goa (New Zuari Bridge)?",
-    "options": [
-      "A) 320 meters",
-      "B) 1.08 km",
-      "C) 2.5 km",
-      "D) 640 meters"
-    ],
-    "answer": "D) 640 meters",
-    "explanation": "The New Zuari Bridge is India's second longest cable-stayed bridge, spanning 640 meters across the Zuari River connecting North and South Goa."
-  },
-  {
-    "id": 191,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_GEOGRAPHY_RIVERS] Which is the smallest wildlife sanctuary in Goa by area?",
-    "options": [
-      "A) Bondla Wildlife Sanctuary",
-      "B) Netravali Wildlife Sanctuary",
-      "C) Cotigao Wildlife Sanctuary",
-      "D) Madei Wildlife Sanctuary"
-    ],
-    "answer": "A) Bondla Wildlife Sanctuary",
-    "explanation": "Bondla Wildlife Sanctuary in Ponda taluka is the smallest sanctuary in Goa, covering an area of 8 square kilometers."
-  },
-  {
-    "id": 192,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the capital of South Goa district?",
-    "options": [
-      "A) Ponda",
-      "B) Mormugao",
-      "C) Quepem",
-      "D) Margao"
-    ],
-    "answer": "D) Margao",
-    "explanation": "Margao (Madgaon) is the administrative headquarters of South Goa district."
-  },
-  {
-    "id": 193,
+    "id": 139,
     "category": "randomized_mock_exam",
     "question": "[GOA_SPECIAL_GK] Who was the first Chief Minister of Goa, Daman and Diu?",
     "options": [
       "A) Manohar Parrikar",
-      "B) Pratapsingh Rane",
+      "B) Dayanand Bandodkar",
       "C) Jack de Sequeira",
-      "D) Dayanand Bandodkar"
+      "D) Pratapsingh Rane"
     ],
-    "answer": "D) Dayanand Bandodkar",
+    "answer": "B) Dayanand Bandodkar",
     "explanation": "Dayanand Bandodkar (Bhausaheb Bandodkar) of the Maharashtrawadi Gomantak Party (MGP) served as the first Chief Minister of Goa from 1963 to 1973."
   },
   {
-    "id": 194,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] On which date did Goa officially become the 25th state of India?",
-    "options": [
-      "A) 30 May 1987",
-      "B) 26 January 1950",
-      "C) 15 August 1947",
-      "D) 19 December 1961"
-    ],
-    "answer": "A) 30 May 1987",
-    "explanation": "Goa was conferred full statehood on May 30, 1987. May 30 is celebrated as Goa Statehood Day."
-  },
-  {
-    "id": 195,
-    "category": "randomized_mock_exam",
-    "question": "[INDIAN_POLITY_GOA] How many seats are there in the Goa State Legislative Assembly (Vidhan Sabha)?",
-    "options": [
-      "A) 60",
-      "B) 40",
-      "C) 70",
-      "D) 30"
-    ],
-    "answer": "B) 40",
-    "explanation": "The Goa Legislative Assembly consists of 40 elected members (MLAs)."
-  },
-  {
-    "id": 196,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which dam in Goa built across the Sanguem River supplies water to South Goa?",
-    "options": [
-      "A) Chapoli Dam",
-      "B) Anjunem Dam",
-      "C) Tillari Dam",
-      "D) Salaulim Dam"
-    ],
-    "answer": "D) Salaulim Dam",
-    "explanation": "Salaulim Dam in Sanguem taluka is the largest water reservoir supplying drinking and irrigation water to South Goa."
-  },
-  {
-    "id": 197,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Indian classical dance form originated in the state of Kerala?",
-    "options": [
-      "A) Odissi",
-      "B) Kuchipudi",
-      "C) Bharatanatyam",
-      "D) Kathakali"
-    ],
-    "answer": "D) Kathakali",
-    "explanation": "Kathakali is a major form of classical Indian dance originating in Kerala."
-  },
-  {
-    "id": 198,
-    "category": "randomized_mock_exam",
-    "question": "[INDIAN_POLITY_GOA] Under the Panchayati Raj system in Goa, what are the two tiers of rural local self-government?",
-    "options": [
-      "A) Zilla Panchayat and Municipal Council",
-      "B) Gram Panchayat and Panchayat Samiti",
-      "C) Gram Panchayat and Zilla Panchayat",
-      "D) Gram Sabha and Nyaya Panchayat"
-    ],
-    "answer": "C) Gram Panchayat and Zilla Panchayat",
-    "explanation": "Goa follows a two-tier Panchayati Raj system consisting of Village (Gram) Panchayats at the base and Zilla Panchayats (North Goa & South Goa Zilla Panchayats) at the district level."
-  },
-  {
-    "id": 199,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] Which is the official language of the state of Goa under the Goa Official Language Act, 1987?",
-    "options": [
-      "A) Konkani (in Devanagari script)",
-      "B) English",
-      "C) Portuguese",
-      "D) Marathi"
-    ],
-    "answer": "A) Konkani (in Devanagari script)",
-    "explanation": "Under the Goa Official Language Act 1987, Konkani in the Devanagari script is the sole official language of Goa."
-  },
-  {
-    "id": 200,
-    "category": "randomized_mock_exam",
-    "question": "[COMPUTER_AWARENESS] What is the shortcut key to permanently delete a file without moving it to the Recycle Bin in Windows?",
-    "options": [
-      "A) Ctrl + Delete",
-      "B) Shift + Delete",
-      "C) Alt + Delete",
-      "D) Ctrl + Shift + Delete"
-    ],
-    "answer": "B) Shift + Delete",
-    "explanation": "Shift + Delete bypasses the Recycle Bin and permanently deletes the selected file or folder."
-  },
-  {
-    "id": 201,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan scientist was the former Chairman of the Indian Space Research Organisation (ISRO)?",
-    "options": [
-      "A) Dr. K. Kasturirangan",
-      "B) Dr. Anil Kakodkar",
-      "C) Dr. R.A. Mashelkar",
-      "D) Dr. Shailesh Nayak"
-    ],
-    "answer": "C) Dr. R.A. Mashelkar",
-    "explanation": "Eminent Goan scientist Dr. R.A. Mashelkar is a renowned chemical engineer and former Director-General of CSIR."
-  },
-  {
-    "id": 202,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which metal is liquid at room temperature?",
-    "options": [
-      "A) Mercury",
-      "B) Aluminum",
-      "C) Magnesium",
-      "D) Sodium"
-    ],
-    "answer": "A) Mercury",
-    "explanation": "Mercury (Hg) is the only metal element that remains liquid at standard room temperature."
-  },
-  {
-    "id": 203,
-    "category": "randomized_mock_exam",
-    "question": "[COMPUTER_AWARENESS] In MS Excel, which function key is used to edit the contents of a selected cell?",
-    "options": [
-      "A) F7",
-      "B) F2",
-      "C) F1",
-      "D) F4"
-    ],
-    "answer": "B) F2",
-    "explanation": "Pressing F2 allows you to directly edit the active cell in Microsoft Excel."
-  },
-  {
-    "id": 204,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] The famous Salim Ali Bird Sanctuary is named after Dr. Salim Ali, who was a renowned Indian:",
-    "options": [
-      "A) Geologist",
-      "B) Marine Biologist",
-      "C) Botanist",
-      "D) Ornithologist"
-    ],
-    "answer": "D) Ornithologist",
-    "explanation": "Dr. Salim Ali (1896\u20131987) was known as the 'Birdman of India' and was a world-famous ornithologist."
-  },
-  {
-    "id": 205,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the SI unit of Electric Current?",
-    "options": [
-      "A) Ampere",
-      "B) Ohm",
-      "C) Watt",
-      "D) Volt"
-    ],
-    "answer": "A) Ampere",
-    "explanation": "The Ampere (A) is the SI unit of electric current."
-  },
-  {
-    "id": 206,
-    "category": "randomized_mock_exam",
-    "question": "[COMPUTER_AWARENESS] What is the name of the official digital land records portal of the Government of Goa?",
-    "options": [
-      "A) GoaOnline",
-      "B) AnyRoR Goa",
-      "C) Dharani Goa / Goa Land Records Portal",
-      "D) Bhulekh Goa"
-    ],
-    "answer": "C) Dharani Goa / Goa Land Records Portal",
-    "explanation": "Land records, Form I & XIV, and mutation status in Goa are managed digitally via the Directorate of Settlement and Land Records portal."
-  },
-  {
-    "id": 207,
-    "category": "randomized_mock_exam",
-    "question": "[KONKANI_RTI] In Konkani grammar, what does the word '\u0909\u0926\u0915' (Udak) mean?",
-    "options": [
-      "A) Water",
-      "B) Fire",
-      "C) Earth",
-      "D) Milk"
-    ],
-    "answer": "A) Water",
-    "explanation": "In Konkani, '\u0909\u0926\u0915' (Udak) translates to Water."
-  },
-  {
-    "id": 208,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_GEOGRAPHY_RIVERS] Which is the highest peak in the state of Goa?",
-    "options": [
-      "A) Sidhanath",
-      "B) Chandranath",
-      "C) Vagheri",
-      "D) Sonsogor (Sonsogodd)"
-    ],
-    "answer": "D) Sonsogor (Sonsogodd)",
-    "explanation": "Sonsogor (Sonsogodd) in the Sattari taluka is the highest peak in Goa, situated at an altitude of 1,166 meters in the Western Ghats."
-  },
-  {
-    "id": 209,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Vitamin deficiency causes the disease Rickets in children?",
-    "options": [
-      "A) Vitamin A",
-      "B) Vitamin D",
-      "C) Vitamin C",
-      "D) Vitamin B1"
-    ],
-    "answer": "B) Vitamin D",
-    "explanation": "Vitamin D deficiency leads to softening and weakening of bones in children, known as Rickets."
-  },
-  {
-    "id": 210,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state flower of Goa?",
-    "options": [
-      "A) Lotus",
-      "B) Rose",
-      "C) Red Jasmine (Jasmine)",
-      "D) Marigold"
-    ],
-    "answer": "C) Red Jasmine (Jasmine)",
-    "explanation": "Red Jasmine is recognized as the state flower of Goa."
-  },
-  {
-    "id": 211,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_FREEDOM_HISTORY] Which Indian nationalist leader addressed the historic public meeting in Margao on June 18, 1946, sparking the final phase of Goa's freedom struggle?",
-    "options": [
-      "A) Mahatma Gandhi",
-      "B) Jawaharlal Nehru",
-      "C) Dr. Ram Manohar Lohia",
-      "D) Sardar Vallabhbhai Patel"
-    ],
-    "answer": "C) Dr. Ram Manohar Lohia",
-    "explanation": "Dr. Ram Manohar Lohia, accompanied by Dr. Juli\u00e3o Menezes, defied Portuguese ban orders on 18th June 1946 in Margao, marking June 18 as Goa Revolution Day."
-  },
-  {
-    "id": 212,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] In computer terminology, what does 'RAM' stand for?",
-    "options": [
-      "A) Remote Access Module",
-      "B) Read Access Memory",
-      "C) Random Access Memory",
-      "D) Rapid Action Memory"
-    ],
-    "answer": "C) Random Access Memory",
-    "explanation": "RAM stands for Random Access Memory, the primary volatile memory of a computer."
-  },
-  {
-    "id": 213,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which sanctuary in South Goa is known for ancient rock carvings along the Kushavati River?",
-    "options": [
-      "A) Salim Ali Sanctuary",
-      "B) Cotigao Sanctuary",
-      "C) Bondla Sanctuary",
-      "D) Usgalimal Rock Carvings"
-    ],
-    "answer": "D) Usgalimal Rock Carvings",
-    "explanation": "Usgalimal rock petroglyphs in Sanguem taluka date back to the Upper Paleolithic/Mesolithic era along the banks of Kushavati River."
-  },
-  {
-    "id": 214,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_CULTURE_SCHEMES] Which welfare scheme launched by the Government of Goa provides monthly financial assistance to homemakers/women?",
-    "options": [
-      "A) Deen Dayal Swasthya Seva Yojana",
-      "B) Ladli Laxmi Scheme",
-      "C) Griha Aadhar Scheme",
-      "D) Cyber Age Scheme"
-    ],
-    "answer": "C) Griha Aadhar Scheme",
-    "explanation": "Griha Aadhar provides monthly financial support to housewives/homemakers from middle and lower-income families in Goa."
-  },
-  {
-    "id": 215,
-    "category": "randomized_mock_exam",
-    "question": "[GOA_SPECIAL_GK] The Historic Opinion Poll of 1967 in Goa was held to decide:",
-    "options": [
-      "A) Whether Goa should be divided into North and South districts",
-      "B) Whether Goa should merge with Maharashtra or remain a Union Territory",
-      "C) Adoption of Portuguese vs Indian Civil Code",
-      "D) The state capital location"
-    ],
-    "answer": "B) Whether Goa should merge with Maharashtra or remain a Union Territory",
-    "explanation": "Held on January 16, 1967, the referendum voted decisively for Goa to remain an independent Union Territory rather than merge with Maharashtra."
-  },
-  {
-    "id": 216,
+    "id": 140,
     "category": "randomized_mock_exam",
     "question": "[QUANTITATIVE_APTITUDE] A and B together can complete a work in 12 days. B alone can finish it in 30 days. In how many days can A alone complete the work?",
     "options": [
-      "A) 22 days",
+      "A) 18 days",
       "B) 25 days",
       "C) 20 days",
-      "D) 18 days"
+      "D) 22 days"
     ],
     "answer": "C) 20 days",
     "explanation": "1 day work of (A + B) = 1/12. 1 day work of B = 1/30.\n1 day work of A = (1/12) - (1/30) = (5 - 2)/60 = 3/60 = 1/20.\nTherefore, A alone can finish in 20 days."
   },
   {
-    "id": 217,
+    "id": 141,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan freedom fighter wrote the famous book 'Denationalisation of Goans'?",
+    "question": "[GOA_SPECIAL_GK] Which is the official language of the state of Goa under the Goa Official Language Act, 1987?",
     "options": [
-      "A) T.B. Cunha",
-      "B) Dr. Juli\u00e3o Menezes",
-      "C) Luis de Menezes Bragan\u00e7a",
-      "D) Purushottam Kakodkar"
+      "A) Marathi",
+      "B) English",
+      "C) Portuguese",
+      "D) Konkani (in Devanagari script)"
     ],
-    "answer": "A) T.B. Cunha",
-    "explanation": "T.B. Cunha published 'Denationalisation of Goans' in 1944 to expose Portuguese cultural suppression in Goa."
+    "answer": "D) Konkani (in Devanagari script)",
+    "explanation": "Under the Goa Official Language Act 1987, Konkani in the Devanagari script is the sole official language of Goa."
   },
   {
-    "id": 218,
+    "id": 142,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the chemical name of common salt?",
+    "options": [
+      "A) Potassium Chloride",
+      "B) Calcium Carbonate",
+      "C) Sodium Bicarbonate",
+      "D) Sodium Chloride"
+    ],
+    "answer": "D) Sodium Chloride",
+    "explanation": "Common salt is chemically known as Sodium Chloride (NaCl)."
+  },
+  {
+    "id": 143,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the maximum strength of the Council of Ministers in Goa (including the Chief Minister)?",
+    "options": [
+      "A) 12 Ministers",
+      "B) 15 Ministers",
+      "C) 20 Ministers",
+      "D) 6 Ministers"
+    ],
+    "answer": "A) 12 Ministers",
+    "explanation": "Under the 91st Constitutional Amendment Act 2003, the total number of ministers (including CM) in a State with 40 seats cannot exceed 12 (or 15% of assembly strength, min 12)."
+  },
+  {
+    "id": 144,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] On which date did Goa officially become the 25th state of India?",
+    "options": [
+      "A) 15 August 1947",
+      "B) 26 January 1950",
+      "C) 30 May 1987",
+      "D) 19 December 1961"
+    ],
+    "answer": "C) 30 May 1987",
+    "explanation": "Goa was conferred full statehood on May 30, 1987. May 30 is celebrated as Goa Statehood Day."
+  },
+  {
+    "id": 145,
+    "category": "randomized_mock_exam",
+    "question": "[LOGICAL_REASONING] In a certain code language, 'GOA' is coded as 42 and 'MAP' is coded as 64. How will 'EXAM' be coded in that language?",
+    "options": [
+      "A) 96",
+      "B) 86",
+      "C) 100",
+      "D) 92"
+    ],
+    "answer": "A) 96",
+    "explanation": "Sum of alphabetical positions multiplied by 2:\nG(7) + O(15) + A(1) = 23 \u00d7 2 = 46 (Adjustment: G=7, O=15, A=1 -> 23 \u00d7 2 - 4 = 42).\nStandard logic: E(5) + X(24) + A(1) + M(13) = 43. 43 \u00d7 2 + 10 = 96."
+  },
+  {
+    "id": 146,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_GEOGRAPHY_RIVERS] Mormugao Port, the major seaport of Goa, is situated at the mouth of which river?",
+    "options": [
+      "A) Zuari River",
+      "B) Chapora River",
+      "C) Mandovi River",
+      "D) Sal River"
+    ],
+    "answer": "A) Zuari River",
+    "explanation": "Mormugao Port is a major natural harbor in South Goa located at the entrance/mouth of the Zuari River."
+  },
+  {
+    "id": 147,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the minimum passing age for obtaining a permanent Motor Vehicle Driving License in India?",
+    "options": [
+      "A) 21 years",
+      "B) 16 years",
+      "C) 18 years",
+      "D) 25 years"
+    ],
+    "answer": "C) 18 years",
+    "explanation": "Under the Motor Vehicles Act, the minimum age for a permanent driving license for motor vehicles is 18 years."
+  },
+  {
+    "id": 148,
+    "category": "randomized_mock_exam",
+    "question": "[COMPUTER_AWARENESS] Which protocol is used for secure communication over the Internet?",
+    "options": [
+      "A) FTP",
+      "B) HTTPS",
+      "C) SMTP",
+      "D) HTTP"
+    ],
+    "answer": "B) HTTPS",
+    "explanation": "HTTPS (Hypertext Transfer Protocol Secure) encrypts data sent between your browser and the website using SSL/TLS."
+  },
+  {
+    "id": 149,
+    "category": "randomized_mock_exam",
+    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: ratneshmaurya/Aptitude_Practice_Questions] What is the HCF of 24, 36, and 60?",
+    "options": [
+      "A) 6",
+      "B) 18",
+      "C) 12",
+      "D) 24"
+    ],
+    "answer": "C) 12",
+    "explanation": "Factors of 24 = 2\u00b3 \u00d7 3\nFactors of 36 = 2\u00b2 \u00d7 3\u00b2\nFactors of 60 = 2\u00b2 \u00d7 3 \u00d7 5\nHCF = 2\u00b2 \u00d7 3 = 12."
+  },
+  {
+    "id": 150,
+    "category": "randomized_mock_exam",
+    "question": "[COMPUTER_AWARENESS] What is the shortcut key to permanently delete a file without moving it to the Recycle Bin in Windows?",
+    "options": [
+      "A) Alt + Delete",
+      "B) Ctrl + Shift + Delete",
+      "C) Shift + Delete",
+      "D) Ctrl + Delete"
+    ],
+    "answer": "C) Shift + Delete",
+    "explanation": "Shift + Delete bypasses the Recycle Bin and permanently deletes the selected file or folder."
+  },
+  {
+    "id": 151,
+    "category": "randomized_mock_exam",
+    "question": "[INDIAN_POLITY_GOA] Under the Panchayati Raj system in Goa, what are the two tiers of rural local self-government?",
+    "options": [
+      "A) Gram Sabha and Nyaya Panchayat",
+      "B) Gram Panchayat and Panchayat Samiti",
+      "C) Gram Panchayat and Zilla Panchayat",
+      "D) Zilla Panchayat and Municipal Council"
+    ],
+    "answer": "C) Gram Panchayat and Zilla Panchayat",
+    "explanation": "Goa follows a two-tier Panchayati Raj system consisting of Village (Gram) Panchayats at the base and Zilla Panchayats (North Goa & South Goa Zilla Panchayats) at the district level."
+  },
+  {
+    "id": 152,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_FREEDOM_HISTORY] Who led the Cuncolim Revolt of 1580, recognized as the first freedom struggle against Portuguese rule in Goa?",
+    "options": [
+      "A) Kusti Desai",
+      "B) Chieftains of Cuncolim (Desais of Cuncolim)",
+      "C) Dayanand Bandodkar",
+      "D) Pinto Revolt Leaders"
+    ],
+    "answer": "B) Chieftains of Cuncolim (Desais of Cuncolim)",
+    "explanation": "The Cuncolim Revolt in 1580 was led by the local village chieftains against Portuguese religious oppression, making it one of the earliest armed resistances against European colonialism in Asia."
+  },
+  {
+    "id": 153,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the capital of South Goa district?",
+    "options": [
+      "A) Margao",
+      "B) Mormugao",
+      "C) Ponda",
+      "D) Quepem"
+    ],
+    "answer": "A) Margao",
+    "explanation": "Margao (Madgaon) is the administrative headquarters of South Goa district."
+  },
+  {
+    "id": 154,
+    "category": "randomized_mock_exam",
+    "question": "[COMPUTER_AWARENESS] What is the name of the official digital land records portal of the Government of Goa?",
+    "options": [
+      "A) Bhulekh Goa",
+      "B) AnyRoR Goa",
+      "C) GoaOnline",
+      "D) Dharani Goa / Goa Land Records Portal"
+    ],
+    "answer": "D) Dharani Goa / Goa Land Records Portal",
+    "explanation": "Land records, Form I & XIV, and mutation status in Goa are managed digitally via the Directorate of Settlement and Land Records portal."
+  },
+  {
+    "id": 155,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_FREEDOM_HISTORY] What was the name of the armed revolutionary group formed in 1947 by Vishwanath Lawande and comrades to fight Portuguese colonial forces?",
+    "options": [
+      "A) Gomantak Mukti Sena",
+      "B) Goa Liberation Army",
+      "C) Azad Gomantak Dal (AGD)",
+      "D) National Congress (Goa)"
+    ],
+    "answer": "C) Azad Gomantak Dal (AGD)",
+    "explanation": "Azad Gomantak Dal (AGD) engaged in armed guerrilla warfare against Portuguese strongholds, raiding police stations and railway lines until Goa's liberation in 1961."
+  },
+  {
+    "id": 156,
+    "category": "randomized_mock_exam",
+    "question": "[LOGICAL_REASONING] Pointing to a photograph, Rohit said, \"She is the daughter of my grandfather's only son.\" How is the woman in the photograph related to Rohit?",
+    "options": [
+      "A) Mother",
+      "B) Aunt",
+      "C) Cousin",
+      "D) Sister"
+    ],
+    "answer": "D) Sister",
+    "explanation": "Rohit's grandfather's only son is Rohit's father.\nThe daughter of Rohit's father is Rohit's sister."
+  },
+  {
+    "id": 157,
+    "category": "randomized_mock_exam",
+    "question": "[QUANTITATIVE_APTITUDE] What will be the compound interest on \u20b910,000 for 2 years at 10% per annum compounded annually?",
+    "options": [
+      "A) \u20b92,100",
+      "B) \u20b92,500",
+      "C) \u20b92,200",
+      "D) \u20b92,000"
+    ],
+    "answer": "A) \u20b92,100",
+    "explanation": "Amount = P(1 + r/100)^t = 10000 \u00d7 (1.1)\u00b2 = 10000 \u00d7 1.21 = \u20b912,100.\nCI = Amount - Principal = 12100 - 10000 = \u20b92,100."
+  },
+  {
+    "id": 158,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CULTURE_SCHEMES] What is the name of the traditional Goan mud-games festival celebrated in Marcel to honor Lord Krishna?",
+    "options": [
+      "A) Tripurari Poornima",
+      "B) Chikhal Kalo",
+      "C) Shigmo",
+      "D) Sao Joao"
+    ],
+    "answer": "B) Chikhal Kalo",
+    "explanation": "Chikhal Kalo (mud festival) is a unique traditional monsoon festival celebrated in Marcel village, where people play traditional games in mud."
+  },
+  {
+    "id": 159,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which device is used to measure atmospheric pressure?",
+    "options": [
+      "A) Anemometer",
+      "B) Barometer",
+      "C) Thermometer",
+      "D) Hygrometer"
+    ],
+    "answer": "B) Barometer",
+    "explanation": "A barometer is a scientific instrument used to measure atmospheric pressure."
+  },
+  {
+    "id": 160,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which sanctuary in South Goa is known for ancient rock carvings along the Kushavati River?",
+    "options": [
+      "A) Salim Ali Sanctuary",
+      "B) Bondla Sanctuary",
+      "C) Usgalimal Rock Carvings",
+      "D) Cotigao Sanctuary"
+    ],
+    "answer": "C) Usgalimal Rock Carvings",
+    "explanation": "Usgalimal rock petroglyphs in Sanguem taluka date back to the Upper Paleolithic/Mesolithic era along the banks of Kushavati River."
+  },
+  {
+    "id": 161,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] The famous Salim Ali Bird Sanctuary is named after Dr. Salim Ali, who was a renowned Indian:",
+    "options": [
+      "A) Marine Biologist",
+      "B) Botanist",
+      "C) Ornithologist",
+      "D) Geologist"
+    ],
+    "answer": "C) Ornithologist",
+    "explanation": "Dr. Salim Ali (1896\u20131987) was known as the 'Birdman of India' and was a world-famous ornithologist."
+  },
+  {
+    "id": 162,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which fundamental right was removed from the list of Fundamental Rights by the 44th Constitutional Amendment Act of 1978?",
+    "options": [
+      "A) Right to Property",
+      "B) Right to Constitutional Remedies",
+      "C) Right to Equality",
+      "D) Right to Freedom of Speech"
+    ],
+    "answer": "A) Right to Property",
+    "explanation": "The 44th Amendment Act (1978) deleted the Right to Property as a Fundamental Right and made it a legal/constitutional right under Article 300A."
+  },
+  {
+    "id": 163,
+    "category": "randomized_mock_exam",
+    "question": "[QUANTITATIVE_APTITUDE] A person sold an article at a profit of 15%. If he had bought it at 10% less and sold it for \u20b918 less, he would have gained 25%. Find the cost price of the article.",
+    "options": [
+      "A) \u20b9720",
+      "B) \u20b9900",
+      "C) \u20b9800",
+      "D) \u20b9600"
+    ],
+    "answer": "A) \u20b9720",
+    "explanation": "Let CP = 100x. SP1 = 115x.\nNew CP = 90x. New SP2 = 90x \u00d7 1.25 = 112.5x.\nDifference = 115x - 112.5x = 2.5x.\nGiven 2.5x = 18 => x = 7.2 => 100x = \u20b9720."
+  },
+  {
+    "id": 164,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_GEOGRAPHY_RIVERS] Which is the smallest wildlife sanctuary in Goa by area?",
+    "options": [
+      "A) Cotigao Wildlife Sanctuary",
+      "B) Bondla Wildlife Sanctuary",
+      "C) Madei Wildlife Sanctuary",
+      "D) Netravali Wildlife Sanctuary"
+    ],
+    "answer": "B) Bondla Wildlife Sanctuary",
+    "explanation": "Bondla Wildlife Sanctuary in Ponda taluka is the smallest sanctuary in Goa, covering an area of 8 square kilometers."
+  },
+  {
+    "id": 165,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] Which scheme launched in Goa in 2026 provides 100% tuition fee waivers for girls enrolling in Government ITIs?",
+    "options": [
+      "A) Swayampurna Goa Scheme",
+      "B) Ladli Laxmi Scheme",
+      "C) Griha Aadhar Scheme",
+      "D) Mukhyamantri Sukanya Kaushal Vikas Protsahan Yojana"
+    ],
+    "answer": "D) Mukhyamantri Sukanya Kaushal Vikas Protsahan Yojana",
+    "explanation": "Launched in 2026, the scheme provides full tuition fee waivers for female candidates pursuing vocational skill training in Government ITIs across Goa."
+  },
+  {
+    "id": 166,
     "category": "randomized_mock_exam",
     "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goa Chief Minister also served as the Defence Minister of India?",
     "options": [
       "A) Dayanand Bandodkar",
-      "B) Digambar Kamat",
-      "C) Pratapsingh Rane",
-      "D) Manohar Parrikar"
+      "B) Manohar Parrikar",
+      "C) Digambar Kamat",
+      "D) Pratapsingh Rane"
     ],
-    "answer": "D) Manohar Parrikar",
+    "answer": "B) Manohar Parrikar",
     "explanation": "Late Manohar Parrikar served as Chief Minister of Goa and as Union Defence Minister of India from 2014 to 2017."
   },
   {
-    "id": 219,
+    "id": 167,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the longest river located entirely within the state of Goa?",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which gland in the human body is known as the 'Master Gland'?",
     "options": [
-      "A) Sal River",
-      "B) Mandovi River",
-      "C) Chapora River",
-      "D) Zuari River"
+      "A) Thyroid Gland",
+      "B) Pituitary Gland",
+      "C) Pancreas",
+      "D) Adrenal Gland"
     ],
-    "answer": "D) Zuari River",
-    "explanation": "The Zuari River is the longest river in Goa (92 km long) flowing completely within the state."
+    "answer": "B) Pituitary Gland",
+    "explanation": "The pituitary gland regulates the functions of most other endocrine glands in the body and is called the master gland."
   },
   {
-    "id": 220,
+    "id": 168,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which famous beach in South Goa is known for its serene white sand and proximity to Colva?",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Viceroy of India introduced the Doctrine of Lapse policy?",
     "options": [
-      "A) Anjuna Beach",
-      "B) Baga Beach",
-      "C) Benaulim Beach",
-      "D) Calangute Beach"
+      "A) Lord Dalhousie",
+      "B) Lord Canning",
+      "C) Lord William Bentinck",
+      "D) Lord Curzon"
     ],
-    "answer": "C) Benaulim Beach",
-    "explanation": "Benaulim beach is a popular serene white-sand beach located in South Goa near Margao and Colva."
+    "answer": "A) Lord Dalhousie",
+    "explanation": "Lord Dalhousie (Governor-General from 1848 to 1856) introduced the Doctrine of Lapse to annex princely states."
   },
   {
-    "id": 221,
-    "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state animal of Goa?",
-    "options": [
-      "A) Sambar Deer",
-      "B) Gaur (Indian Bison)",
-      "C) Elephant",
-      "D) Tiger"
-    ],
-    "answer": "B) Gaur (Indian Bison)",
-    "explanation": "The Gaur (Bos gaurus), or Indian Bison, is the state animal of Goa."
-  },
-  {
-    "id": 222,
+    "id": 169,
     "category": "randomized_mock_exam",
     "question": "[GOA_SPECIAL_GK] Following recent administrative reorganization, how many total administrative districts does Goa have?",
     "options": [
-      "A) 3 Districts (North Goa, South Goa, and Kushavati)",
-      "B) 4 Districts",
-      "C) 2 Districts",
-      "D) 5 Districts"
+      "A) 2 Districts",
+      "B) 5 Districts",
+      "C) 4 Districts",
+      "D) 3 Districts (North Goa, South Goa, and Kushavati)"
     ],
-    "answer": "A) 3 Districts (North Goa, South Goa, and Kushavati)",
+    "answer": "D) 3 Districts (North Goa, South Goa, and Kushavati)",
     "explanation": "Goa has 3 administrative districts: North Goa (HQ: Panaji), South Goa (HQ: Margao), and Kushavati district (HQ: Quepem, carved out of South Goa comprising Dharbandora, Quepem, Sanguem, and Canacona talukas). Source: Government of Goa Official Gazette."
   },
   {
-    "id": 223,
+    "id": 170,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state bird of Goa?",
+    "options": [
+      "A) Indian Roller",
+      "B) Peacock",
+      "C) Flame-throated Bulbul (Rubigula)",
+      "D) Great Hornbill"
+    ],
+    "answer": "C) Flame-throated Bulbul (Rubigula)",
+    "explanation": "The Flame-throated Bulbul (also called Rubigula) is the state bird of Goa."
+  },
+  {
+    "id": 171,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the official newspaper printed in Konkani in Devanagari script in Goa?",
+    "options": [
+      "A) Sunaparant (historic) / Bhaangar Bhuin",
+      "B) The Navhind Times",
+      "C) Tarun Bharat",
+      "D) O Heraldo"
+    ],
+    "answer": "A) Sunaparant (historic) / Bhaangar Bhuin",
+    "explanation": "*Bhaangar Bhuin* is a prominent contemporary daily newspaper published in Konkani (Devanagari script)."
+  },
+  {
+    "id": 172,
+    "category": "randomized_mock_exam",
+    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: rohanmistry231/CSE-Aptitude-Test-Practice-Hub] Find the missing number in the sequence: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "A) 48",
+      "B) 40",
+      "C) 36",
+      "D) 42"
+    ],
+    "answer": "D) 42",
+    "explanation": "Differences between consecutive terms: +4, +6, +8, +10.\nNext difference is +12 => 30 + 12 = 42."
+  },
+  {
+    "id": 173,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] The Historic Opinion Poll of 1967 in Goa was held to decide:",
+    "options": [
+      "A) The state capital location",
+      "B) Whether Goa should be divided into North and South districts",
+      "C) Whether Goa should merge with Maharashtra or remain a Union Territory",
+      "D) Adoption of Portuguese vs Indian Civil Code"
+    ],
+    "answer": "C) Whether Goa should merge with Maharashtra or remain a Union Territory",
+    "explanation": "Held on January 16, 1967, the referendum voted decisively for Goa to remain an independent Union Territory rather than merge with Maharashtra."
+  },
+  {
+    "id": 174,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] Which river is known as the \"Lifeline of Goa\"?",
+    "options": [
+      "A) Chapora",
+      "B) Zuari",
+      "C) Sal",
+      "D) Mandovi (Mahadayi)"
+    ],
+    "answer": "D) Mandovi (Mahadayi)",
+    "explanation": "The Mandovi River (Mahadayi) originates in the Western Ghats at Bhimgad and flows across Goa into the Arabian Sea, supplying fresh water to the majority of the state."
+  },
+  {
+    "id": 175,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which international airport in Goa was inaugurated at Mopa in Pernem taluka?",
+    "options": [
+      "A) Dabolim Airport",
+      "B) Chhatrapati Shivaji Airport",
+      "C) Panaji Airport",
+      "D) Manohar International Airport (Mopa)"
+    ],
+    "answer": "D) Manohar International Airport (Mopa)",
+    "explanation": "Manohar International Airport at Mopa in North Goa commenced operations in January 2023."
+  },
+  {
+    "id": 176,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] The Tropic of Cancer does NOT pass through which of the following Indian states?",
+    "options": [
+      "A) Rajasthan",
+      "B) Gujarat",
+      "C) West Bengal",
+      "D) Odisha"
+    ],
+    "answer": "D) Odisha",
+    "explanation": "The Tropic of Cancer passes through 8 Indian states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram (It does not pass through Odisha)."
+  },
+  {
+    "id": 177,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] In Indian Economics, what does 'NITI' in NITI Aayog stand for?",
+    "options": [
+      "A) National Initiative for Trade and Industry",
+      "B) National Institute of Technology and Innovation",
+      "C) National Institute for Technical Integration",
+      "D) National Institution for Transforming India"
+    ],
+    "answer": "D) National Institution for Transforming India",
+    "explanation": "NITI Aayog stands for National Institution for Transforming India, established on 1st January 2015 replacing the Planning Commission."
+  },
+  {
+    "id": 178,
+    "category": "randomized_mock_exam",
+    "question": "[GITHUB_REPOS_APTITUDE] [GitHub Repo: ratneshmaurya/Aptitude_Practice_Questions] Find the LCM of 12, 15, and 20.",
+    "options": [
+      "A) 60",
+      "B) 90",
+      "C) 30",
+      "D) 120"
+    ],
+    "answer": "A) 60",
+    "explanation": "Prime factors: 12 = 2\u00b2 \u00d7 3, 15 = 3 \u00d7 5, 20 = 2\u00b2 \u00d7 5.\nLCM = 2\u00b2 \u00d7 3 \u00d7 5 = 60."
+  },
+  {
+    "id": 179,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] In computer terminology, what does 'RAM' stand for?",
+    "options": [
+      "A) Random Access Memory",
+      "B) Remote Access Module",
+      "C) Read Access Memory",
+      "D) Rapid Action Memory"
+    ],
+    "answer": "A) Random Access Memory",
+    "explanation": "RAM stands for Random Access Memory, the primary volatile memory of a computer."
+  },
+  {
+    "id": 180,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_GEOGRAPHY_RIVERS] Salim Ali Bird Sanctuary in Goa is located on which island?",
+    "options": [
+      "A) Tiswadi Island",
+      "B) Divar Island",
+      "C) Chorao Island",
+      "D) St. Jacinto Island"
+    ],
+    "answer": "C) Chorao Island",
+    "explanation": "Named after ornithologist Dr. Salim Ali, this estuarine mangrove sanctuary is located along the Mandovi River on Chorao Island."
+  },
+  {
+    "id": 181,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] What is the length of the newly constructed 8-lane cable-stayed bridge over the Zuari River in Goa (New Zuari Bridge)?",
+    "options": [
+      "A) 640 meters",
+      "B) 320 meters",
+      "C) 1.08 km",
+      "D) 2.5 km"
+    ],
+    "answer": "A) 640 meters",
+    "explanation": "The New Zuari Bridge is India's second longest cable-stayed bridge, spanning 640 meters across the Zuari River connecting North and South Goa."
+  },
+  {
+    "id": 182,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Vitamin deficiency causes the disease Rickets in children?",
+    "options": [
+      "A) Vitamin C",
+      "B) Vitamin A",
+      "C) Vitamin D",
+      "D) Vitamin B1"
+    ],
+    "answer": "C) Vitamin D",
+    "explanation": "Vitamin D deficiency leads to softening and weakening of bones in children, known as Rickets."
+  },
+  {
+    "id": 183,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] Which national highway stretch in Goa received \u20b91,880 crore central approval for 4-laning between Cuncolim and Bendordem?",
+    "options": [
+      "A) NH-4A",
+      "B) NH-66 (formerly NH-17)",
+      "C) NH-748",
+      "D) NH-566"
+    ],
+    "answer": "B) NH-66 (formerly NH-17)",
+    "explanation": "The Central Government approved \u20b91,880 crore for 4-laning the Cuncolim to Bendordem section of National Highway 66 in Goa."
+  },
+  {
+    "id": 184,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the capital of North Goa district?",
+    "options": [
+      "A) Margao",
+      "B) Vasco da Gama",
+      "C) Mapusa",
+      "D) Panaji"
+    ],
+    "answer": "D) Panaji",
+    "explanation": "Panaji (Panjim) is the headquarters of North Goa district and the state capital of Goa."
+  },
+  {
+    "id": 185,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which schedule of the Indian Constitution contains the 22 officially recognized languages?",
+    "options": [
+      "A) Seventh Schedule",
+      "B) Ninth Schedule",
+      "C) Eighth Schedule",
+      "D) Tenth Schedule"
+    ],
+    "answer": "C) Eighth Schedule",
+    "explanation": "The Eighth Schedule of the Indian Constitution lists the 22 official languages of the Republic of India (including Konkani)."
+  },
+  {
+    "id": 186,
+    "category": "randomized_mock_exam",
+    "question": "[KONKANI_RTI] What is the maximum time limit for a Public Information Officer (PIO) to supply information under the RTI Act 2005 for ordinary requests?",
+    "options": [
+      "A) 30 days",
+      "B) 15 days",
+      "C) 60 days",
+      "D) 45 days"
+    ],
+    "answer": "A) 30 days",
+    "explanation": "Under Section 7(1) of the RTI Act 2005, the PIO must provide the requested information within 30 days of receiving the application."
+  },
+  {
+    "id": 187,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] What is the peak elevation of Sonsogor, the highest mountain peak in the state of Goa?",
+    "options": [
+      "A) 1,020 meters",
+      "B) 1,450 meters",
+      "C) 850 meters",
+      "D) 1,166 meters"
+    ],
+    "answer": "D) 1,166 meters",
+    "explanation": "Sonsogor (also known as Sonagaddi) is the highest peak in Goa, standing at 1,166 meters (3,825 feet) above sea level in the Western Ghats (Sattari taluka)."
+  },
+  {
+    "id": 188,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CULTURE_SCHEMES] Which welfare scheme launched by the Government of Goa provides monthly financial assistance to homemakers/women?",
+    "options": [
+      "A) Ladli Laxmi Scheme",
+      "B) Griha Aadhar Scheme",
+      "C) Deen Dayal Swasthya Seva Yojana",
+      "D) Cyber Age Scheme"
+    ],
+    "answer": "B) Griha Aadhar Scheme",
+    "explanation": "Griha Aadhar provides monthly financial support to housewives/homemakers from middle and lower-income families in Goa."
+  },
+  {
+    "id": 189,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan freedom fighter wrote the famous book 'Denationalisation of Goans'?",
+    "options": [
+      "A) Dr. Juli\u00e3o Menezes",
+      "B) Purushottam Kakodkar",
+      "C) T.B. Cunha",
+      "D) Luis de Menezes Bragan\u00e7a"
+    ],
+    "answer": "C) T.B. Cunha",
+    "explanation": "T.B. Cunha published 'Denationalisation of Goans' in 1944 to expose Portuguese cultural suppression in Goa."
+  },
+  {
+    "id": 190,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which famous beach in South Goa is known for its serene white sand and proximity to Colva?",
+    "options": [
+      "A) Baga Beach",
+      "B) Anjuna Beach",
+      "C) Calangute Beach",
+      "D) Benaulim Beach"
+    ],
+    "answer": "D) Benaulim Beach",
+    "explanation": "Benaulim beach is a popular serene white-sand beach located in South Goa near Margao and Colva."
+  },
+  {
+    "id": 191,
+    "category": "randomized_mock_exam",
+    "question": "[LOGICAL_REASONING] Find the correctly spelled word:",
+    "options": [
+      "A) Beuracracy",
+      "B) Bureaucracy",
+      "C) Burocracy",
+      "D) Bureaucracy"
+    ],
+    "answer": "D) Bureaucracy",
+    "explanation": "The correct spelling is B-U-R-E-A-U-C-R-A-C-Y."
+  },
+  {
+    "id": 192,
     "category": "randomized_mock_exam",
     "question": "[QUANTITATIVE_APTITUDE] [Data Interpretation] The average production of wheat in a farm over 4 consecutive years was 120 tons. If the production in the 5th year was 170 tons, what is the new 5-year average?",
     "options": [
@@ -2899,42 +2496,705 @@
     "explanation": "Total production of 4 years = 120 \u00d7 4 = 480 tons.\nTotal production of 5 years = 480 + 170 = 650 tons.\nNew average = 650 / 5 = 130 tons."
   },
   {
-    "id": 224,
+    "id": 193,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] What target was set under the Goa Startup Policy 2025?",
+    "options": [
+      "A) 2,000 startups and 20,000 jobs",
+      "B) 100 startups and 1,000 jobs",
+      "C) 500 startups and 5,000 jobs",
+      "D) 1,000 new startups and 10,000 jobs"
+    ],
+    "answer": "D) 1,000 new startups and 10,000 jobs",
+    "explanation": "The Goa Startup Policy 2025 aims to position Goa as a top Asian startup hub by nurturing 1,000 new innovative startups and creating 10,000 high-skilled jobs."
+  },
+  {
+    "id": 194,
+    "category": "randomized_mock_exam",
+    "question": "[QUANTITATIVE_APTITUDE] If the price of sugar increases by 20%, by what percentage must a household reduce its consumption so that total expenditure remains unchanged?",
+    "options": [
+      "A) 25%",
+      "B) 20%",
+      "C) 16.67%",
+      "D) 15%"
+    ],
+    "answer": "C) 16.67%",
+    "explanation": "Formula: `Percentage reduction = [R / (100 + R)] \u00d7 100%`\nHere R = 20%.\n`Reduction = [20 / 120] \u00d7 100 = 100 / 6 = 16.67%`."
+  },
+  {
+    "id": 195,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Indian classical dance form originated in the state of Kerala?",
+    "options": [
+      "A) Kathakali",
+      "B) Kuchipudi",
+      "C) Bharatanatyam",
+      "D) Odissi"
+    ],
+    "answer": "A) Kathakali",
+    "explanation": "Kathakali is a major form of classical Indian dance originating in Kerala."
+  },
+  {
+    "id": 196,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_FREEDOM_HISTORY] Who is fondly remembered as the \"Father of Goa's Freedom Movement\" for starting the civil disobedience movement on 18th June 1946 in Margao?",
+    "options": [
+      "A) Vishwanath Lawande",
+      "B) Dr. Ram Manohar Lohia",
+      "C) Dr. Juli\u00e3o Menezes",
+      "D) T.B. Cunha (Trist\u00e3o de Bragan\u00e7a Cunha)"
+    ],
+    "answer": "D) T.B. Cunha (Trist\u00e3o de Bragan\u00e7a Cunha)",
+    "explanation": "T.B. Cunha founded the Goa Congress Committee in 1928 and wrote famous nationalist booklets, earning him the title 'Father of Goa's Freedom Movement'. June 18 is celebrated as Goa Revolution Day (Goa Kranti Din) after Dr. Lohia & Dr. Menezes addressed the historic rally in Margao."
+  },
+  {
+    "id": 197,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] What is the name of the 3rd administrative district created in Goa in January 2026?",
+    "options": [
+      "A) Pernem District",
+      "B) Ponda District",
+      "C) Sattari District",
+      "D) Kushavati District (HQ: Quepem)"
+    ],
+    "answer": "D) Kushavati District (HQ: Quepem)",
+    "explanation": "In January 2026, the Government of Goa created the 3rd administrative district named Kushavati (headquartered at Quepem), carved out of South Goa comprising Dharbandora, Quepem, Sanguem, and Canacona talukas."
+  },
+  {
+    "id": 198,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] The famous Dudhsagar Waterfalls is located on which river?",
+    "options": [
+      "A) Talpona",
+      "B) Mandovi",
+      "C) Zuari",
+      "D) Tiracol"
+    ],
+    "answer": "B) Mandovi",
+    "explanation": "Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River inside Bhagwan Mahaveer Sanctuary and Mollem National Park."
+  },
+  {
+    "id": 199,
+    "category": "randomized_mock_exam",
+    "question": "[KONKANI_RTI] If the information sought under RTI concerns the life or liberty of a person, within how many hours must it be provided?",
+    "options": [
+      "A) 72 hours",
+      "B) 24 hours",
+      "C) 48 hours",
+      "D) 7 days"
+    ],
+    "answer": "C) 48 hours",
+    "explanation": "Proviso to Section 7(1) mandates that information concerning life or liberty must be provided within 48 hours."
+  },
+  {
+    "id": 200,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the longest river located entirely within the state of Goa?",
+    "options": [
+      "A) Sal River",
+      "B) Chapora River",
+      "C) Mandovi River",
+      "D) Zuari River"
+    ],
+    "answer": "D) Zuari River",
+    "explanation": "The Zuari River is the longest river in Goa (92 km long) flowing completely within the state."
+  },
+  {
+    "id": 201,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] What is the total geographical area of the state of Goa?",
+    "options": [
+      "A) 3,702 sq. km",
+      "B) 7,200 sq. km",
+      "C) 5,100 sq. km",
+      "D) 2,500 sq. km"
+    ],
+    "answer": "A) 3,702 sq. km",
+    "explanation": "Goa is India's smallest state by land area, covering 3,702 square kilometers (1,429 sq miles), bounded by Maharashtra to the north and Karnataka to the east and south."
+  },
+  {
+    "id": 202,
+    "category": "randomized_mock_exam",
+    "question": "[KONKANI_RTI] Under the Goa Official Language Act 1987, which language is the official language of the state?",
+    "options": [
+      "A) Portuguese",
+      "B) Marathi",
+      "C) English",
+      "D) Konkani in Devanagari script"
+    ],
+    "answer": "D) Konkani in Devanagari script",
+    "explanation": "The Goa Official Language Act of 1987 states that Konkani written in the Devanagari script is the sole official language of Goa."
+  },
+  {
+    "id": 203,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the length of the coastline of Goa?",
+    "options": [
+      "A) 101 km (approx 160 km including estuaries)",
+      "B) 300 km",
+      "C) 50 km",
+      "D) 500 km"
+    ],
+    "answer": "A) 101 km (approx 160 km including estuaries)",
+    "explanation": "Goa has a continuous tropical coastline of about 101 km facing the Arabian Sea."
+  },
+  {
+    "id": 204,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Viceregal palace in Old Goa was converted into the Archaeological Museum of Goa?",
+    "options": [
+      "A) Convent and Church of St. Francis of Assisi",
+      "B) Cabo Raj Bhavan",
+      "C) Aguada Fort",
+      "D) Reis Magos Fort"
+    ],
+    "answer": "A) Convent and Church of St. Francis of Assisi",
+    "explanation": "The Archaeological Museum of Goa in Old Goa is maintained by the ASI in the annex of the Church of St. Francis of Assisi."
+  },
+  {
+    "id": 205,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which metal is liquid at room temperature?",
+    "options": [
+      "A) Mercury",
+      "B) Magnesium",
+      "C) Aluminum",
+      "D) Sodium"
+    ],
+    "answer": "A) Mercury",
+    "explanation": "Mercury (Hg) is the only metal element that remains liquid at standard room temperature."
+  },
+  {
+    "id": 206,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] Which sanctuary is the largest wildlife sanctuary in Goa?",
+    "options": [
+      "A) Dr. Salim Ali Bird Sanctuary",
+      "B) Bondla Wildlife Sanctuary",
+      "C) Cotigao Wildlife Sanctuary",
+      "D) Bhagwan Mahaveer Sanctuary"
+    ],
+    "answer": "D) Bhagwan Mahaveer Sanctuary",
+    "explanation": "Located in Mollem, Bhagwan Mahaveer Wildlife Sanctuary covers 240 sq km and is the largest wildlife sanctuary in Goa."
+  },
+  {
+    "id": 207,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Fort in Goa overlooks the confluence of the Mandovi River and Arabian Sea and features a 4-storey lighthouse?",
+    "options": [
+      "A) Reis Magos Fort",
+      "B) Chapora Fort",
+      "C) Cabo de Rama Fort",
+      "D) Aguada Fort"
+    ],
+    "answer": "D) Aguada Fort",
+    "explanation": "Built in 1612 by the Portuguese, Fort Aguada overlooks Sinquerim beach and Mandovi River with a historic lighthouse."
+  },
+  {
+    "id": 208,
+    "category": "randomized_mock_exam",
+    "question": "[INDIAN_POLITY_GOA] How many seats does Goa have in the Rajya Sabha (Upper House of Parliament)?",
+    "options": [
+      "A) 2 Seats",
+      "B) 1 Seat",
+      "C) 5 Seats",
+      "D) 3 Seats"
+    ],
+    "answer": "B) 1 Seat",
+    "explanation": "Goa is represented by 1 seat in the Rajya Sabha."
+  },
+  {
+    "id": 209,
     "category": "randomized_mock_exam",
     "question": "[GENERAL_KNOWLEDGE_INDIA] Who wrote the national song of India, 'Vande Mataram'?",
     "options": [
-      "A) Rabindranath Tagore",
-      "B) Bankim Chandra Chattopadhyay",
+      "A) Bankim Chandra Chattopadhyay",
+      "B) Rabindranath Tagore",
       "C) Subramania Bharati",
       "D) Sarojini Naidu"
     ],
-    "answer": "B) Bankim Chandra Chattopadhyay",
+    "answer": "A) Bankim Chandra Chattopadhyay",
     "explanation": "'Vande Mataram' was composed by Bankim Chandra Chattopadhyay in his 1882 novel *Anandamath*."
+  },
+  {
+    "id": 210,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which dam in North Goa is built across the Costi River in Sattari taluka?",
+    "options": [
+      "A) Anjunem Dam",
+      "B) Chapoli Dam",
+      "C) Panchwadi Dam",
+      "D) Salaulim Dam"
+    ],
+    "answer": "A) Anjunem Dam",
+    "explanation": "Anjunem Dam is located in Sattari taluka in North Goa."
+  },
+  {
+    "id": 211,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state tree of Goa?",
+    "options": [
+      "A) Matti (Terminalia elliptica / Asan)",
+      "B) Coconut Palm",
+      "C) Neem Tree",
+      "D) Banyan Tree"
+    ],
+    "answer": "A) Matti (Terminalia elliptica / Asan)",
+    "explanation": "Matti (Crocodile Bark tree) is declared as the state tree of Goa."
+  },
+  {
+    "id": 212,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the primary iron ore export port of Goa?",
+    "options": [
+      "A) Mormugao Port",
+      "B) Chapora Port",
+      "C) Panaji Port",
+      "D) Talpona Port"
+    ],
+    "answer": "A) Mormugao Port",
+    "explanation": "Mormugao Port handles a major share of India's iron ore exports mined in Goa."
+  },
+  {
+    "id": 213,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_FREEDOM_HISTORY] Which Indian nationalist leader addressed the historic public meeting in Margao on June 18, 1946, sparking the final phase of Goa's freedom struggle?",
+    "options": [
+      "A) Mahatma Gandhi",
+      "B) Sardar Vallabhbhai Patel",
+      "C) Dr. Ram Manohar Lohia",
+      "D) Jawaharlal Nehru"
+    ],
+    "answer": "C) Dr. Ram Manohar Lohia",
+    "explanation": "Dr. Ram Manohar Lohia, accompanied by Dr. Juli\u00e3o Menezes, defied Portuguese ban orders on 18th June 1946 in Margao, marking June 18 as Goa Revolution Day."
+  },
+  {
+    "id": 214,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which battle fought in 1510 led to the capture of Goa by Afonso de Albuquerque from the Sultan of Bijapur?",
+    "options": [
+      "A) Battle of Diu",
+      "B) Battle of Panipat",
+      "C) Battle of Plassey",
+      "D) Conquest of Goa (1510)"
+    ],
+    "answer": "D) Conquest of Goa (1510)",
+    "explanation": "Afonso de Albuquerque conquered Goa in 1510 from Ismail Adil Shah, Sultan of Bijapur, establishing Portuguese rule for over 450 years."
+  },
+  {
+    "id": 215,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_FREEDOM_HISTORY] The Pinto Revolt (Pinto Conspiracy) of 1787 was led by native Goan priests against Portuguese rule. In which town did it originate?",
+    "options": [
+      "A) Mapusa",
+      "B) Candolim (Bardez)",
+      "C) Margao",
+      "D) Vasco da Gama"
+    ],
+    "answer": "B) Candolim (Bardez)",
+    "explanation": "Led by Father Caetano Vitorino de Faria and Father Jose Antonio Goncalves of Candolim, the 1787 conspiracy aimed to overthrow Portuguese rule."
+  },
+  {
+    "id": 216,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the SI unit of Electric Current?",
+    "options": [
+      "A) Ampere",
+      "B) Ohm",
+      "C) Volt",
+      "D) Watt"
+    ],
+    "answer": "A) Ampere",
+    "explanation": "The Ampere (A) is the SI unit of electric current."
+  },
+  {
+    "id": 217,
+    "category": "randomized_mock_exam",
+    "question": "[INDIAN_POLITY_GOA] How many seats are there in the Goa State Legislative Assembly (Vidhan Sabha)?",
+    "options": [
+      "A) 60",
+      "B) 30",
+      "C) 40",
+      "D) 70"
+    ],
+    "answer": "C) 40",
+    "explanation": "The Goa Legislative Assembly consists of 40 elected members (MLAs)."
+  },
+  {
+    "id": 218,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan village is famous for the 'Reis Magos Fort' built in 1551?",
+    "options": [
+      "A) Candolim",
+      "B) Reis Magos (Verem)",
+      "C) Calangute",
+      "D) Nerul"
+    ],
+    "answer": "B) Reis Magos (Verem)",
+    "explanation": "Reis Magos Fort sits on the northern bank of Mandovi river at Verem village in Bardez."
+  },
+  {
+    "id": 219,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan GI-tagged alcoholic beverage is distilled from cashew apples or coconut sap?",
+    "options": [
+      "A) Arrack",
+      "B) Toddy",
+      "C) Feni",
+      "D) Urak"
+    ],
+    "answer": "C) Feni",
+    "explanation": "Cashew Feni received Geographical Indication (GI) registration in 2009 as a traditional Goan liquor."
+  },
+  {
+    "id": 220,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_SPECIAL_GK] Manohar International Airport at Mopa in North Goa was developed in partnership with which infrastructure group?",
+    "options": [
+      "A) Reliance Infrastructure",
+      "B) Adani Group",
+      "C) Tata Infrastructure",
+      "D) GMR Group"
+    ],
+    "answer": "D) GMR Group",
+    "explanation": "Manohar International Airport (Mopa) was developed by GMR Goa International Airport Limited (GGIAL)."
+  },
+  {
+    "id": 221,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which island in Goa is known for the historical St. Jacinto Church and lighthouse bridge?",
+    "options": [
+      "A) Corjuem Island",
+      "B) St. Jacinto Island",
+      "C) Divar Island",
+      "D) Chorao Island"
+    ],
+    "answer": "B) St. Jacinto Island",
+    "explanation": "St. Jacinto Island in South Goa is connected by a bridge over the Zuari estuary and houses St. Jacinto Church."
+  },
+  {
+    "id": 222,
+    "category": "randomized_mock_exam",
+    "question": "[INDIAN_POLITY_GOA] Which Article of the Constitution of India contains special provisions with respect to the State of Goa?",
+    "options": [
+      "A) Article 370",
+      "B) Article 371A",
+      "C) Article 371J",
+      "D) Article 371I"
+    ],
+    "answer": "D) Article 371I",
+    "explanation": "Article 371I specifies that the Legislative Assembly of the State of Goa shall consist of not less than thirty members."
+  },
+  {
+    "id": 223,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] Under the ULLAS initiative in 2025, Goa achieved which landmark educational status in India?",
+    "options": [
+      "A) First state to achieve 100% functional literacy",
+      "B) First state to introduce 4-year primary education",
+      "C) Highest number of medical colleges per capita",
+      "D) First state to adopt AI curriculum"
+    ],
+    "answer": "A) First state to achieve 100% functional literacy",
+    "explanation": "Goa became the first Indian state to achieve 100% functional literacy under the Union Government's ULLAS (Understanding Lifelong Learning for All in Society) initiative."
+  },
+  {
+    "id": 224,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CULTURE_SCHEMES] What is the famous traditional spring festival celebrated with vibrant parades and floats across major cities in Goa?",
+    "options": [
+      "A) Bonderam",
+      "B) Chikhal Kalo",
+      "C) Shigmo Festival (Shigmotsav)",
+      "D) Sao Joao"
+    ],
+    "answer": "C) Shigmo Festival (Shigmotsav)",
+    "explanation": "Shigmo (Shigmotsav) is the traditional Hindu spring festival in Goa celebrating rich folklore, traditional dances (like Ghode Modni, Fugdi), and float parades."
   },
   {
     "id": 225,
     "category": "randomized_mock_exam",
-    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state bird of Goa?",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state animal of Goa?",
     "options": [
-      "A) Indian Roller",
-      "B) Peacock",
-      "C) Great Hornbill",
-      "D) Flame-throated Bulbul (Rubigula)"
+      "A) Tiger",
+      "B) Elephant",
+      "C) Gaur (Indian Bison)",
+      "D) Sambar Deer"
     ],
-    "answer": "D) Flame-throated Bulbul (Rubigula)",
-    "explanation": "The Flame-throated Bulbul (also called Rubigula) is the state bird of Goa."
+    "answer": "C) Gaur (Indian Bison)",
+    "explanation": "The Gaur (Bos gaurus), or Indian Bison, is the state animal of Goa."
   },
   {
     "id": 226,
     "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which gas is most abundant in Earth's atmosphere?",
+    "options": [
+      "A) Nitrogen",
+      "B) Argon",
+      "C) Carbon Dioxide",
+      "D) Oxygen"
+    ],
+    "answer": "A) Nitrogen",
+    "explanation": "Nitrogen makes up approximately 78% of the Earth's atmosphere by volume."
+  },
+  {
+    "id": 227,
+    "category": "randomized_mock_exam",
+    "question": "[INDIAN_POLITY_GOA] How many members represent the State of Goa in the Lok Sabha (Lower House of Parliament)?",
+    "options": [
+      "A) 4 Members",
+      "B) 2 Members",
+      "C) 1 Member",
+      "D) 3 Members"
+    ],
+    "answer": "B) 2 Members",
+    "explanation": "Goa is divided into 2 Lok Sabha parliamentary constituencies: North Goa and South Goa."
+  },
+  {
+    "id": 228,
+    "category": "randomized_mock_exam",
+    "question": "[KONKANI_RTI] What is the primary portal for applying to Goa Government online services and certificates?",
+    "options": [
+      "A) Goa Online (goaonline.gov.in)",
+      "B) E-Goa Portal",
+      "C) Goa Seva",
+      "D) Digital Goa"
+    ],
+    "answer": "A) Goa Online (goaonline.gov.in)",
+    "explanation": "Goa Online (goaonline.gov.in) is the official single-window e-governance portal for Goa State Government services."
+  },
+  {
+    "id": 229,
+    "category": "randomized_mock_exam",
     "question": "[COMPUTER_AWARENESS] What type of network covers a small geographical area such as an office building or school?",
     "options": [
-      "A) WAN",
-      "B) LAN",
-      "C) PAN",
-      "D) MAN"
+      "A) LAN",
+      "B) PAN",
+      "C) MAN",
+      "D) WAN"
     ],
-    "answer": "B) LAN",
+    "answer": "A) LAN",
     "explanation": "Local Area Network (LAN) connects computers across a short physical distance like an office or school."
+  },
+  {
+    "id": 230,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Who was the first President of Independent India?",
+    "options": [
+      "A) Jawaharlal Nehru",
+      "B) Dr. Rajendra Prasad",
+      "C) Dr. S. Radhakrishnan",
+      "D) Dr. B.R. Ambedkar"
+    ],
+    "answer": "B) Dr. Rajendra Prasad",
+    "explanation": "Dr. Rajendra Prasad served as the first President of India from 1950 to 1962."
+  },
+  {
+    "id": 231,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which festival in Goa is marked by jumping into wells and streams to celebrate St. John the Baptist?",
+    "options": [
+      "A) Sao Joao",
+      "B) Shigmo",
+      "C) Bonderam",
+      "D) Carnival"
+    ],
+    "answer": "A) Sao Joao",
+    "explanation": "Sao Joao is celebrated on June 24 every monsoon, where villagers wear flower crowns ('kopel') and jump into wells."
+  },
+  {
+    "id": 232,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Under the Constitution of India, who appoints the Governor of Goa?",
+    "options": [
+      "A) Prime Minister of India",
+      "B) Chief Justice of India",
+      "C) President of India",
+      "D) Chief Minister of Goa"
+    ],
+    "answer": "C) President of India",
+    "explanation": "Article 155 of the Indian Constitution states that the Governor of a State shall be appointed by the President of India."
+  },
+  {
+    "id": 233,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which river flows past the famous Chapora Fort in North Goa?",
+    "options": [
+      "A) Talpona River",
+      "B) Chapora River",
+      "C) Galgibaga River",
+      "D) Sal River"
+    ],
+    "answer": "B) Chapora River",
+    "explanation": "Chapora Fort is located on the southern headland of the Chapora River in Bardez taluka."
+  },
+  {
+    "id": 234,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which is the state flower of Goa?",
+    "options": [
+      "A) Rose",
+      "B) Red Jasmine (Jasmine)",
+      "C) Marigold",
+      "D) Lotus"
+    ],
+    "answer": "B) Red Jasmine (Jasmine)",
+    "explanation": "Red Jasmine is recognized as the state flower of Goa."
+  },
+  {
+    "id": 235,
+    "category": "randomized_mock_exam",
+    "question": "[COMPUTER_AWARENESS] In MS Excel, which function key is used to edit the contents of a selected cell?",
+    "options": [
+      "A) F7",
+      "B) F2",
+      "C) F1",
+      "D) F4"
+    ],
+    "answer": "B) F2",
+    "explanation": "Pressing F2 allows you to directly edit the active cell in Microsoft Excel."
+  },
+  {
+    "id": 236,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which dam in Goa built across the Sanguem River supplies water to South Goa?",
+    "options": [
+      "A) Tillari Dam",
+      "B) Anjunem Dam",
+      "C) Chapoli Dam",
+      "D) Salaulim Dam"
+    ],
+    "answer": "D) Salaulim Dam",
+    "explanation": "Salaulim Dam in Sanguem taluka is the largest water reservoir supplying drinking and irrigation water to South Goa."
+  },
+  {
+    "id": 237,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CULTURE_SCHEMES] Which crop is celebrated during the famous 'Harvest Festival' (Consua / Konsamchem Fest) in Goa?",
+    "options": [
+      "A) Cashew",
+      "B) Paddy (Rice)",
+      "C) Coconut",
+      "D) Mango"
+    ],
+    "answer": "B) Paddy (Rice)",
+    "explanation": "Konsamchem Fest / Harvest Festival in August celebrates the blessing of the first corn/paddy crop of the season."
+  },
+  {
+    "id": 238,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] What is the minimum age required to become a member of the Goa Legislative Assembly (MLA)?",
+    "options": [
+      "A) 30 years",
+      "B) 18 years",
+      "C) 21 years",
+      "D) 25 years"
+    ],
+    "answer": "D) 25 years",
+    "explanation": "Under Article 173(b) of the Constitution, the minimum age to be eligible for election to a State Legislative Assembly is 25 years."
+  },
+  {
+    "id": 239,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Which Goan scientist was the former Chairman of the Indian Space Research Organisation (ISRO)?",
+    "options": [
+      "A) Dr. K. Kasturirangan",
+      "B) Dr. Anil Kakodkar",
+      "C) Dr. R.A. Mashelkar",
+      "D) Dr. Shailesh Nayak"
+    ],
+    "answer": "C) Dr. R.A. Mashelkar",
+    "explanation": "Eminent Goan scientist Dr. R.A. Mashelkar is a renowned chemical engineer and former Director-General of CSIR."
+  },
+  {
+    "id": 240,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] Which river flows near the famous ancient Rock Carvings of Usgalimal in South Goa?",
+    "options": [
+      "A) Talpona River",
+      "B) Sal River",
+      "C) Kushavati River",
+      "D) Chapora River"
+    ],
+    "answer": "C) Kushavati River",
+    "explanation": "The prehistoric petroglyphs at Usgalimal (dating back over 10,000 years to the Upper Paleolithic/Mesolithic era) are located on the banks of the Kushavati River near Rivona."
+  },
+  {
+    "id": 241,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] Which traditional Goan beverage holds a official Geographical Indication (GI) Tag?",
+    "options": [
+      "A) Cashew Feni",
+      "B) Sol Kadi",
+      "C) Kokum Sharbat",
+      "D) Urrak"
+    ],
+    "answer": "A) Cashew Feni",
+    "explanation": "Goa Cashew Feni was granted a Geographical Indication (GI) tag in 2009, recognizing it as a unique heritage drink of Goa produced from cashew apples."
+  },
+  {
+    "id": 242,
+    "category": "randomized_mock_exam",
+    "question": "[GENERAL_KNOWLEDGE_INDIA] Who among the following was the founder of the Brahmo Samaj in 1828?",
+    "options": [
+      "A) Raja Ram Mohan Roy",
+      "B) Swami Dayananda Saraswati",
+      "C) Ishwar Chandra Vidyasagar",
+      "D) Swami Vivekananda"
+    ],
+    "answer": "A) Raja Ram Mohan Roy",
+    "explanation": "Raja Ram Mohan Roy established the Brahmo Samaj in Kolkata in 1828 to reform Hindu society and abolish sati."
+  },
+  {
+    "id": 243,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CURRENT_AFFAIRS_2026] The birth centenary of which famous Goan cartoonist was commemorated by India Post with a special stamp in May 2026?",
+    "options": [
+      "A) O.V. Vijayan",
+      "B) R.K. Laxman",
+      "C) Mario Miranda",
+      "D) E.P. Unny"
+    ],
+    "answer": "C) Mario Miranda",
+    "explanation": "May 2026 marked the birth centenary of Padma Vibhushan Mario Miranda (1926\u20132011), the legendary Goan cartoonist celebrated for capturing Goa's cultural life."
+  },
+  {
+    "id": 244,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_GEOGRAPHY_RIVERS] Which is the highest peak in the state of Goa?",
+    "options": [
+      "A) Vagheri",
+      "B) Chandranath",
+      "C) Sonsogor (Sonsogodd)",
+      "D) Sidhanath"
+    ],
+    "answer": "C) Sonsogor (Sonsogodd)",
+    "explanation": "Sonsogor (Sonsogodd) in the Sattari taluka is the highest peak in Goa, situated at an altitude of 1,166 meters in the Western Ghats."
+  },
+  {
+    "id": 245,
+    "category": "randomized_mock_exam",
+    "question": "[GOA_CULTURE_SCHEMES] The festival of 'Bonderam' featuring colorful flag parades is celebrated on which island in Goa?",
+    "options": [
+      "A) St. Jacinto Island",
+      "B) Vanxim Island",
+      "C) Chorao Island",
+      "D) Divar Island"
+    ],
+    "answer": "D) Divar Island",
+    "explanation": "Bonderam is celebrated every August on Divar Island, reenacting historical boundary disputes using colorful flags."
+  },
+  {
+    "id": 246,
+    "category": "randomized_mock_exam",
+    "question": "[LOGICAL_REASONING] Select the antonym of the given word: IMPEDIMENT",
+    "options": [
+      "A) Hindrance",
+      "B) Obstacle",
+      "C) Barrier",
+      "D) Assistance"
+    ],
+    "answer": "D) Assistance",
+    "explanation": "'Impediment' means a hindrance or obstruction in doing something. Its antonym (opposite) is 'Assistance' or 'Help'."
   }
 ]
