@@ -14,13 +14,13 @@ def test_official_exam_rules_and_performance():
     print("[AUTOMATED TEST 6: OFFICIAL EXAM RULES & PERFORMANCE TEST]")
     print("=" * 60)
 
-    app_path = "app.js"
+    exam_js_path = os.path.join("js", "exam.js")
     style_path = "style.css"
     
-    assert os.path.exists(app_path), "app.js file missing!"
+    assert os.path.exists(exam_js_path), "js/exam.js file missing!"
     assert os.path.exists(style_path), "style.css file missing!"
 
-    with open(app_path, 'r', encoding='utf-8') as f:
+    with open(exam_js_path, 'r', encoding='utf-8') as f:
         app_code = f.read()
 
     with open(style_path, 'r', encoding='utf-8') as f:
@@ -29,10 +29,12 @@ def test_official_exam_rules_and_performance():
     # 1. Verify CSS hardware acceleration rules (will-change & hardware transforms)
     assert "will-change" in css_code, "CSS performance optimization 'will-change' missing!"
     assert "@media (max-width: 900px)" in css_code, "Responsive breakpoint @media (max-width: 900px) missing!"
+    assert "margin-left: 0 !important" in css_code, "Mobile responsive sidebar reset missing!"
     print("  [PASS] CSS hardware acceleration (will-change & transforms) verified.")
     print("  [PASS] Mobile/Tablet responsive media query breakpoints verified.")
+    print("  [PASS] Mobile screen sidebar overflow layout fix verified.")
 
-    # 2. Verify Exam Timer & Palette logic
+    # 2. Verify Exam Timer & Palette logic in js/exam.js
     assert "startExamTimer" in app_code, "Exam timer function missing!"
     assert "omrExamQuestions" in app_code, "OMR Exam Questions palette array missing!"
     print("  [PASS] Exam Arena OMR Palette & Timer Engine verified.")
