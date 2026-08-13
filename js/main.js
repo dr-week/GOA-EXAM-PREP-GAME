@@ -29,8 +29,14 @@ window.launchExamArenaView = function(catKey = null) {
   const launchScreen = document.getElementById('exam-launch-screen');
   const activeContainer = document.getElementById('active-exam-container');
 
-  if (launchScreen) launchScreen.classList.add('hidden');
-  if (activeContainer) activeContainer.classList.remove('hidden');
+  if (launchScreen) {
+    launchScreen.classList.add('hidden');
+    launchScreen.style.display = 'none';
+  }
+  if (activeContainer) {
+    activeContainer.classList.remove('hidden');
+    activeContainer.style.display = 'block';
+  }
 
   startFullExamArena(catKey);
 };
@@ -40,9 +46,18 @@ window.exitExamArenaView = function() {
   const activeContainer = document.getElementById('active-exam-container');
   const modal = document.getElementById('exam-score-modal');
 
-  if (modal) modal.classList.add('hidden');
-  if (activeContainer) activeContainer.classList.add('hidden');
-  if (launchScreen) launchScreen.classList.remove('hidden');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.style.display = 'none';
+  }
+  if (activeContainer) {
+    activeContainer.classList.add('hidden');
+    activeContainer.style.display = 'none';
+  }
+  if (launchScreen) {
+    launchScreen.classList.remove('hidden');
+    launchScreen.style.display = 'block';
+  }
 
   if (state.examTimerInterval) clearInterval(state.examTimerInterval);
 };

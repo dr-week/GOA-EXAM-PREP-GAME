@@ -78,7 +78,7 @@
 
       <!-- TAB 1: Unified Exam Studio -->
       <section id="view-exam-studio" class="tab-view active">
-        <!-- Launch Screen View (Shown initially) -->
+        <!-- Launch Screen View (Shown initially on Home Page) -->
         <div id="exam-launch-screen">
           <div class="welcome-banner">
             <h1>GPSC & GSSC Preparation Studio 🚀</h1>
@@ -115,14 +115,14 @@
           </div>
         </div>
 
-        <!-- Active OMR Exam Arena Container (Hidden initially until user launches test) -->
-        <div id="active-exam-container" class="hidden">
+        <!-- Active OMR Exam Arena Container (STRICTLY HIDDEN on Home Page until user clicks Launch) -->
+        <div id="active-exam-container" class="hidden" style="display: none;">
           <div style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center;">
             <button class="btn btn-secondary" onclick="exitExamArenaView()">◄ Back to Launch Studio</button>
           </div>
 
           <!-- In-Page Score Results Modal Container -->
-          <div id="exam-score-modal" class="game-box hidden" style="border:1px solid var(--border-active); margin-bottom:2rem; background:linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%); text-align:left;">
+          <div id="exam-score-modal" class="game-box hidden" style="border:1px solid var(--border-active); margin-bottom:2rem; background:linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%); text-align:left; display: none;">
             <h2 style="color:var(--accent-cyan); margin-bottom:1rem;">🏆 EXAM RESULT SUMMARY</h2>
             <div style="font-size:1.1rem; line-height:1.8; margin-bottom:1.5rem;">
               <div>🎯 <strong>Final Score:</strong> <span id="res-score" style="color:#10b981; font-weight:700;">0</span> / <span id="res-total">100</span></div>
@@ -191,7 +191,7 @@
         </div>
 
         <!-- Game 2: Speed Math Trainer -->
-        <div id="game-speedmath-box" class="game-box hidden">
+        <div id="game-speedmath-box" class="game-box hidden" style="display: none;">
           <h3>⚡ 60-Second Speed Math Trainer</h3>
           <p style="color:var(--text-muted); margin-bottom:1rem;">Boost quantitative calculation speed!</p>
           <div class="speed-math-display" id="math-problem">5 + 7 = ?</div>
