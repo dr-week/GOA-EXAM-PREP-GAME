@@ -82,7 +82,7 @@
         <div id="exam-launch-screen">
           <div class="welcome-banner">
             <h1>GPSC & GSSC Preparation Studio 🚀</h1>
-            <p>Practice 246+ high-yield Goa questions, Hard-Tier officer screening papers, and 2026 Current Affairs!</p>
+            <p>Practice 656+ high-yield Goa questions, Hard-Tier officer screening papers, 2026 Gazettes & Estuary geography!</p>
           </div>
 
           <!-- Ultra-Simplified 2-Card Launch Grid -->
@@ -91,7 +91,7 @@
             <div class="cat-card" style="border:1px solid var(--border-active); background:linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);">
               <div class="cat-icon">🏛️</div>
               <h3>Official 100-Question Exam Arena</h3>
-              <p>Full-length official mock test with 100 double-shuffled questions & 30-minute timer.</p>
+              <p>Full-length official mock test with 100 double-shuffled questions from 656+ DB pool & 30-minute timer.</p>
               <button class="btn btn-primary" onclick="launchExamArenaView()" style="width:100%; padding:0.9rem; font-size:1rem;">Launch Official Test (100 Qs)</button>
             </div>
 
@@ -102,12 +102,12 @@
               <p>Select any subject module to practice targeted questions at your own pace.</p>
               <div style="display:flex; gap:0.5rem; margin-top:auto;">
                 <select id="practice-subject-select" style="flex:1; background:rgba(15, 23, 42, 0.9); border:1px solid var(--border-color); color:#fff; padding:0.75rem; border-radius:10px; font-weight:600; outline:none;">
+                  <option value="goa_advanced_history_gazette">🏛️ Advanced History & Gazettes (100 Qs)</option>
+                  <option value="advanced_quant_di">🔢 Advanced Quant & Data Int. (100 Qs)</option>
+                  <option value="goa_geography_estuaries_hard">⛰️ Estuaries & Geography Hard (100 Qs)</option>
+                  <option value="goa_polity_service_rules">⚖️ Polity & Service Rules (100 Qs)</option>
                   <option value="goa_advanced_gpsc_hard">🔥 Advanced GPSC Officer Tier (Hard Qs)</option>
                   <option value="goa_current_affairs_2026">🆕 Goa Current Affairs 2025-2026</option>
-                  <option value="goa_special_gk">🏝️ Goa Special & History GK</option>
-                  <option value="quantitative_aptitude">🔢 Quantitative Aptitude</option>
-                  <option value="konkani_rti">📜 Konkani, RTI & Polity</option>
-                  <option value="computer_awareness">💻 Computer Awareness</option>
                   <option value="general_knowledge_india">🔥 General Studies India (50 Qs)</option>
                 </select>
                 <button class="btn btn-primary" onclick="launchSelectedPractice()">Start</button>
@@ -159,13 +159,12 @@
             <input type="text" id="global-search" placeholder="Search Goa history, formulas, topics (Press Enter)..." style="width:100%; max-width:500px;">
           </div>
           <div class="md-selector">
-            <button class="btn-chip active" onclick="loadMDFile('goa_advanced_gpsc_hard', this)">🔥 Advanced GPSC (Hard)</button>
+            <button class="btn-chip active" onclick="loadMDFile('goa_advanced_history_gazette', this)">🏛️ History & Gazettes</button>
+            <button class="btn-chip" onclick="loadMDFile('advanced_quant_di', this)">🔢 Advanced Quant</button>
+            <button class="btn-chip" onclick="loadMDFile('goa_geography_estuaries_hard', this)">⛰️ Estuaries Geography</button>
+            <button class="btn-chip" onclick="loadMDFile('goa_polity_service_rules', this)">⚖️ Polity & Service Rules</button>
+            <button class="btn-chip" onclick="loadMDFile('goa_advanced_gpsc_hard', this)">🔥 GPSC Hard</button>
             <button class="btn-chip" onclick="loadMDFile('goa_current_affairs_2026', this)">Goa 2026 CA</button>
-            <button class="btn-chip" onclick="loadMDFile('general_knowledge_india', this)">50 Master Qs</button>
-            <button class="btn-chip" onclick="loadMDFile('goa_special_gk', this)">Goa GK</button>
-            <button class="btn-chip" onclick="loadMDFile('github_repos_aptitude', this)">GitHub Aptitude</button>
-            <button class="btn-chip" onclick="loadMDFile('goa_freedom_history', this)">Freedom Movement</button>
-            <button class="btn-chip" onclick="loadMDFile('konkani_rti', this)">Konkani & RTI</button>
           </div>
         </div>
 
