@@ -15,12 +15,13 @@
       color: #fff; 
       margin: 0;
       width: 100vw;
+      box-sizing: border-box;
       min-height: 100vh;
       overflow-x: hidden;
     }
 
     .exam-wrapper {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 0 auto;
       width: 100%;
     }
@@ -36,14 +37,24 @@
       gap: 0.75rem;
     }
 
+    .standalone-omr-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    .palette-grid {
+      max-height: 520px !important;
+    }
+
     /* Mobile Responsive Optimizations for Standalone Exam Page */
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       body { padding: 0.75rem; }
-      .exam-header { flex-direction: row; justify-content: space-between; }
+      .standalone-omr-grid { grid-template-columns: 1fr !important; }
       .exam-header h2 { font-size: 1.1rem !important; }
       .exam-header span { font-size: 0.75rem !important; }
-      .omr-layout { grid-template-columns: 1fr !important; }
-      .palette-grid { grid-template-columns: repeat(6, 1fr) !important; }
+      .palette-grid { grid-template-columns: repeat(6, 1fr) !important; max-height: 250px !important; }
     }
   </style>
 </head>
@@ -79,7 +90,7 @@
     </div>
 
     <!-- Active OMR Layout -->
-    <div class="omr-layout">
+    <div class="standalone-omr-grid">
       <div class="omr-question-card">
         <div class="quiz-header" style="margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
           <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall (100 Qs)</span>

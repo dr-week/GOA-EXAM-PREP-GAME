@@ -1,55 +1,97 @@
-# 🎨 Goa Exam Prep Platform - Master Design Guidelines, Architectural Rules & Repository Index
+# 🎨 Goa Exam Prep Platform - Comprehensive UI Specifications, Iconography Rules & Implementation Guide
 
-This document serves as the master specification for UI design standards, mobile responsiveness rules, architectural guidelines, and integrated open-source GitHub repositories for **Goa Government Exam Prep Studio**.
-
----
-
-## 🛡️ Master Development Rules & Non-Destructive Principles
-
-### Rule 1: Zero-Data Loss Policy
-- **No Question Bank Deletions**: All 13 Markdown question banks in `data/*.md` (226+ indexed questions) must be preserved.
-- **Relational DB Synchronization**: The SQLite database (`data/questions.db`) and web bundle (`data/db_export.json`) are automatically recompiled using `python compile_db.py`.
-
-### Rule 2: Non-Destructive UI Refactoring
-- Refactoring UI layouts must never delete underlying engine capabilities:
-  - OMR Palette Grid & 30-Minute Exam Timer.
-  - 50:50 Lifeline & In-Page Result Modal.
-  - Global Audio Toggle (`🔊 Audio ON` / `🔇 Audio OFF`).
-  - Brain Training Arcade (Memory Match & Speed Math).
-  - Revision Bank Markdown Viewer, Instant Search, and LocalStorage Bookmarks.
-
-### Rule 3: Phone-First Mobile UI Architecture
-- **Desktop Layout (`> 900px`)**: Fixed 280px left sidebar, topbar header, multi-column card grids.
-- **Phone Layout (`<= 900px`)**:
-  - Desktop sidebar hidden completely (`display: none !important`).
-  - Main canvas margin reset to zero (`margin-left: 0 !important; width: 100vw !important`).
-  - Top sticky header displaying logo, Level, and Streak.
-  - Fixed 60px bottom navigation bar for 1-tap switching between Studio, Arcade, and Revision tabs.
-  - All touch targets (buttons, dropdowns) sized to minimum 48px height.
+Master specification defining visual design rules for every page section, icon systems, mistake detection rules, minimal UI constraints, and developer implementation workflows for **Goa Government Exam Prep Studio**.
 
 ---
 
-## 🎨 Design System & Visual Specification
+## 📐 1. Section-by-Section UI Design Specifications
 
-### 💎 Dark Mode Glassmorphism Color Palette
-- **Primary Background**: `#090d16` (Deep Space Dark)
-- **Sidebar & Nav Bar Surface**: `#0f172a` (Slate Dark)
-- **Card Container Surface**: `#1e293b` (Elevated Card Layer)
-- **Card Active Border**: `#3b82f6` (Accent Indigo)
-- **Primary Action Gradient**: `linear-gradient(135deg, #6366f1 0%, #a855f7 100%)`
-- **Cyan Accent**: `#06b6d4`
-- **Amber Streak**: `#f59e0b`
-- **Success Emerald**: `#10b981`
-- **Error Coral**: `#ef4444`
+### 🏛️ Section A: Exam Studio Page (Home / Launch Dashboard)
+- **Visual Goal**: Zero clutter, instant test launch within 1 click.
+- **Layout Architecture**:
+  - **Hero Welcome Banner**: Subtle indigo-purple glassmorphic background (`linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(168, 85, 247, 0.12) 100%)`) with `18px` rounded corners and `1px` active border.
+  - **Launch Action Cards Grid**:
+    - **Card 1 (Full 100 Qs Exam Arena)**: High-emphasis card featuring `🏛️` icon, bold title, 100-question & 30-min timer badge, and full-width gradient launch button.
+    - **Card 2 (Subject Practice Studio)**: Interactive card featuring `⚡` icon, custom stylized `<select>` subject dropdown (`#practice-subject-select`), and a 1-tap **Start** button.
+- **Mobile Responsive Behavior**:
+  - Desktop (`> 900px`): Cards render side-by-side in a 2-column flex grid.
+  - Mobile Phone (`<= 900px`): Cards stack cleanly into a single column with `100vw` margin resets.
 
-### 🔤 Typography
-- **Headings**: `Outfit`, sans-serif (Weights: 600, 700)
-- **Body**: `Plus Jakarta Sans`, sans-serif (Weights: 400, 500, 600)
-- **Base Size**: `16px`, Line Height: `1.65`
+### 📝 Section B: Standalone OMR Exam Hall Page (`exam.html`)
+- **Visual Goal**: Distraction-free official exam hall simulation matching GPSC/GSSC paper standards.
+- **Layout Architecture**:
+  - **Header Bar**: Displays `🏛️ GPSC & GSSC Official Exam Arena`, `🔊 Audio ON / OFF` toggle, and `✖ Exit` button.
+  - **2-Column Layout (`standalone-omr-grid`)**:
+    - **Left Column (`omr-question-card`)**: Current question text, 4 A/B/C/D option choice buttons (`opt-btn`), explanation drawer, and navigation controls (`◄ Previous`, `Next Question ►`, `Finish Test`).
+    - **Right Column (`omr-palette`)**: 100-button numeric grid (`palette-grid`) showing answered (green/purple) vs current (cyan outline) questions with max-height scroll (`520px` desktop / `250px` mobile).
+
+### 🧠 Section C: Brain Arcade Tab (`#view-brain-games`)
+- **Visual Goal**: High-contrast interactive micro-games to build visual memory & quantitative calculation speed.
+- **Games Included**:
+  1. **🃏 Memory Match**: 4x4 card grid with 3D flip transform (`transform: rotateY(180deg)`).
+  2. **⚡ 60-Second Speed Math Trainer**: High-visibility math calculation display with numerical input box.
+
+### 📚 Section D: Revision & Notes Bank Tab (`#view-revision-bank`)
+- **Visual Goal**: Instant searchability across 226+ indexed Goa GK & aptitude questions.
+- **Layout Architecture**:
+  - **Global Search Input**: Top search bar executing instant keyword search on press of `Enter`.
+  - **Subject Chips**: Quick-filter pill buttons (`goa_current_affairs_2026`, `goa_special_gk`, `konkani_rti`, etc.).
+  - **Markdown Viewer Box**: Renders structured study notes with custom typography (`Outfit` headings, `Plus Jakarta Sans` body).
 
 ---
 
-## 🔗 Integrated Open-Source GitHub Repositories
+## 🎨 2. Iconography & Visual Accent Rules
+
+| Element Category | Assigned Emoji / Icon | Color Token / CSS Class | Purpose |
+| :--- | :---: | :--- | :--- |
+| **Official Exam Arena** | `🏛️` | `var(--primary-gradient)` | Represents official GPSC/GSSC exam hall simulation. |
+| **Goa Current Affairs** | `🆕` | `#06b6d4` (`var(--accent-cyan)`) | Highlights 2025-2026 administrative updates (Kushavati 3rd district, ULLAS). |
+| **Goa Special GK** | `🏝️` | `#10b981` (`var(--success)`) | Identifies Goa liberation history, geography, and rivers. |
+| **Quantitative Aptitude** | `🔢` | `#f59e0b` (`var(--accent-amber)`) | Denotes math formulas, ratios, percentages, and data interpretation. |
+| **Konkani & RTI** | `📜` | `#a855f7` | Indicates Konkani vocabulary and Goa RTI 30-day/48-hr rules. |
+| **Lifelines** | `🔥 50:50` | `#ef4444` (`var(--error)`) | Triggers removal of 2 incorrect choices. |
+| **Timer** | `⏱️ 30:00` | `#f59e0b` | Displays 30-minute exam countdown. |
+
+---
+
+## 🔍 3. Mistake Detection & Common UI Pitfalls to Avoid
+
+> [!CAUTION]
+> **Common UI Failure Modes & Prevention Protocols**:
+> 1. **Horizontal Scroll Bar Overflow**: Caused when fixed pixel widths (e.g. `width: 1200px` or `margin-left: 260px`) are applied without media query overrides on mobile.  
+>    *Prevention Rule*: Always use `max-width: 100%`, `box-sizing: border-box`, and set `margin-left: 0 !important; width: 100vw !important` under `@media (max-width: 900px)`.
+> 2. **Overlapping UI Cards**: Occurs when multiple view containers are active simultaneously.  
+>    *Prevention Rule*: Strictly enforce `.hidden { display: none !important; }` on unlaunched views.
+> 3. **Unresponsive Touch Buttons**: Caused by small touch targets (`< 40px`).  
+>    *Prevention Rule*: Enforce `min-height: 48px` on all mobile touch buttons and bottom nav items.
+
+---
+
+## 📏 4. Minimalist Design & Visual Skill Rules
+
+1. **Rule of 2 Cards**: Limit dashboard choices to 2 primary high-impact action cards (*Official Test Arena* vs *Subject Practice Dropdown*).
+2. **Subtle Micro-Animations**: Use GPU hardware acceleration (`will-change: transform; transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)`) on card hover states.
+3. **Contrast & Legibility**:
+   - Primary text: `#f8fafc` on `#090d16` (Contrast ratio > 12:1).
+   - Muted text: `#94a3b8` on `#1e293b` (Contrast ratio > 4.5:1).
+
+---
+
+## 📋 5. Implementation & Verification Workflow
+
+```mermaid
+graph TD
+    A["1. Inspect Markdown Bank (data/*.md)"] --> B["2. Compile SQLite DB (compile_db.py)"]
+    B --> C["3. Export Web JSON Bundle (db_export.json)"]
+    C --> D["4. Execute Fast Integration Tests (test_fast.py)"]
+    D --> E["5. Execute UI & DOM Suite (test_ui_suite.py)"]
+    E --> F["6. Verify Mobile CSS Breakpoints (test_official_rules.py)"]
+    F --> G["7. Deploy to GitHub Pages (gh-pages)"]
+```
+
+---
+
+## 🔗 6. Curated Open-Source GitHub Repositories Index
 
 1. **[ratneshmaurya/Aptitude_Practice_Questions](https://github.com/ratneshmaurya/Aptitude_Practice_Questions)** – Aptitude question banks.
 2. **[drsarveshwarbharti/Aptitude-For-Placements](https://github.com/drsarveshwarbharti/Aptitude-For-Placements)** – Placement quantitative logic.
