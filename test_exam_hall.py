@@ -11,28 +11,29 @@ def test_exam_hall_navigation_logic():
     print("[AUTOMATED TEST 5: EXAM HALL EARLY-TERMINATION TEST]")
     print("=" * 60)
 
-    app_path = "app.js"
-    assert os.path.exists(app_path), "app.js file missing!"
+    exam_js_path = os.path.join("js", "exam.js")
+    assert os.path.exists(exam_js_path), "js/exam.js file missing!"
 
-    with open(app_path, 'r', encoding='utf-8') as f:
+    with open(exam_js_path, 'r', encoding='utf-8') as f:
         code = f.read()
 
     # Verify selectOMRAnswer does NOT call submitFullExam or switchTab
-    select_fn = re.search(r'function selectOMRAnswer[\s\S]*?\{([\s\S]*?)\}\n\nfunction', code)
+    select_fn = re.search(r'export function selectOMRAnswer[\s\S]*?\{([\s\S]*?)\}\n\nexport function', code)
     assert select_fn, "selectOMRAnswer function missing!"
     select_code = select_fn.group(1)
 
     assert "submitFullExam()" not in select_code, "CRITICAL BUG: selectOMRAnswer calls submitFullExam()!"
     assert "switchTab" not in select_code, "CRITICAL BUG: selectOMRAnswer switches tab early!"
+    assert "alert(" not in select_code, "CRITICAL BUG: selectOMRAnswer contains annoying browser alert popup!"
 
     # Verify nextOMRQuestion checks for last question bounds
-    next_fn = re.search(r'function nextOMRQuestion[\s\S]*?\{([\s\S]*?)\}', code)
+    next_fn = re.search(r'export function nextOMRQuestion[\s\S]*?\{([\s\S]*?)\}', code)
     assert next_fn, "nextOMRQuestion function missing!"
     next_code = next_fn.group(1)
 
-    assert "omrCurrentIndex < omrExamQuestions.length - 1" in next_code, "nextOMRQuestion missing bounds check!"
+    assert "state.omrCurrentIndex < state.omrExamQuestions.length - 1" in next_code, "nextOMRQuestion missing bounds check!"
 
-    print("  [PASS] selectOMRAnswer does not trigger early submission.")
+    print("  [PASS] selectOMRAnswer does not trigger early submission or popup alerts.")
     print("  [PASS] nextOMRQuestion correctly iterates through full question palette.")
     print("-" * 60)
     print("[SUCCESS] EXAM HALL MULTI-QUESTION NAVIGATION VERIFIED CLEANLY!")

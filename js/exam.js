@@ -1,7 +1,7 @@
 // Exam Hall OMR Engine Module
 import { state, addXP } from './state.js';
 import { playSound } from './audio.js';
-import { shuffleArray, shuffleOptionsAndAnswer, loadQuestionBanks } from './db.js';
+import { shuffleArray, shuffleOptionsAndAnswer } from './db.js';
 
 export function startFullExamArena(catKey = null) {
   let sourceQuestions = state.allDatabaseQuestions;
@@ -11,8 +11,12 @@ export function startFullExamArena(catKey = null) {
     const topicElem = document.getElementById('current-quiz-topic');
     if (topicElem) topicElem.innerText = `Practice Mode: ${catKey.replace('_', ' ').toUpperCase()}`;
   } else {
+    // Slice to exactly 100 questions for official exam mode if DB has more
+    if (sourceQuestions.length > 100) {
+      sourceQuestions = shuffleArray(sourceQuestions).slice(0, 100);
+    }
     const topicElem = document.getElementById('current-quiz-topic');
-    if (topicElem) topicElem.innerText = '🏛️ GPSC / GSSC Official Exam Hall';
+    if (topicElem) topicElem.innerText = '🏛️ GPSC / GSSC Official Exam Hall (100 Qs)';
   }
 
   if (!sourceQuestions || sourceQuestions.length === 0) {
@@ -20,6 +24,7 @@ export function startFullExamArena(catKey = null) {
     return;
   }
 
+  // Double-Randomize: Shuffle Question Sequence AND Option Positions (A/B/C/D)
   state.omrExamQuestions = shuffleArray(sourceQuestions).map(q => shuffleOptionsAndAnswer(q));
   state.omrCurrentIndex = 0;
   state.omrUserAnswers = {};
@@ -30,6 +35,9 @@ export function startFullExamArena(catKey = null) {
     btn50.disabled = false;
     btn50.innerText = '🔥 50:50 Lifeline';
   }
+
+  const modal = document.getElementById('exam-score-modal');
+  if (modal) modal.classList.add('hidden');
 
   startExamTimer();
   renderOMRPalette();
@@ -53,8 +61,7 @@ export function startExamTimer() {
 
     if (state.examTimeLeft <= 0) {
       clearInterval(state.examTimerInterval);
-      alert('⏱️ TIME EXPIRED! Auto-submitting your exam paper now.');
-      submitFullExam();
+      submitFullExam(true); // Silent auto-submit without prompt on timeout
     }
   }, 1000);
 }
@@ -170,6 +177,8 @@ export function selectOMRAnswer(selectedOpt, q, selectedBtn) {
   const expBox = document.getElementById('omr-explanation-box');
   if (expText) expText.innerText = q.explanation;
   if (expBox) expBox.classList.remove('hidden');
+
+  // SILENT SELECTION: No popups after single questions. Advances via Next button or Palette.
 }
 
 export function useFiftyFifty() {
@@ -205,14 +214,10 @@ export function nextOMRQuestion() {
   if (state.omrCurrentIndex < state.omrExamQuestions.length - 1) {
     state.omrCurrentIndex++;
     renderOMRQuestion();
-  } else {
-    if (confirm("You have reached the last question. Would you like to finish and submit your exam paper?")) {
-      submitFullExam();
-    }
   }
 }
 
-export function submitFullExam() {
+export function submitFullExam(isTimeout = false) {
   if (state.examTimerInterval) clearInterval(state.examTimerInterval);
 
   let score = 0;
@@ -231,6 +236,25 @@ export function submitFullExam() {
   const total = state.omrExamQuestions.length;
   const accuracy = Math.round((score / total) * 100);
 
-  alert(`🏆 EXAM SUBMITTED!\n\nScore: ${score} / ${total}\nUnattempted: ${unattempted}\nAccuracy: ${accuracy}%`);
-  window.switchTab('dashboard');
+  // Render score in smooth in-page UI card instead of annoying popup alert
+  const modal = document.getElementById('exam-score-modal');
+  const resScore = document.getElementById('res-score');
+  const resTotal = document.getElementById('res-total');
+  const resUnattempted = document.getElementById('res-unattempted');
+  const resAccuracy = document.getElementById('res-accuracy');
+
+  if (resScore) resScore.innerText = score;
+  if (resTotal) resTotal.innerText = total;
+  if (resUnattempted) resUnattempted.innerText = unattempted;
+  if (resAccuracy) resAccuracy.innerText = `${accuracy}%`;
+
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+export function closeResultModal() {
+  const modal = document.getElementById('exam-score-modal');
+  if (modal) modal.classList.add('hidden');
 }

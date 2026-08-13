@@ -86,9 +86,9 @@
         <div class="category-grid" style="margin-bottom:2rem;">
           <div class="cat-card" onclick="startFullExamArena()">
             <div class="cat-icon">🏛️</div>
-            <h3>Full Govt Exam Arena</h3>
+            <h3>Full Govt Exam Arena (100 Qs)</h3>
             <p>100-Question Official Exam Hall Simulation with 30-Min Timer</p>
-            <button class="btn btn-primary">Launch Full Exam</button>
+            <button class="btn btn-primary">Launch Full Exam (100 Qs)</button>
           </div>
 
           <div class="cat-card" onclick="startCategoryQuiz('goa_special_gk')">
@@ -113,11 +113,22 @@
           </div>
         </div>
 
+        <!-- In-Page Score Results Modal Container -->
+        <div id="exam-score-modal" class="game-box hidden" style="border:1px solid var(--border-active); margin-bottom:2rem; background:linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%); text-align:left;">
+          <h2 style="color:var(--accent-cyan); margin-bottom:1rem;">🏆 EXAM RESULT SUMMARY</h2>
+          <div style="font-size:1.1rem; line-height:1.8; margin-bottom:1.5rem;">
+            <div>🎯 <strong>Final Score:</strong> <span id="res-score" style="color:#10b981; font-weight:700;">0</span> / <span id="res-total">100</span></div>
+            <div>❓ <strong>Unattempted Questions:</strong> <span id="res-unattempted">0</span></div>
+            <div>📈 <strong>Accuracy Percentage:</strong> <span id="res-accuracy" style="color:var(--accent-amber); font-weight:700;">0%</span></div>
+          </div>
+          <button class="btn btn-primary" onclick="closeResultModal()">Close Results & Return</button>
+        </div>
+
         <!-- Integrated OMR Exam Arena Container -->
         <div class="omr-layout">
           <div class="omr-question-card">
             <div class="quiz-header" style="margin-bottom:1rem;">
-              <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall</span>
+              <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall (100 Qs)</span>
               <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()" style="padding:0.3rem 0.8rem; font-size:0.8rem;">🔥 50:50</button>
               <div class="quiz-timer" id="exam-timer">⏱️ 30:00</div>
             </div>

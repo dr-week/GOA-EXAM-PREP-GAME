@@ -1,7 +1,7 @@
 // Main Application Entry Point
 import { state } from './state.js';
 import { loadQuestionBanks } from './db.js';
-import { startFullExamArena, prevOMRQuestion, nextOMRQuestion, submitFullExam, useFiftyFifty } from './exam.js';
+import { startFullExamArena, prevOMRQuestion, nextOMRQuestion, submitFullExam, useFiftyFifty, closeResultModal } from './exam.js';
 import { loadBrainGame, initMemoryGame, startSpeedMath } from './games.js';
 
 // Expose navigation globally for HTML inline event handlers
@@ -38,6 +38,7 @@ window.prevOMRQuestion = prevOMRQuestion;
 window.nextOMRQuestion = nextOMRQuestion;
 window.submitFullExam = submitFullExam;
 window.useFiftyFifty = useFiftyFifty;
+window.closeResultModal = closeResultModal;
 window.loadBrainGame = loadBrainGame;
 window.initMemoryGame = initMemoryGame;
 window.startSpeedMath = startSpeedMath;
