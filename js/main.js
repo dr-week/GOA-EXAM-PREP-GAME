@@ -3,7 +3,6 @@ import { state } from './state.js';
 import { loadQuestionBanks } from './db.js';
 import { startFullExamArena, prevOMRQuestion, nextOMRQuestion, submitFullExam, useFiftyFifty } from './exam.js';
 import { loadBrainGame, initMemoryGame, startSpeedMath } from './games.js';
-import { speakText } from './audio.js';
 
 // Expose navigation globally for HTML inline event handlers
 window.switchTab = function(tabName) {
@@ -44,13 +43,27 @@ window.initMemoryGame = initMemoryGame;
 window.startSpeedMath = startSpeedMath;
 window.startFullExamArena = startFullExamArena;
 
-// Voice Audio Reader Helper
-window.speakCurrentQuestion = function() {
-  const q = state.omrExamQuestions[state.omrCurrentIndex];
-  if (!q) return;
-  const textToRead = `${q.question}. Options are: ${q.options.join('. ')}`;
-  speakText(textToRead);
+// Audio Mute/Unmute Toggle Engine
+window.toggleAudioMute = function() {
+  const isMuted = localStorage.getItem('audioMuted') === 'true';
+  const newMuteState = !isMuted;
+  localStorage.setItem('audioMuted', newMuteState);
+  updateAudioToggleButton(newMuteState);
 };
+
+function updateAudioToggleButton(isMuted) {
+  const btn = document.getElementById('btn-audio-toggle');
+  if (!btn) return;
+  if (isMuted) {
+    btn.innerText = '🔇 Audio OFF';
+    btn.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+    btn.style.color = '#fca5a5';
+  } else {
+    btn.innerText = '🔊 Audio ON';
+    btn.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+    btn.style.color = '#6ee7b7';
+  }
+}
 
 // Global Search Filter Logic for Study Notes & Questions
 window.filterGlobalSearch = function(query) {
@@ -136,6 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  const initialMuteState = localStorage.getItem('audioMuted') === 'true';
+  updateAudioToggleButton(initialMuteState);
 
   loadQuestionBanks();
 });

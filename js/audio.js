@@ -2,6 +2,9 @@
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
 export function playSound(type) {
+  const isMuted = localStorage.getItem('audioMuted') === 'true';
+  if (isMuted) return; // Silent if audio is muted
+
   try {
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
@@ -26,19 +29,4 @@ export function playSound(type) {
   } catch (e) {
     console.log("Audio not supported or restricted");
   }
-}
-
-// Minimal Native Web Speech API Text-to-Speech (TTS)
-export function speakText(text) {
-  if (!('speechSynthesis' in window)) {
-    alert("Speech synthesis not supported in this browser.");
-    return;
-  }
-
-  window.speechSynthesis.cancel(); // Stop ongoing speech
-  const cleanText = text.replace(/^[A-D]\)\s*/, '');
-  const utterance = new SpeechSynthesisUtterance(cleanText);
-  utterance.rate = 1.0;
-  utterance.pitch = 1.0;
-  window.speechSynthesis.speak(utterance);
 }

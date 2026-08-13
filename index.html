@@ -62,20 +62,25 @@
 
     <!-- Main Content Area -->
     <main class="main-content">
-      <!-- Top Searchbar Area -->
+      <!-- Top Searchbar Area with Voice Mute/Unmute Toggle Button -->
       <header class="topbar">
         <div class="search-bar">
           <input type="text" id="global-search" placeholder="Search Goa history, formulas, topics...">
+        </div>
+        <div class="quick-links">
+          <button class="btn btn-secondary" id="btn-audio-toggle" onclick="toggleAudioMute()" style="padding:0.5rem 1rem; font-size:0.85rem;">
+            🔊 Audio ON
+          </button>
         </div>
       </header>
 
       <!-- View Sections (Combined into 3 Core Tabs) -->
 
-      <!-- TAB 1: Unified Exam Studio (Dashboard + OMR Arena + Voice TTS) -->
+      <!-- TAB 1: Unified Exam Studio (Dashboard + OMR Arena) -->
       <section id="view-exam-studio" class="tab-view active">
         <div class="welcome-banner">
           <h1>Goa Exam Prep Studio 🚀</h1>
-          <p>Master GPSC, GSSC, LDC & MTS exams with OMR simulations, instant solution explanations & hands-free voice audio!</p>
+          <p>Master GPSC, GSSC, LDC & MTS exams with OMR simulations and instant solution explanations!</p>
         </div>
 
         <div class="category-grid" style="margin-bottom:2rem;">
@@ -113,7 +118,6 @@
           <div class="omr-question-card">
             <div class="quiz-header" style="margin-bottom:1rem;">
               <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall</span>
-              <button class="btn btn-secondary" id="btn-listen-q" onclick="speakCurrentQuestion()" style="padding:0.3rem 0.8rem; font-size:0.8rem;">🎙️ Listen</button>
               <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()" style="padding:0.3rem 0.8rem; font-size:0.8rem;">🔥 50:50</button>
               <div class="quiz-timer" id="exam-timer">⏱️ 30:00</div>
             </div>
@@ -181,7 +185,7 @@
         </div>
       </section>
 
-      <!-- TAB 3: Revision Bank (Notes + Search + Bookmarks + Future Roadmap) -->
+      <!-- TAB 3: Revision Bank (Notes + Search + Bookmarks + Phased Update Roadmap) -->
       <section id="view-revision-bank" class="tab-view">
         <div class="study-header">
           <h2>📚 Revision & Notes Bank</h2>
@@ -206,20 +210,25 @@
           </div>
         </div>
 
+        <!-- Phased Roadmap Section -->
         <div style="margin-top:3rem;">
-          <h2>💡 Future Update Roadmap</h2>
+          <h2>🚀 Phased Feature Update Plan</h2>
           <div class="repo-list" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin-top:1rem;">
             <div class="repo-card">
-              <h4>1. 🎙️ Native Voice Audio Reader</h4>
-              <p>Hands-free audio study mode integrated using browser Web Speech API.</p>
+              <h4>Phase 1: Audio Mute & Performance</h4>
+              <p>Global audio toggle button (Mute/Unmute SFX) & 60fps GPU layer optimization.</p>
             </div>
             <div class="repo-card">
-              <h4>2. 📊 AI Performance Radar</h4>
-              <p>Visual chart analyzing accuracy % per topic to target weak areas.</p>
+              <h4>Phase 2: Visual Score Analytics</h4>
+              <p>Zero-dependency SVG accuracy bar chart tracking performance across exam attempts.</p>
             </div>
             <div class="repo-card">
-              <h4>3. 🤖 Daily Gazette Auto-Scraper</h4>
-              <p>Auto-scraping daily recruitment notices from `gpsc.goa.gov.in`.</p>
+              <h4>Phase 3: Automated Gazette Scraping</h4>
+              <p>Scheduled background Python updater (`update_knowledge.py`) scraping live GPSC recruitment notices.</p>
+            </div>
+            <div class="repo-card">
+              <h4>Phase 4: Cloud APK CI/CD Pipeline</h4>
+              <p>Automated GitHub Actions release pipeline (`build_apk.yml`) building native Android `.apk` installers.</p>
             </div>
           </div>
         </div>
