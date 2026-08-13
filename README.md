@@ -3,6 +3,12 @@
   # 🌴 Goa Government Exam Prep Studio 🚀
   ### *The Ultimate GPSC, GSSC, LDC, MTS & State Exam Preparation Platform*
 
+  🌐 **Live Demo Application:**  
+  ### 👉 [Goa Govt Exam Master - Aptitude & GK Quiz Studio](https://dr-week.github.io/GOA-EXAM-PREP-GAME/) 👈
+
+  <br>
+
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-10b981?style=for-the-badge&logo=github)](https://dr-week.github.io/GOA-EXAM-PREP-GAME/)
   [![GitHub Stars](https://img.shields.io/github/stars/dr-week/GOA-EXAM-PREP-GAME?style=for-the-badge&color=6366f1)](https://github.com/dr-week/GOA-EXAM-PREP-GAME)
   [![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
   [![Questions Database](https://img.shields.io/badge/Questions-213%20Indexed-06b6d4?style=for-the-badge)](data/db_export.json)
@@ -19,6 +25,8 @@
 ## 🌟 Overview
 
 Welcome to **Goa Exam Prep Studio** — an interactive web and native mobile application designed specifically for aspirants preparing for **Goa Public Service Commission (GPSC)**, **Goa Staff Selection Commission (GSSC)**, **Lower Division Clerk (LDC)**, **Multi-Tasking Staff (MTS)**, and **Talathi** competitive examinations.
+
+Experience the live app now at **[Goa Govt Exam Master - Aptitude & GK Quiz Studio](https://dr-week.github.io/GOA-EXAM-PREP-GAME/)**!
 
 Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassmorphism, Modular ES JS)**, this platform packs a **213+ Question Relational SQLite Database**, an **OMR Exam Simulator with 30-Minute Timer**, **Interactive Brain Training Arcade Games**, and an **Android Packaging Pipeline**!
 
@@ -84,6 +92,10 @@ Built with **Zero-Dependency Vanilla Web Technologies (HTML5, Vanilla CSS Glassm
 ---
 
 ## 🚀 Quick Start
+
+### 🌐 Play Online (No Installation Required)
+Launch the live application in any browser:  
+👉 **[Goa Govt Exam Master - Aptitude & GK Quiz Studio](https://dr-week.github.io/GOA-EXAM-PREP-GAME/)**
 
 ### 1. Serve Locally
 Simply start a lightweight Python web server:
