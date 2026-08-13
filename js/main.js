@@ -3,6 +3,7 @@ import { state } from './state.js';
 import { loadQuestionBanks } from './db.js';
 import { startFullExamArena, prevOMRQuestion, nextOMRQuestion, submitFullExam, useFiftyFifty } from './exam.js';
 import { loadBrainGame, initMemoryGame, startSpeedMath } from './games.js';
+import { speakText } from './audio.js';
 
 // Expose navigation globally for HTML inline event handlers
 window.switchTab = function(tabName) {
@@ -15,7 +16,7 @@ window.switchTab = function(tabName) {
   activeNavs.forEach(n => n.classList.add('active'));
   if (activeView) activeView.classList.add('active');
 
-  if (tabName === 'exam-arena') {
+  if (tabName === 'exam-studio') {
     if (state.allDatabaseQuestions.length === 0) {
       loadQuestionBanks().then(() => startFullExamArena());
     } else if (state.omrExamQuestions.length === 0) {
@@ -23,14 +24,14 @@ window.switchTab = function(tabName) {
     }
   } else if (tabName === 'brain-games') {
     initMemoryGame();
-  } else if (tabName === 'study') {
+  } else if (tabName === 'revision-bank') {
     loadMDFile('general_knowledge_india');
     renderBookmarks();
   }
 };
 
 window.startCategoryQuiz = function(catKey) {
-  window.switchTab('exam-arena');
+  window.switchTab('exam-studio');
   startFullExamArena(catKey);
 };
 
@@ -41,13 +42,22 @@ window.useFiftyFifty = useFiftyFifty;
 window.loadBrainGame = loadBrainGame;
 window.initMemoryGame = initMemoryGame;
 window.startSpeedMath = startSpeedMath;
+window.startFullExamArena = startFullExamArena;
+
+// Voice Audio Reader Helper
+window.speakCurrentQuestion = function() {
+  const q = state.omrExamQuestions[state.omrCurrentIndex];
+  if (!q) return;
+  const textToRead = `${q.question}. Options are: ${q.options.join('. ')}`;
+  speakText(textToRead);
+};
 
 // Global Search Filter Logic for Study Notes & Questions
 window.filterGlobalSearch = function(query) {
   const q = query.toLowerCase().trim();
   if (!q) return;
 
-  window.switchTab('study');
+  window.switchTab('revision-bank');
   const viewer = document.getElementById('md-viewer-content');
   if (!viewer) return;
 

@@ -42,7 +42,7 @@ def test_json_web_bundle():
     return True
 
 def test_ui_html_structure():
-    """Test 3: Headless UI DOM Structure & Element IDs Check"""
+    """Test 3: Headless UI DOM Structure & 3-Tab Element IDs Check"""
     print("[TEST 3/4] Headless UI DOM Structure Check...")
     index_path = "index.html"
     assert os.path.exists(index_path), "index.html file missing!"
@@ -51,10 +51,9 @@ def test_ui_html_structure():
         html = f.read()
 
     required_ids = [
-        "view-dashboard", "view-exam-arena", "view-brain-games",
-        "view-study", "view-future-roadmap", "omr-palette-grid",
-        "omr-q-text", "omr-options-container", "omr-explanation-box",
-        "user-xp", "user-level", "user-streak", "exam-timer"
+        "view-exam-studio", "view-brain-games", "view-revision-bank",
+        "omr-palette-grid", "omr-q-text", "omr-options-container",
+        "omr-explanation-box", "user-xp", "user-level", "user-streak", "exam-timer"
     ]
 
     for elem_id in required_ids:
