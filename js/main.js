@@ -16,11 +16,7 @@ window.switchTab = function(tabName) {
   if (activeView) activeView.classList.add('active');
 
   if (tabName === 'exam-studio') {
-    if (state.allDatabaseQuestions.length === 0) {
-      loadQuestionBanks().then(() => startFullExamArena());
-    } else if (state.omrExamQuestions.length === 0) {
-      startFullExamArena();
-    }
+    window.exitExamArenaView();
   } else if (tabName === 'brain-games') {
     initMemoryGame();
   } else if (tabName === 'revision-bank') {
@@ -29,9 +25,31 @@ window.switchTab = function(tabName) {
   }
 };
 
+window.launchExamArenaView = function(catKey = null) {
+  const launchScreen = document.getElementById('exam-launch-screen');
+  const activeContainer = document.getElementById('active-exam-container');
+
+  if (launchScreen) launchScreen.classList.add('hidden');
+  if (activeContainer) activeContainer.classList.remove('hidden');
+
+  startFullExamArena(catKey);
+};
+
+window.exitExamArenaView = function() {
+  const launchScreen = document.getElementById('exam-launch-screen');
+  const activeContainer = document.getElementById('active-exam-container');
+  const modal = document.getElementById('exam-score-modal');
+
+  if (modal) modal.classList.add('hidden');
+  if (activeContainer) activeContainer.classList.add('hidden');
+  if (launchScreen) launchScreen.classList.remove('hidden');
+
+  if (state.examTimerInterval) clearInterval(state.examTimerInterval);
+};
+
 window.startCategoryQuiz = function(catKey) {
   window.switchTab('exam-studio');
-  startFullExamArena(catKey);
+  window.launchExamArenaView(catKey);
 };
 
 window.launchSelectedPractice = function() {

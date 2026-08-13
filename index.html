@@ -74,88 +74,97 @@
         </div>
       </header>
 
-      <!-- View Sections (Combined into 3 Core Tabs) -->
+      <!-- View Sections -->
 
-      <!-- TAB 1: Unified Exam Studio (Ultra-Simplified 2-Card Launch Studio) -->
+      <!-- TAB 1: Unified Exam Studio -->
       <section id="view-exam-studio" class="tab-view active">
-        <div class="welcome-banner">
-          <h1>GPSC & GSSC Preparation Studio 🚀</h1>
-          <p>Practice 226+ high-yield Goa questions, 2026 Current Affairs, and official 100-question OMR exam simulations.</p>
+        <!-- Launch Screen View (Shown initially) -->
+        <div id="exam-launch-screen">
+          <div class="welcome-banner">
+            <h1>GPSC & GSSC Preparation Studio 🚀</h1>
+            <p>Practice 226+ high-yield Goa questions, 2026 Current Affairs, and official 100-question OMR exam simulations.</p>
+          </div>
+
+          <!-- Ultra-Simplified 2-Card Launch Grid -->
+          <div class="category-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom:2rem;">
+            <!-- CARD 1: Full 100 Qs Exam Hall -->
+            <div class="cat-card" style="border:1px solid var(--border-active); background:linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);">
+              <div class="cat-icon">🏛️</div>
+              <h3>Official 100-Question Exam Arena</h3>
+              <p>Full-length official mock test with 100 double-shuffled questions & 30-minute timer.</p>
+              <button class="btn btn-primary" onclick="launchExamArenaView()" style="width:100%; padding:0.9rem; font-size:1rem;">Launch Official Test (100 Qs)</button>
+            </div>
+
+            <!-- CARD 2: Quick Subject Practice Dropdown -->
+            <div class="cat-card" style="border:1px solid var(--border-active);">
+              <div class="cat-icon">⚡</div>
+              <h3>Subject Practice Studio</h3>
+              <p>Select any subject module to practice targeted questions at your own pace.</p>
+              <div style="display:flex; gap:0.5rem; margin-top:auto;">
+                <select id="practice-subject-select" style="flex:1; background:rgba(15, 23, 42, 0.9); border:1px solid var(--border-color); color:#fff; padding:0.75rem; border-radius:10px; font-weight:600; outline:none;">
+                  <option value="goa_current_affairs_2026">🆕 Goa Current Affairs 2025-2026</option>
+                  <option value="goa_special_gk">🏝️ Goa Special & History GK</option>
+                  <option value="quantitative_aptitude">🔢 Quantitative Aptitude</option>
+                  <option value="konkani_rti">📜 Konkani, RTI & Polity</option>
+                  <option value="computer_awareness">💻 Computer Awareness</option>
+                  <option value="general_knowledge_india">🔥 General Studies India (50 Qs)</option>
+                </select>
+                <button class="btn btn-primary" onclick="launchSelectedPractice()">Start</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Ultra-Simplified 2-Card Dashboard -->
-        <div class="category-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom:2rem;">
-          <!-- CARD 1: Full 100 Qs Exam Hall -->
-          <div class="cat-card" style="border:1px solid var(--border-active); background:linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);">
-            <div class="cat-icon">🏛️</div>
-            <h3>Official 100-Question Exam Arena</h3>
-            <p>Full-length official mock test with 100 double-shuffled questions & 30-minute timer.</p>
-            <button class="btn btn-primary" onclick="startFullExamArena()" style="width:100%; padding:0.9rem; font-size:1rem;">Launch Official Test (100 Qs)</button>
+        <!-- Active OMR Exam Arena Container (Hidden initially until user launches test) -->
+        <div id="active-exam-container" class="hidden">
+          <div style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center;">
+            <button class="btn btn-secondary" onclick="exitExamArenaView()">◄ Back to Launch Studio</button>
           </div>
 
-          <!-- CARD 2: Quick Subject Practice Dropdown -->
-          <div class="cat-card" style="border:1px solid var(--border-active);">
-            <div class="cat-icon">⚡</div>
-            <h3>Subject Practice Studio</h3>
-            <p>Select any subject module to practice targeted questions at your own pace.</p>
-            <div style="display:flex; gap:0.5rem; margin-top:auto;">
-              <select id="practice-subject-select" style="flex:1; background:rgba(15, 23, 42, 0.9); border:1px solid var(--border-color); color:#fff; padding:0.75rem; border-radius:10px; font-weight:600; outline:none;">
-                <option value="goa_current_affairs_2026">🆕 Goa Current Affairs 2025-2026</option>
-                <option value="goa_special_gk">🏝️ Goa Special & History GK</option>
-                <option value="quantitative_aptitude">🔢 Quantitative Aptitude</option>
-                <option value="konkani_rti">📜 Konkani, RTI & Polity</option>
-                <option value="computer_awareness">💻 Computer Awareness</option>
-                <option value="general_knowledge_india">🔥 General Studies India (50 Qs)</option>
-              </select>
-              <button class="btn btn-primary" onclick="launchSelectedPractice()">Start</button>
+          <!-- In-Page Score Results Modal Container -->
+          <div id="exam-score-modal" class="game-box hidden" style="border:1px solid var(--border-active); margin-bottom:2rem; background:linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%); text-align:left;">
+            <h2 style="color:var(--accent-cyan); margin-bottom:1rem;">🏆 EXAM RESULT SUMMARY</h2>
+            <div style="font-size:1.1rem; line-height:1.8; margin-bottom:1.5rem;">
+              <div>🎯 <strong>Final Score:</strong> <span id="res-score" style="color:#10b981; font-weight:700;">0</span> / <span id="res-total">100</span></div>
+              <div>❓ <strong>Unattempted Questions:</strong> <span id="res-unattempted">0</span></div>
+              <div>📈 <strong>Accuracy Percentage:</strong> <span id="res-accuracy" style="color:var(--accent-amber); font-weight:700;">0%</span></div>
             </div>
-          </div>
-        </div>
-
-        <!-- In-Page Score Results Modal Container -->
-        <div id="exam-score-modal" class="game-box hidden" style="border:1px solid var(--border-active); margin-bottom:2rem; background:linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%); text-align:left;">
-          <h2 style="color:var(--accent-cyan); margin-bottom:1rem;">🏆 EXAM RESULT SUMMARY</h2>
-          <div style="font-size:1.1rem; line-height:1.8; margin-bottom:1.5rem;">
-            <div>🎯 <strong>Final Score:</strong> <span id="res-score" style="color:#10b981; font-weight:700;">0</span> / <span id="res-total">100</span></div>
-            <div>❓ <strong>Unattempted Questions:</strong> <span id="res-unattempted">0</span></div>
-            <div>📈 <strong>Accuracy Percentage:</strong> <span id="res-accuracy" style="color:var(--accent-amber); font-weight:700;">0%</span></div>
-          </div>
-          <button class="btn btn-primary" onclick="closeResultModal()">Close Results & Return</button>
-        </div>
-
-        <!-- Integrated OMR Exam Arena Container -->
-        <div class="omr-layout">
-          <div class="omr-question-card">
-            <div class="quiz-header" style="margin-bottom:1rem;">
-              <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall (100 Qs)</span>
-              <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()" style="padding:0.3rem 0.8rem; font-size:0.8rem;">🔥 50:50</button>
-              <div class="quiz-timer" id="exam-timer">⏱️ 30:00</div>
-            </div>
-
-            <div class="q-number">Question <span id="omr-q-curr">1</span> of <span id="omr-q-total">100</span></div>
-            <h2 class="q-text" id="omr-q-text">Loading question...</h2>
-
-            <div class="options-container" id="omr-options-container">
-              <!-- Options rendered here -->
-            </div>
-
-            <div class="explanation-box hidden" id="omr-explanation-box">
-              <h4>💡 Answer & Explanation</h4>
-              <p id="omr-explanation-text"></p>
-            </div>
-
-            <div class="quiz-actions" style="margin-top:2rem; display:flex; gap:1rem;">
-              <button class="btn btn-secondary" onclick="prevOMRQuestion()">◄ Previous</button>
-              <button class="btn btn-primary" onclick="nextOMRQuestion()">Next Question ►</button>
-              <button class="btn btn-primary" style="background:#10b981; margin-left:auto;" onclick="submitFullExam()">Finish Test</button>
-            </div>
+            <button class="btn btn-primary" onclick="closeResultModal()">Close Results & Return</button>
           </div>
 
-          <div class="omr-palette">
-            <h3>📌 OMR Palette</h3>
-            <p style="font-size:0.8rem; color:var(--text-muted);">Jump to question:</p>
-            <div class="palette-grid" id="omr-palette-grid">
-              <!-- OMR Palette Buttons -->
+          <div class="omr-layout">
+            <div class="omr-question-card">
+              <div class="quiz-header" style="margin-bottom:1rem;">
+                <span class="quiz-topic-tag" id="current-quiz-topic">🏛️ GPSC / GSSC Official Exam Hall (100 Qs)</span>
+                <button class="btn btn-secondary" id="btn-5050" onclick="useFiftyFifty()" style="padding:0.3rem 0.8rem; font-size:0.8rem;">🔥 50:50</button>
+                <div class="quiz-timer" id="exam-timer">⏱️ 30:00</div>
+              </div>
+
+              <div class="q-number">Question <span id="omr-q-curr">1</span> of <span id="omr-q-total">100</span></div>
+              <h2 class="q-text" id="omr-q-text">Loading question...</h2>
+
+              <div class="options-container" id="omr-options-container">
+                <!-- Options rendered here -->
+              </div>
+
+              <div class="explanation-box hidden" id="omr-explanation-box">
+                <h4>💡 Answer & Explanation</h4>
+                <p id="omr-explanation-text"></p>
+              </div>
+
+              <div class="quiz-actions" style="margin-top:2rem; display:flex; gap:1rem;">
+                <button class="btn btn-secondary" onclick="prevOMRQuestion()">◄ Previous</button>
+                <button class="btn btn-primary" onclick="nextOMRQuestion()">Next Question ►</button>
+                <button class="btn btn-primary" style="background:#10b981; margin-left:auto;" onclick="submitFullExam()">Finish Test</button>
+              </div>
+            </div>
+
+            <div class="omr-palette">
+              <h3>📌 OMR Palette</h3>
+              <p style="font-size:0.8rem; color:var(--text-muted);">Jump to question:</p>
+              <div class="palette-grid" id="omr-palette-grid">
+                <!-- OMR Palette Buttons -->
+              </div>
             </div>
           </div>
         </div>
