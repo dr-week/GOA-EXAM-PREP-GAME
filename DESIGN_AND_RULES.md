@@ -1,65 +1,58 @@
-# 🎨 Goa Exam Prep Platform - Design Guidelines, System Rules & GitHub Repositories
+# 🎨 Goa Exam Prep Platform - Master Design Guidelines, Architectural Rules & Repository Index
 
-This document serves as the master specification for UI design standards, architectural guidelines, and recommended open-source GitHub repositories integrated into the **Goa Government Exam Prep Studio**.
+This document serves as the master specification for UI design standards, mobile responsiveness rules, architectural guidelines, and integrated open-source GitHub repositories for **Goa Government Exam Prep Studio**.
 
 ---
 
-## 🎨 1. Design Aesthetics & UI System
+## 🛡️ Master Development Rules & Non-Destructive Principles
 
-### 💎 Color System (Dark Mode Glassmorphism)
-- **Background Main**: `#090d16` (Deep Space Dark)
-- **Sidebar Surface**: `#0f172a` (Slate Dark)
-- **Card Surface**: `#1e293b` (Elevated Card Layer)
-- **Card Surface Hover**: `#26334d` (Active Hover Accent)
-- **Primary Accent Gradient**: `linear-gradient(135deg, #6366f1 0%, #a855f7 100%)` (Indigo-Purple)
-- **Cyan Accent Tag**: `#06b6d4`
+### Rule 1: Zero-Data Loss Policy
+- **No Question Bank Deletions**: All 13 Markdown question banks in `data/*.md` (226+ indexed questions) must be preserved.
+- **Relational DB Synchronization**: The SQLite database (`data/questions.db`) and web bundle (`data/db_export.json`) are automatically recompiled using `python compile_db.py`.
+
+### Rule 2: Non-Destructive UI Refactoring
+- Refactoring UI layouts must never delete underlying engine capabilities:
+  - OMR Palette Grid & 30-Minute Exam Timer.
+  - 50:50 Lifeline & In-Page Result Modal.
+  - Global Audio Toggle (`🔊 Audio ON` / `🔇 Audio OFF`).
+  - Brain Training Arcade (Memory Match & Speed Math).
+  - Revision Bank Markdown Viewer, Instant Search, and LocalStorage Bookmarks.
+
+### Rule 3: Phone-First Mobile UI Architecture
+- **Desktop Layout (`> 900px`)**: Fixed 280px left sidebar, topbar header, multi-column card grids.
+- **Phone Layout (`<= 900px`)**:
+  - Desktop sidebar hidden completely (`display: none !important`).
+  - Main canvas margin reset to zero (`margin-left: 0 !important; width: 100vw !important`).
+  - Top sticky header displaying logo, Level, and Streak.
+  - Fixed 60px bottom navigation bar for 1-tap switching between Studio, Arcade, and Revision tabs.
+  - All touch targets (buttons, dropdowns) sized to minimum 48px height.
+
+---
+
+## 🎨 Design System & Visual Specification
+
+### 💎 Dark Mode Glassmorphism Color Palette
+- **Primary Background**: `#090d16` (Deep Space Dark)
+- **Sidebar & Nav Bar Surface**: `#0f172a` (Slate Dark)
+- **Card Container Surface**: `#1e293b` (Elevated Card Layer)
+- **Card Active Border**: `#3b82f6` (Accent Indigo)
+- **Primary Action Gradient**: `linear-gradient(135deg, #6366f1 0%, #a855f7 100%)`
+- **Cyan Accent**: `#06b6d4`
 - **Amber Streak**: `#f59e0b`
-- **Success State**: `#10b981` (Emerald Green)
-- **Error State**: `#ef4444` (Coral Red)
+- **Success Emerald**: `#10b981`
+- **Error Coral**: `#ef4444`
 
-### 🔤 Typography & Hierarchy
-- **Primary Headings**: `Outfit`, sans-serif (Weights: 600, 700)
-- **Body Text**: `Plus Jakarta Sans`, sans-serif (Weights: 400, 500, 600)
-- **Base Font Size**: `16px`, Line Height: `1.65`
-
-### 📐 Layout Architecture & Responsive Breakpoints
-1. **Fixed Sidebar (`260px`)**: Stays pinned during scroll; holds brand identity, main 5 navigation tabs, XP level progress bar, and daily streak badge.
-2. **Main Canvas (`margin-left: 260px`)**: Topbar search input + GitHub pills + Streamlined 5 Tab Views.
-3. **Responsive Breakpoint (`<= 900px`)**: Sidebar shifts to top navigation and OMR palette expands to a 10-column touch ribbon.
+### 🔤 Typography
+- **Headings**: `Outfit`, sans-serif (Weights: 600, 700)
+- **Body**: `Plus Jakarta Sans`, sans-serif (Weights: 400, 500, 600)
+- **Base Size**: `16px`, Line Height: `1.65`
 
 ---
 
-## 📜 2. Automated Test Suite Specifications & Rules
+## 🔗 Integrated Open-Source GitHub Repositories
 
-The project incorporates 5 automated testing and verification scripts:
-
-1. **[`test_official_rules.py`](file:///d:/CODES/busy/govtexamtest/test_official_rules.py)**:
-   - Verifies 60fps hardware acceleration (`will-change`) and mobile responsive breakpoints.
-2. **[`test_exam_hall.py`](file:///d:/CODES/busy/govtexamtest/test_exam_hall.py)**:
-   - Verifies multi-question navigation and ensures answering Question 1 does NOT trigger early test submission.
-3. **[`test_ui_suite.py`](file:///d:/CODES/busy/govtexamtest/test_ui_suite.py)**:
-   - SQLite DB integrity, web JSON export, DOM elements verification.
-4. **[`test_fast.py`](file:///d:/CODES/busy/govtexamtest/test_fast.py)**:
-   - Syntax validation and duplicate detection across all 12 Markdown banks.
-5. **[`reason_knowledge.py`](file:///d:/CODES/busy/govtexamtest/reason_knowledge.py)**:
-   - Verifies and logs official government sources in `knowledge_sources.json`.
-
----
-
-## 🔗 3. Curated Open-Source GitHub Repositories
-
-Below is the complete list of open-source GitHub repositories integrated into the platform:
-
-### 📚 Aptitude & Exam Question Banks
-1. **[ratneshmaurya/Aptitude_Practice_Questions](https://github.com/ratneshmaurya/Aptitude_Practice_Questions)**: Markdown question bank covering foundational math.
-2. **[drsarveshwarbharti/Aptitude-For-Placements](https://github.com/drsarveshwarbharti/Aptitude-For-Placements)**: Quantitative & Logical collections.
-3. **[rohanmistry231/CSE-Aptitude-Test-Practice-Hub](https://github.com/rohanmistry231/CSE-Aptitude-Test-Practice-Hub)**: Categorized aptitude test practice questions.
-
-### 🎮 Open-Source Brain Games & Utilities
-4. **[kubowania/memory-game](https://github.com/kubowania/memory-game)**: Vanilla JS memory matching card game logic.
-5. **[Khazri71/HTML5-CSS3-JS-Memory-Game](https://github.com/Khazri71/HTML5-CSS3-JS-Memory-Game)**: Card flip animations and game state management.
-6. **[bonartm/quizdown-js](https://github.com/bonartm/quizdown-js)**: Markdown-to-quiz instant rendering engine.
-
-### 📱 Android APK Build & Automation Tools
-7. **[ionic-team/capacitor](https://github.com/ionic-team/capacitor)**: Framework used in `build_apk.bat` & `make_apk.py`.
-8. **[darkshredder/web-to-app-action](https://github.com/darkshredder/web-to-app-action)**: GitHub Marketplace Action for cloud APK building.
+1. **[ratneshmaurya/Aptitude_Practice_Questions](https://github.com/ratneshmaurya/Aptitude_Practice_Questions)** – Aptitude question banks.
+2. **[drsarveshwarbharti/Aptitude-For-Placements](https://github.com/drsarveshwarbharti/Aptitude-For-Placements)** – Placement quantitative logic.
+3. **[rohanmistry231/CSE-Aptitude-Test-Practice-Hub](https://github.com/rohanmistry231/CSE-Aptitude-Test-Practice-Hub)** – Difficulty-categorized sets.
+4. **[kubowania/memory-game](https://github.com/kubowania/memory-game)** – Memory card matching game pattern.
+5. **[ionic-team/capacitor](https://github.com/ionic-team/capacitor)** – Web-to-Native Android container framework.
