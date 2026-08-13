@@ -24,7 +24,7 @@ window.switchTab = function(tabName) {
   } else if (tabName === 'brain-games') {
     initMemoryGame();
   } else if (tabName === 'revision-bank') {
-    loadMDFile('general_knowledge_india');
+    loadMDFile('goa_current_affairs_2026');
     renderBookmarks();
   }
 };
@@ -32,6 +32,13 @@ window.switchTab = function(tabName) {
 window.startCategoryQuiz = function(catKey) {
   window.switchTab('exam-studio');
   startFullExamArena(catKey);
+};
+
+window.launchSelectedPractice = function() {
+  const selectElem = document.getElementById('practice-subject-select');
+  if (!selectElem) return;
+  const selectedCat = selectElem.value;
+  window.startCategoryQuiz(selectedCat);
 };
 
 window.prevOMRQuestion = prevOMRQuestion;

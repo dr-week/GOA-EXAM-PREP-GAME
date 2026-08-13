@@ -62,10 +62,10 @@
 
     <!-- Main Content Area -->
     <main class="main-content">
-      <!-- Top Searchbar Area with Voice Mute/Unmute Toggle Button -->
+      <!-- Clean Topbar Header -->
       <header class="topbar">
-        <div class="search-bar">
-          <input type="text" id="global-search" placeholder="Search Goa history, formulas, topics...">
+        <div class="brand-text" style="display:flex; align-items:center; gap:0.5rem;">
+          <h2 style="font-family:var(--font-heading); font-size:1.3rem;">Goa Government Exam Studio</h2>
         </div>
         <div class="quick-links">
           <button class="btn btn-secondary" id="btn-audio-toggle" onclick="toggleAudioMute()" style="padding:0.5rem 1rem; font-size:0.85rem;">
@@ -76,47 +76,39 @@
 
       <!-- View Sections (Combined into 3 Core Tabs) -->
 
-      <!-- TAB 1: Unified Exam Studio (Dashboard + OMR Arena) -->
+      <!-- TAB 1: Unified Exam Studio (Ultra-Simplified 2-Card Launch Studio) -->
       <section id="view-exam-studio" class="tab-view active">
         <div class="welcome-banner">
-          <h1>Goa Exam Prep Studio 🚀</h1>
-          <p>Master GPSC, GSSC, LDC & MTS exams with OMR simulations, instant solution explanations & 2026 Current Affairs!</p>
+          <h1>GPSC & GSSC Preparation Studio 🚀</h1>
+          <p>Practice 226+ high-yield Goa questions, 2026 Current Affairs, and official 100-question OMR exam simulations.</p>
         </div>
 
-        <div class="category-grid" style="margin-bottom:2rem;">
-          <div class="cat-card" onclick="startFullExamArena()">
+        <!-- Ultra-Simplified 2-Card Dashboard -->
+        <div class="category-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom:2rem;">
+          <!-- CARD 1: Full 100 Qs Exam Hall -->
+          <div class="cat-card" style="border:1px solid var(--border-active); background:linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);">
             <div class="cat-icon">🏛️</div>
-            <h3>Full Govt Exam Arena (100 Qs)</h3>
-            <p>100-Question Official Exam Hall Simulation with 30-Min Timer</p>
-            <button class="btn btn-primary">Launch Full Exam (100 Qs)</button>
+            <h3>Official 100-Question Exam Arena</h3>
+            <p>Full-length official mock test with 100 double-shuffled questions & 30-minute timer.</p>
+            <button class="btn btn-primary" onclick="startFullExamArena()" style="width:100%; padding:0.9rem; font-size:1rem;">Launch Official Test (100 Qs)</button>
           </div>
 
-          <div class="cat-card" onclick="startCategoryQuiz('goa_current_affairs_2026')">
-            <div class="cat-icon">🆕</div>
-            <h3>Goa Current Affairs 2025-2026</h3>
-            <p>Kushavati 3rd District, ULLAS Literacy, Sukanya Scheme, Startup Policy</p>
-            <button class="btn btn-primary">Start Quiz</button>
-          </div>
-
-          <div class="cat-card" onclick="startCategoryQuiz('goa_special_gk')">
-            <div class="cat-icon">🏝️</div>
-            <h3>Goa Special & History GK</h3>
-            <p>1961 Liberation, Sonsogor Peak (1166m), Freedom Struggle</p>
-            <button class="btn btn-primary">Start Quiz</button>
-          </div>
-
-          <div class="cat-card" onclick="startCategoryQuiz('quantitative_aptitude')">
-            <div class="cat-icon">🔢</div>
-            <h3>Aptitude & GitHub Bank</h3>
-            <p>Percentages, Ratios, Speed & Time, Data Interpretation</p>
-            <button class="btn btn-primary">Start Quiz</button>
-          </div>
-
-          <div class="cat-card" onclick="startCategoryQuiz('konkani_rti')">
-            <div class="cat-icon">📜</div>
-            <h3>Konkani, RTI & Polity</h3>
-            <p>Konkani Devanagari Vocabulary, Goa RTI 30-day rules</p>
-            <button class="btn btn-primary">Start Quiz</button>
+          <!-- CARD 2: Quick Subject Practice Dropdown -->
+          <div class="cat-card" style="border:1px solid var(--border-active);">
+            <div class="cat-icon">⚡</div>
+            <h3>Subject Practice Studio</h3>
+            <p>Select any subject module to practice targeted questions at your own pace.</p>
+            <div style="display:flex; gap:0.5rem; margin-top:auto;">
+              <select id="practice-subject-select" style="flex:1; background:rgba(15, 23, 42, 0.9); border:1px solid var(--border-color); color:#fff; padding:0.75rem; border-radius:10px; font-weight:600; outline:none;">
+                <option value="goa_current_affairs_2026">🆕 Goa Current Affairs 2025-2026</option>
+                <option value="goa_special_gk">🏝️ Goa Special & History GK</option>
+                <option value="quantitative_aptitude">🔢 Quantitative Aptitude</option>
+                <option value="konkani_rti">📜 Konkani, RTI & Polity</option>
+                <option value="computer_awareness">💻 Computer Awareness</option>
+                <option value="general_knowledge_india">🔥 General Studies India (50 Qs)</option>
+              </select>
+              <button class="btn btn-primary" onclick="launchSelectedPractice()">Start</button>
+            </div>
           </div>
         </div>
 
@@ -203,10 +195,13 @@
         </div>
       </section>
 
-      <!-- TAB 3: Revision Bank (Notes + Search + Bookmarks + Phased Update Roadmap) -->
+      <!-- TAB 3: Revision Bank (Notes + Search Engine + Bookmarks + Phased Roadmap) -->
       <section id="view-revision-bank" class="tab-view">
         <div class="study-header">
           <h2>📚 Revision & Notes Bank</h2>
+          <div class="search-bar" style="margin:1rem 0;">
+            <input type="text" id="global-search" placeholder="Search Goa history, formulas, topics (Press Enter)..." style="width:100%; max-width:500px;">
+          </div>
           <div class="md-selector">
             <button class="btn-chip active" onclick="loadMDFile('goa_current_affairs_2026')">Goa 2026 CA</button>
             <button class="btn-chip" onclick="loadMDFile('general_knowledge_india')">50 Master Qs</button>
