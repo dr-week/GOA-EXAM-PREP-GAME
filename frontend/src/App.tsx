@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
 import { ExamArena } from './components/ExamArena';
@@ -124,25 +125,53 @@ export function App() {
         onSelectTab={(tab) => setActiveTab(tab)}
       />
 
-      {/* Main Views */}
+      {/* Main Views with Framer Motion 60fps transitions */}
       <main className="pb-12">
-        {activeTab === 'dashboard' && (
-          <Home
-            onStartFullExam={handleStartFullExam}
-            onStartPractice={handleStartPractice}
-            subjectKeys={subjectKeys}
-          />
-        )}
+        <AnimatePresence mode="wait">
+          {activeTab === 'dashboard' && (
+            <motion.div
+              key="dashboard"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Home
+                onStartFullExam={handleStartFullExam}
+                onStartPractice={handleStartPractice}
+                subjectKeys={subjectKeys}
+              />
+            </motion.div>
+          )}
 
-        {activeTab === 'arcade' && <BrainArcade />}
+          {activeTab === 'arcade' && (
+            <motion.div
+              key="arcade"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.2 }}
+            >
+              <BrainArcade />
+            </motion.div>
+          )}
 
-        {activeTab === 'revision' && (
-          <RevisionBank
-            questions={questions}
-            bookmarks={bookmarks}
-            onToggleBookmark={handleToggleBookmark}
-          />
-        )}
+          {activeTab === 'revision' && (
+            <motion.div
+              key="revision"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.2 }}
+            >
+              <RevisionBank
+                questions={questions}
+                bookmarks={bookmarks}
+                onToggleBookmark={handleToggleBookmark}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </main>
 
       {/* Mobile Bottom Navigation */}
