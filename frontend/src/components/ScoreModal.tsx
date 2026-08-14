@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trophy, BookOpen, Target, Zap } from 'lucide-react';
 
 interface ScoreModalProps {
   score: number;
@@ -28,7 +29,13 @@ export const ScoreModal: React.FC<ScoreModalProps> = ({
 
         {/* Icon & Title */}
         <div className="space-y-2">
-          <div className="text-5xl">{isPassed ? '🏆' : '📚'}</div>
+          <div className="flex justify-center">
+            {isPassed ? (
+              <Trophy className="w-16 h-16 text-emerald-400" />
+            ) : (
+              <BookOpen className="w-16 h-16 text-amber-400" />
+            )}
+          </div>
           <h3 className="text-2xl font-extrabold text-white">
             {isPassed ? 'Exam Passed!' : 'Practice Completed'}
           </h3>
@@ -43,7 +50,9 @@ export const ScoreModal: React.FC<ScoreModalProps> = ({
         <div className="bg-slate-950/80 border border-slate-800 rounded-2xl p-6 space-y-4">
           <div className="flex items-center justify-around">
             <div>
-              <div className="text-xs text-slate-400 uppercase font-bold tracking-wider">Score</div>
+              <div className="text-xs text-slate-400 uppercase font-bold tracking-wider flex items-center justify-center gap-1">
+                <Target className="w-3.5 h-3.5 text-indigo-400" /> Score
+              </div>
               <div className="text-2xl font-black text-white mt-1">
                 {score} / {total}
               </div>
@@ -71,8 +80,8 @@ export const ScoreModal: React.FC<ScoreModalProps> = ({
             />
           </div>
 
-          <div className="text-xs text-amber-400 font-semibold">
-            ⚡ Gained +{gainedXP} XP
+          <div className="text-xs text-amber-400 font-semibold flex items-center justify-center gap-1">
+            <Zap className="w-3.5 h-3.5 fill-amber-400" /> Gained +{gainedXP} XP
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Palmtree, Medal, Zap, Flame, Landmark, Brain, BookOpen, Volume2, VolumeX } from 'lucide-react';
 
 interface NavbarProps {
   userXP: number;
@@ -31,8 +32,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => onSelectTab('dashboard')} 
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-xl shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-            🌴
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+            <Palmtree className="w-5 h-5" />
           </div>
           <div>
             <h1 className="text-lg font-bold text-white tracking-wide">
@@ -47,11 +48,17 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Level & XP with Progress Bar */}
           <div className="flex flex-col gap-1 bg-slate-900/90 border border-slate-800 px-3.5 py-1.5 rounded-2xl text-xs font-medium">
             <div className="flex items-center gap-2">
-              <span className="text-indigo-400 font-bold">🎖️ {userLevel}</span>
+              <span className="text-indigo-400 font-bold flex items-center gap-1">
+                <Medal className="w-3.5 h-3.5" /> {userLevel}
+              </span>
               <span className="text-slate-600">|</span>
-              <span className="text-amber-400 font-semibold">⚡ {userXP} XP</span>
+              <span className="text-amber-400 font-semibold flex items-center gap-1">
+                <Zap className="w-3.5 h-3.5 fill-amber-400" /> {userXP} XP
+              </span>
               <span className="text-slate-600">|</span>
-              <span className="text-orange-400 font-semibold">🔥 {userStreak} Days</span>
+              <span className="text-orange-400 font-semibold flex items-center gap-1">
+                <Flame className="w-3.5 h-3.5 fill-orange-400" /> {userStreak} Days
+              </span>
             </div>
             {/* Progress bar */}
             <div className="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden border border-slate-800/80">
@@ -66,33 +73,33 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center bg-slate-900/90 border border-slate-800 p-1 rounded-full text-xs">
             <button
               onClick={() => onSelectTab('dashboard')}
-              className={`px-3 py-1.5 rounded-full font-medium transition-colors ${
+              className={`px-3 py-1.5 rounded-full font-medium transition-colors flex items-center gap-1.5 ${
                 activeTab === 'dashboard'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              🏛️ Exam Studio
+              <Landmark className="w-3.5 h-3.5" /> Exam Studio
             </button>
             <button
               onClick={() => onSelectTab('arcade')}
-              className={`px-3 py-1.5 rounded-full font-medium transition-colors ${
+              className={`px-3 py-1.5 rounded-full font-medium transition-colors flex items-center gap-1.5 ${
                 activeTab === 'arcade'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              🧠 Brain Arcade
+              <Brain className="w-3.5 h-3.5" /> Brain Arcade
             </button>
             <button
               onClick={() => onSelectTab('revision')}
-              className={`px-3 py-1.5 rounded-full font-medium transition-colors ${
+              className={`px-3 py-1.5 rounded-full font-medium transition-colors flex items-center gap-1.5 ${
                 activeTab === 'revision'
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              📚 Revision Bank
+              <BookOpen className="w-3.5 h-3.5" /> Revision Bank
             </button>
           </div>
 
@@ -104,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors"
               title="Toggle Sound Effects"
             >
-              {isAudioOn ? '🔊' : '🔇'}
+              {isAudioOn ? <Volume2 className="w-4 h-4 text-emerald-400" /> : <VolumeX className="w-4 h-4 text-slate-500" />}
             </button>
 
             {/* Language Dropdown */}

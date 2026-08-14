@@ -37,7 +37,6 @@ def test_exam_hall_navigation_logic():
     print("  [PASS] nextOMRQuestion correctly iterates through full question palette.")
     print("-" * 60)
     print("[SUCCESS] EXAM HALL MULTI-QUESTION NAVIGATION VERIFIED CLEANLY!")
-    return True
 
 if __name__ == "__main__":
     test_exam_hall_navigation_logic()

@@ -59,9 +59,27 @@ graph TD
     D --> E["5. Run Pytest Suite for Backend / Playwright for Frontend"]
 ```
 
+## 🎨 4. Open-Source Icons & Asset System
+
+We strictly use **[`lucide-react`](https://lucide.dev/)** (MIT License), an active open-source vector icon library providing clean, scalable SVG icons:
+- **Navigation & Brand**: `<Palmtree />`, `<Landmark />`, `<Brain />`, `<BookOpen />`
+- **Stats & Gamification**: `<Medal />`, `<Zap />`, `<Flame />`, `<Clock />`, `<Trophy />`
+- **Controls & Actions**: `<Volume2 />`, `<VolumeX />`, `<Search />`, `<Bookmark />`, `<Rocket />`
+
 ---
 
-## 🚀 5. Future Strategic UI Roadmap & Specifications
+## 🔗 5. Curated Open-Source Integrations
+
+1. **[Vite](https://vitejs.dev/)** – Next Generation Frontend Tooling.
+2. **[Tailwind CSS](https://tailwindcss.com/)** – Rapid utility-first CSS framework.
+3. **[Lucide Icons](https://lucide.dev/)** – Crisp, open-source vector SVG icons (MIT Licensed).
+4. **[Supabase](https://supabase.com/)** – The open-source Firebase alternative. leaderboard modal displaying candidate rankings based on cumulative XP and streak badges.
+3. **📲 Offline Progressive Web App (PWA)**:
+   - Configure service workers for offline caching of question banks and assets.
+
+---
+
+## 🚀 6. Future Strategic UI Roadmap & Specifications
 
 1. **📊 SVG Visual Analytics**:
    - Render zero-dependency SVG bar charts tracking subject-wise accuracy scores per user session.

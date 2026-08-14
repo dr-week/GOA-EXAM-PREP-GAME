@@ -1,4 +1,5 @@
 import React from 'react';
+import { BarChart2, Brain, BookOpen } from 'lucide-react';
 
 interface BottomNavProps {
   activeTab: string;
@@ -14,7 +15,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
           activeTab === 'dashboard' ? 'text-indigo-400' : 'text-slate-500 hover:text-slate-300'
         }`}
       >
-        <span className="text-lg">📊</span>
+        <BarChart2 className="w-5 h-5" />
         <span className="text-[10px] font-bold">Studio</span>
       </button>
 
@@ -24,7 +25,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
           activeTab === 'arcade' ? 'text-indigo-400' : 'text-slate-500 hover:text-slate-300'
         }`}
       >
-        <span className="text-lg">🧠</span>
+        <Brain className="w-5 h-5" />
         <span className="text-[10px] font-bold">Arcade</span>
       </button>
 
@@ -34,7 +35,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
           activeTab === 'revision' ? 'text-indigo-400' : 'text-slate-500 hover:text-slate-300'
         }`}
       >
-        <span className="text-lg">📚</span>
+        <BookOpen className="w-5 h-5" />
         <span className="text-[10px] font-bold">Revision</span>
       </button>
     </nav>

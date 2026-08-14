@@ -41,7 +41,6 @@ def test_official_exam_rules_and_performance():
 
     print("-" * 60)
     print("[SUCCESS] OFFICIAL EXAM RULES & PERFORMANCE VERIFIED CLEANLY!")
-    return True
 
 if __name__ == "__main__":
     test_official_exam_rules_and_performance()
