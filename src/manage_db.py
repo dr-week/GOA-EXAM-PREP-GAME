@@ -12,6 +12,7 @@ def print_help():
     print("  audit      - Deep checks for duplicates and formatting blunders")
     print("  seed-bulk  - Seeds 500+ Goa Q&A programmatically")
     print("  test       - Runs full unit & UI test suite")
+    print("  ci         - Runs full parallel CI pipeline (audit + compile + test + build)")
     print("=" * 60)
 
 def main():
@@ -40,6 +41,41 @@ def main():
     elif command == "test":
         print("[TEST] Running test suite...")
         subprocess.run([sys.executable, "-m", "pytest", "tests/"])
+    elif command == "ci":
+        print("=" * 60)
+        print("[CI PIPELINE] Running Full Integration & Verification Chain")
+        print("=" * 60)
+        print("\n[STEP 1/4] Running Markdown Audit...")
+        import src.deep_audit_md as deep_audit_md
+        deep_audit_md.audit_markdown_files()
+
+        print("\n[STEP 2/4] Compiling SQLite DB & Web Exports...")
+        import src.compile_db as compile_db
+        compile_db.compile_database()
+        # Copy to frontend public
+        subprocess.run(["cmd.exe", "/c", "copy", "data\\db_export.json", "frontend\\public\\db_export.json"], check=False)
+
+        print("\n[STEP 3/4] Running Pytest Backend & Frontend Schema Suite...")
+        res_pytest = subprocess.run([sys.executable, "-m", "pytest", "tests/"])
+        if res_pytest.returncode != 0:
+            print("[CI FAIL] Pytest suite failed!")
+            sys.exit(1)
+
+        print("\n[STEP 4/4] Running Vitest & React Production Build...")
+        frontend_dir = os.path.join(project_root, "frontend")
+        res_vitest = subprocess.run(["npm.cmd", "test"], cwd=frontend_dir)
+        if res_vitest.returncode != 0:
+            print("[CI FAIL] Vitest suite failed!")
+            sys.exit(1)
+
+        res_build = subprocess.run(["npm.cmd", "run", "build"], cwd=frontend_dir)
+        if res_build.returncode != 0:
+            print("[CI FAIL] Vite production build failed!")
+            sys.exit(1)
+
+        print("\n" + "=" * 60)
+        print("[CI SUCCESS] Entire Pipeline Passed 100% Cleanly!")
+        print("=" * 60)
     else:
         print(f"Unknown command: {command}")
         print_help()

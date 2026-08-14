@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Trophy, BookOpen, Target, Zap } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 interface ScoreModalProps {
   score: number;
@@ -17,6 +18,18 @@ export const ScoreModal: React.FC<ScoreModalProps> = ({
   const percentage = Math.round((score / total) * 100);
   const isPassed = percentage >= 60;
 
+  // Trigger celebration particle confetti upon passing exam
+  useEffect(() => {
+    if (isPassed) {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#10b981', '#6366f1', '#f59e0b'],
+      });
+    }
+  }, [isPassed]);
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
       <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-md w-full text-center space-y-6 shadow-2xl relative overflow-hidden">
@@ -31,7 +44,7 @@ export const ScoreModal: React.FC<ScoreModalProps> = ({
         <div className="space-y-2">
           <div className="flex justify-center">
             {isPassed ? (
-              <Trophy className="w-16 h-16 text-emerald-400" />
+              <Trophy className="w-16 h-16 text-emerald-400 animate-bounce" />
             ) : (
               <BookOpen className="w-16 h-16 text-amber-400" />
             )}
