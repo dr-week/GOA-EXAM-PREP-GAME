@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Clock, Flame, ArrowLeft, Lightbulb, ChevronLeft, ChevronRight, CheckCircle2, XCircle } from 'lucide-react';
 import { playSound } from '../utils/audio';
 import type { Question } from '../types';
 
@@ -35,6 +36,18 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
   }, [timeLeft]);
 
   // Reset or show explanation when changing question
+  const currentQ = questions[currentIndex] || {
+    id: '1',
+    question: 'Loading Question...',
+    options: ['A) Option 1', 'B) Option 2', 'C) Option 3', 'D) Option 4'],
+    answer: 'A) Option 1',
+    explanation: 'No explanation available.',
+    subject: 'General Knowledge',
+  };
+
+  const currentEliminated = eliminatedOptions[currentIndex] || [];
+  const isLifelineUsed = usedLifelines[currentIndex] || false;
+
   useEffect(() => {
     setShowExplanation(userAnswers[currentIndex] !== undefined);
   }, [currentIndex, userAnswers]);
@@ -46,16 +59,13 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
   };
 
   const handleSelectOption = (optionLetter: string) => {
-    // Record user answer
     setUserAnswers((prev) => ({
       ...prev,
       [currentIndex]: optionLetter,
     }));
 
-    // Auto-reveal explanation when answered
     setShowExplanation(true);
 
-    // Instant Right/Wrong Audio Feedback
     const isCorrect = currentQ.answer.startsWith(optionLetter);
     if (isCorrect) {
       playSound('correct', isMuted);
@@ -64,15 +74,11 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
     }
   };
 
-  // 🔥 50:50 Lifeline Logic
+  // 50:50 Lifeline Logic
   const handleUse5050 = () => {
     if (usedLifelines[currentIndex]) return;
-    const currentQ = questions[currentIndex];
-    if (!currentQ) return;
-
-    const correctLetter = currentQ.answer.charAt(0); // 'A', 'B', 'C', or 'D'
+    const correctLetter = currentQ.answer.charAt(0);
     const letters = ['A', 'B', 'C', 'D'].filter((l) => l !== correctLetter);
-    // Pick 2 wrong options to eliminate
     const shuffledWrong = letters.sort(() => 0.5 - Math.random()).slice(0, 2);
 
     setEliminatedOptions((prev) => ({
@@ -98,18 +104,6 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
     onFinishExam(score, questions.length);
   };
 
-  const currentQ = questions[currentIndex] || {
-    id: '1',
-    question: 'Loading Question...',
-    options: ['A) Option 1', 'B) Option 2', 'C) Option 3', 'D) Option 4'],
-    answer: 'A) Option 1',
-    explanation: 'No explanation available.',
-    subject: 'General Knowledge',
-  };
-
-  const currentEliminated = eliminatedOptions[currentIndex] || [];
-  const isLifelineUsed = usedLifelines[currentIndex] || false;
-
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
       {/* Top Controls Header */}
@@ -117,34 +111,36 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
         <div className="flex items-center gap-3">
           <button
             onClick={onExit}
-            className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 transition-colors"
+            className="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 transition-colors flex items-center gap-1.5"
           >
-            ← Exit Test
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>Exit Test</span>
           </button>
           <h2 className="text-sm font-bold text-white hidden sm:block">
-            🏛️ Official GPSC/GSSC Exam Hall
+            Official GPSC/GSSC Exam Hall
           </h2>
         </div>
 
         {/* Countdown Timer & Lifeline */}
         <div className="flex items-center gap-3">
-          {/* 🔥 50:50 Lifeline Button */}
+          {/* 50:50 Lifeline Button */}
           <button
             disabled={isLifelineUsed}
             onClick={handleUse5050}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1 border ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 border ${
               isLifelineUsed
                 ? 'bg-slate-950 border-slate-800 text-slate-600 opacity-50 cursor-not-allowed'
                 : 'bg-red-500/20 border-red-500/40 text-red-400 hover:bg-red-500/30'
             }`}
             title="Eliminate 2 wrong answers"
           >
-            <span>🔥 50:50 Lifeline</span>
+            <Flame className="w-3.5 h-3.5 fill-red-400/40" />
+            <span>50:50 Lifeline</span>
           </button>
 
           {/* Countdown Timer */}
-          <div className="flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 px-3 py-1.5 rounded-xl">
-            <span className="text-amber-400 text-xs font-bold hidden sm:inline">⏱️ Time:</span>
+          <div className="flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/20 px-3 py-1.5 rounded-xl">
+            <Clock className="w-3.5 h-3.5 text-amber-400" />
             <span className="text-amber-300 font-mono text-sm font-bold">
               {formatTime(timeLeft)}
             </span>
@@ -207,10 +203,18 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
               if (isAnswered) {
                 if (isCorrectAnswer) {
                   btnStyle = 'bg-emerald-600/20 border-emerald-500 text-emerald-300 font-semibold shadow-lg shadow-emerald-500/10';
-                  badge = <span className="text-xs font-bold text-emerald-400">✓ Correct</span>;
+                  badge = (
+                    <span className="text-xs font-bold text-emerald-400 flex items-center gap-1">
+                      <CheckCircle2 className="w-4 h-4" /> Correct
+                    </span>
+                  );
                 } else if (isSelected) {
                   btnStyle = 'bg-red-600/20 border-red-500 text-red-300 font-semibold shadow-lg shadow-red-500/10';
-                  badge = <span className="text-xs font-bold text-red-400">✖ Wrong</span>;
+                  badge = (
+                    <span className="text-xs font-bold text-red-400 flex items-center gap-1">
+                      <XCircle className="w-4 h-4" /> Wrong
+                    </span>
+                  );
                 }
               }
 
@@ -232,10 +236,10 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
           <div className="pt-2">
             <button
               onClick={() => setShowExplanation(!showExplanation)}
-              className="text-xs text-indigo-400 hover:underline flex items-center gap-1"
+              className="text-xs text-indigo-400 hover:underline flex items-center gap-1.5"
             >
+              <Lightbulb className="w-3.5 h-3.5" />
               <span>{showExplanation ? 'Hide' : 'Show'} Explanation</span>
-              <span>💡</span>
             </button>
             {showExplanation && (
               <div className="mt-3 p-4 rounded-2xl bg-indigo-950/30 border border-indigo-500/20 text-xs text-indigo-200 leading-relaxed">
@@ -252,9 +256,10 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
                 playSound('click', isMuted);
                 setCurrentIndex((prev) => prev - 1);
               }}
-              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 text-xs font-semibold text-white transition-colors"
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 disabled:opacity-50 text-xs font-semibold text-white transition-colors flex items-center gap-1.5"
             >
-              ◄ Previous
+              <ChevronLeft className="w-3.5 h-3.5" />
+              <span>Previous</span>
             </button>
             <button
               disabled={currentIndex === questions.length - 1}
@@ -262,9 +267,10 @@ export const ExamArena: React.FC<ExamArenaProps> = ({
                 playSound('click', isMuted);
                 setCurrentIndex((prev) => prev + 1);
               }}
-              className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-xs font-semibold text-white transition-colors"
+              className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-xs font-semibold text-white transition-colors flex items-center gap-1.5"
             >
-              Next Question ►
+              <span>Next Question</span>
+              <ChevronRight className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>

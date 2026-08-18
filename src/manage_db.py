@@ -63,12 +63,12 @@ def main():
 
         print("\n[STEP 4/4] Running Vitest & React Production Build...")
         frontend_dir = os.path.join(project_root, "frontend")
-        res_vitest = subprocess.run(["npm.cmd", "test"], cwd=frontend_dir)
+        res_vitest = subprocess.run("npm test", cwd=frontend_dir, shell=True)
         if res_vitest.returncode != 0:
             print("[CI FAIL] Vitest suite failed!")
             sys.exit(1)
 
-        res_build = subprocess.run(["npm.cmd", "run", "build"], cwd=frontend_dir)
+        res_build = subprocess.run("npm run build", cwd=frontend_dir, shell=True)
         if res_build.returncode != 0:
             print("[CI FAIL] Vite production build failed!")
             sys.exit(1)

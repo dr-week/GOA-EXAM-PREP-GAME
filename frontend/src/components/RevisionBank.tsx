@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BookOpen, Search, Bookmark, X, Globe, Rocket, Zap, BarChart2, FileText, Smartphone } from 'lucide-react';
 import type { Question } from '../types';
 
 interface RevisionBankProps {
@@ -34,7 +35,8 @@ export const RevisionBank: React.FC<RevisionBankProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-            <span>📚 Revision & Notes Bank</span>
+            <BookOpen className="w-6 h-6 text-purple-400" />
+            <span>Revision & Notes Bank</span>
           </h2>
           <p className="text-xs text-slate-400">
             Instant search across {questions.length} indexed questions & detailed explanations.
@@ -48,14 +50,15 @@ export const RevisionBank: React.FC<RevisionBankProps> = ({
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search keywords (e.g. Zuari, Mandovi, 1961)..."
-            className="w-full bg-slate-900 border border-slate-800 rounded-2xl py-2.5 px-4 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500"
+            className="w-full bg-slate-900 border border-slate-800 rounded-2xl py-2.5 pl-10 pr-10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500"
           />
+          <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-3 pointer-events-none" />
           {searchTerm && (
             <button
               onClick={() => setSearchTerm('')}
-              className="absolute right-3 top-2.5 text-xs text-slate-400 hover:text-white"
+              className="absolute right-3 top-2.5 text-xs text-slate-400 hover:text-white p-0.5"
             >
-              ✕
+              <X className="w-4 h-4" />
             </button>
           )}
         </div>
@@ -65,13 +68,14 @@ export const RevisionBank: React.FC<RevisionBankProps> = ({
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
         <button
           onClick={() => setViewBookmarksOnly(!viewBookmarksOnly)}
-          className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors border ${
+          className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors border flex items-center gap-1.5 ${
             viewBookmarksOnly
               ? 'bg-amber-500/20 border-amber-500 text-amber-300'
               : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
           }`}
         >
-          🔖 Saved Bookmarks ({bookmarks.length})
+          <Bookmark className="w-3.5 h-3.5 fill-amber-400/40 text-amber-400" />
+          <span>Saved Bookmarks ({bookmarks.length})</span>
         </button>
 
         <div className="h-4 w-[1px] bg-slate-800 mx-1" />
@@ -83,13 +87,14 @@ export const RevisionBank: React.FC<RevisionBankProps> = ({
               setSelectedSubject(subj);
               setViewBookmarksOnly(false);
             }}
-            className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
+            className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1.5 ${
               selectedSubject === subj && !viewBookmarksOnly
                 ? 'bg-indigo-600 text-white'
                 : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white'
             }`}
           >
-            {subj === 'all' ? '🌐 All Subjects' : subj.replace(/_/g, ' ')}
+            {subj === 'all' && <Globe className="w-3.5 h-3.5" />}
+            <span>{subj === 'all' ? 'All Subjects' : subj.replace(/_/g, ' ')}</span>
           </button>
         ))}
       </div>
@@ -117,9 +122,14 @@ export const RevisionBank: React.FC<RevisionBankProps> = ({
                   <span className="text-emerald-400 font-semibold">Correct: {q.answer}</span>
                   <button
                     onClick={() => onToggleBookmark(q.id)}
-                    className={`text-sm ${isBookmarked ? 'text-amber-400' : 'text-slate-600 hover:text-slate-300'}`}
+                    className="p-1 rounded-lg hover:bg-slate-800 transition-colors"
+                    title={isBookmarked ? 'Remove bookmark' : 'Bookmark question'}
                   >
-                    🔖
+                    <Bookmark
+                      className={`w-4 h-4 ${
+                        isBookmarked ? 'fill-amber-400 text-amber-400' : 'text-slate-600 hover:text-slate-300'
+                      }`}
+                    />
                   </button>
                 </div>
               </div>
@@ -145,26 +155,35 @@ export const RevisionBank: React.FC<RevisionBankProps> = ({
       {/* Phased Roadmap Section */}
       <div className="pt-8 border-t border-slate-800 space-y-4">
         <h3 className="text-lg font-bold text-white flex items-center gap-2">
-          <span>🚀 Official Phased Feature Update Roadmap</span>
+          <Rocket className="w-5 h-5 text-indigo-400" />
+          <span>Official Phased Feature Update Roadmap</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-1.5">
-            <span className="text-[10px] uppercase font-bold text-indigo-400">Phase 1</span>
+            <span className="text-[10px] uppercase font-bold text-indigo-400 flex items-center gap-1">
+              <Zap className="w-3 h-3" /> Phase 1
+            </span>
             <h4 className="text-xs font-bold text-white">Audio Mute & 60fps Acceleration</h4>
             <p className="text-[11px] text-slate-400">Global Web Audio API synthesizer with GPU layer acceleration.</p>
           </div>
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-1.5">
-            <span className="text-[10px] uppercase font-bold text-purple-400">Phase 2</span>
+            <span className="text-[10px] uppercase font-bold text-purple-400 flex items-center gap-1">
+              <BarChart2 className="w-3 h-3" /> Phase 2
+            </span>
             <h4 className="text-xs font-bold text-white">Visual Score Analytics</h4>
             <p className="text-[11px] text-slate-400">Zero-dependency SVG accuracy bar charts tracking performance.</p>
           </div>
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-1.5">
-            <span className="text-[10px] uppercase font-bold text-amber-400">Phase 3</span>
+            <span className="text-[10px] uppercase font-bold text-amber-400 flex items-center gap-1">
+              <FileText className="w-3 h-3" /> Phase 3
+            </span>
             <h4 className="text-xs font-bold text-white">Automated Gazette Scraping</h4>
             <p className="text-[11px] text-slate-400">Python scraper fetching live GPSC recruitment notices.</p>
           </div>
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-1.5">
-            <span className="text-[10px] uppercase font-bold text-emerald-400">Phase 4</span>
+            <span className="text-[10px] uppercase font-bold text-emerald-400 flex items-center gap-1">
+              <Smartphone className="w-3 h-3" /> Phase 4
+            </span>
             <h4 className="text-xs font-bold text-white">Cloud Mobile APK CI/CD</h4>
             <p className="text-[11px] text-slate-400">Automated GitHub Actions pipeline building native Android APKs.</p>
           </div>
